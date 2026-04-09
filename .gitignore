@@ -1,0 +1,123 @@
+# =========================
+# OS / System Files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# Logs & Temp Files
+# =========================
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+
+# =========================
+# Maya Files
+# =========================
+# Autosaves & temp
+*.mb.autosave
+*.ma.autosave
+autosave/
+tmp/
+
+# Maya project cache
+cache/
+particles/
+fluids/
+renderData/
+dynCache/
+
+# Render outputs
+images/
+renders/
+
+# =========================
+# Substance Painter
+# =========================
+# Cache & temp
+*.spp.autosave
+*.log
+shelf/
+allegorithmic/
+
+# Exported textures (optional: remove if you WANT to version textures)
+exports/
+textures/
+
+# =========================
+# Substance Designer
+# =========================
+*.sbsar.cache
+*.autosave
+
+# =========================
+# 3D Asset Files
+# =========================
+# Keep source files if needed, but often large binaries are excluded
+# Uncomment if you DON'T want them tracked:
+
+# *.fbx
+# *.obj
+# *.abc
+# *.dae
+# *.3ds
+
+# =========================
+# Texture Files
+# =========================
+# Optional: ignore baked/exported textures
+# *.png
+# *.jpg
+# *.tga
+# *.exr
+# *.tif
+
+# =========================
+# Simulation / Cache Files
+# =========================
+*.sim
+*.bgeo
+*.vdb
+*.cache
+
+# =========================
+# Compressed / Archives
+# =========================
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# =========================
+# Python (if using scripts)
+# =========================
+__pycache__/
+*.pyc
+
+# =========================
+# Environment / Build
+# =========================
+.env
+.env.*
+dist/
+build/
+
+# =========================
+# Git LFS (optional note)
+# =========================
+# Consider using Git LFS for large files like:
+# *.fbx
+# *.exr
+# *.tif
