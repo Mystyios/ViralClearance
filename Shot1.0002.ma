@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Shot1.0002.ma
-//Last modified: Thu, Apr 23, 2026 06:13:09 PM
+//Last modified: Fri, Apr 24, 2026 04:03:48 PM
 //Codeset: 1252
 file -rdi 1 -ns "Desk" -rfn "DeskRN" -op "v=0;" -typ "mayaAscii" "D:/UVU/UVU-AGD-Portfolio/MayaProject/Misc Models/Desk.ma";
 file -rdi 1 -ns "GlassEquipment" -rfn "GlassEquipmentRN" -op "v=0;" -typ "mayaAscii"
@@ -49,7 +49,6 @@ requires maya "2025ff03";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiStandardSurface"
 		 -nodeType "aiImagerDenoiserOidn" "mtoa" "5.4.5";
-requires "stereoCamera" "10.0";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOutputPass" -nodeType "mentalrayRenderPass"
 		 -nodeType "mentalrayUserBuffer" -nodeType "mentalraySubdivApprox" -nodeType "mentalrayCurveApprox"
 		 -nodeType "mentalraySurfaceApprox" -nodeType "mentalrayDisplaceApprox" -nodeType "mentalrayOptions"
@@ -134,12 +133,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "0FED9A58-4AF8-B43D-3A90-67A7F0E26DED";
+fileInfo "UUID" "BA6A9ECE-4748-7539-70E5-B9903F3DD0A7";
 createNode transform -s -n "persp";
 	rename -uid "746A465E-4F6D-437B-4A04-12BE53AE700F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.7384281387949319 2.9408909838524342 2.0532127925031491 ;
-	setAttr ".r" -type "double3" -17.999999999900972 2655.1999999953291 0 ;
+	setAttr ".t" -type "double3" 2.7384281387949319 2.9408909838524346 2.0532127925031491 ;
+	setAttr ".r" -type "double3" -17.999999999900972 2655.1999999953296 0 ;
 	setAttr ".rpt" -type "double3" 4.0647425428458584e-17 -8.0831926593688664e-18 -1.3894100675065369e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CA34C914-496A-CE53-3116-29B1F982CD48";
@@ -147,7 +146,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".fl" 34.999999999999979;
 	setAttr ".fcp" 1000.0000000000002;
 	setAttr ".fd" 0.054680664916885391;
-	setAttr ".coi" 5.5590329842490211;
+	setAttr ".coi" 5.559032984249022;
 	setAttr ".ow" 0.10936132983377078;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -30131,23 +30130,23 @@ createNode locator -n "locatorShape1" -p "locator1";
 	rename -uid "1F7DF9AE-4DDC-7029-744B-35979DCA96C8";
 	setAttr -k off ".v";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "B85A0FFF-4334-4450-BD6C-3A886F8C1C5B";
+	rename -uid "DF1956F1-4AEF-7486-B3C0-06957627BF66";
 	setAttr -s 30 ".lnk";
 	setAttr -s 30 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "F8F3533B-4FAF-08A8-22EF-69A1AD40E449";
+	rename -uid "C989EC53-4886-0506-1274-C7BC8B4CA240";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "E14AC74D-4CDD-2398-F2EB-6A82FC195F3C";
+	rename -uid "F7339D9B-4966-475A-0DCB-F9ABBD470336";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "6E40EA68-4375-B9FA-33C2-4DB378836B3C";
+	rename -uid "F402E4AC-402E-92FE-CFC3-24806FAAD955";
 	setAttr ".cdl" 4;
 	setAttr -s 5 ".dli[1:4]"  8 4 1 2;
 createNode displayLayer -n "defaultLayer";
 	rename -uid "82E79C4F-4ADC-0D2F-C7AC-FD98F06FBC1A";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "53373C49-4BFE-956C-2910-3D99B08B793E";
+	rename -uid "BD8ABEA3-4A39-5AEA-085B-6DA15C355CAD";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "47ECF151-4033-CA4D-0162-BA86DBA8CB19";
 	setAttr ".g" yes;
@@ -31044,14 +31043,14 @@ createNode reference -n "MicroscopeRN";
 		
 		2 "|Objects|Microscope:Microscope_Geo|Microscope:pCube4|Microscope:pCube4Shape" 
 		"instObjGroups.objectGroups" " -s 3"
+		3 "Microscope:groupId12.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "|Objects|Microscope:Microscope_Geo|Microscope:pCube5|Microscope:pCubeShape5.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Objects|Microscope:Microscope_Geo|Microscope:pCylinder1|Microscope:pCylinderShape1.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Objects|Microscope:Microscope_Geo|Microscope:pCylinder5|Microscope:pCylinderShape5.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Objects|Microscope:Microscope_Geo|Microscope:pCylinder3|Microscope:pCylinderShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "Microscope:groupId12.message" ":initialShadingGroup.groupNodes" "-na"
-		3 "|Objects|Microscope:Microscope_Geo|Microscope:pCylinder1|Microscope:pCylinderShape1.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Objects|Microscope:Microscope_Geo|Microscope:pCylinder4|Microscope:pCylinderShape4.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
@@ -31106,25 +31105,25 @@ createNode reference -n "Desk_ChairRN";
 		
 		2 "|Objects|Desk_Chair:Chair_Geo" "scale" " -type \"double3\" 1.28421413547398688 1.28421413547398688 1.28421413547398688"
 		
-		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCylinder7|Desk_Chair:pCylinderShape7.instObjGroups" 
+		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCube2|Desk_Chair:pCubeShape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCylinder8|Desk_Chair:pCylinderShape8.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCylinder4|Desk_Chair:pCylinderShape4.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCylinder1|Desk_Chair:pCylinderShape1.instObjGroups" 
+		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:sweep1|Desk_Chair:sweepShape1.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCylinder3|Desk_Chair:pCylinderShape3.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCube2|Desk_Chair:pCubeShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCylinder6|Desk_Chair:pCylinderShape6.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCylinder7|Desk_Chair:pCylinderShape7.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCylinder1|Desk_Chair:pCylinderShape1.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCylinder2|Desk_Chair:pCylinderShape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCylinder5|Desk_Chair:pCylinderShape5.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:sweep1|Desk_Chair:sweepShape1.instObjGroups" 
+		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCylinder4|Desk_Chair:pCylinderShape4.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCylinder8|Desk_Chair:pCylinderShape8.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Objects|Desk_Chair:Chair_Geo|Desk_Chair:pCube1|Desk_Chair:pCubeShape1.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
@@ -31188,14 +31187,14 @@ createNode reference -n "Bunsen_BurnerRN";
 		2 "Bunsen_Burner:file1" "fileTextureName" " -type \"string\" \"D:/UVU/UVU-AGD-Portfolio/ViralClearance/Lab Models/Lab Model Textures/Bunsen Burner Textures/Bunsen Burner_standardSurface1_BaseColor.1001.png\""
 		
 		2 "Bunsen_Burner:file1" "colorSpace" " -type \"string\" \"sRGB\""
-		3 "Bunsen_Burner:groupId1.message" ":initialShadingGroup.groupNodes" "-na"
-		
 		3 "Bunsen_Burner:groupId1.groupId" "|Objects|Bunsen_Burner:pPlane4|Bunsen_Burner:pPlane4Shape.instObjGroups.objectGroups[0].objectGroupId" 
 		""
 		3 ":initialShadingGroup.memberWireframeColor" "|Objects|Bunsen_Burner:pPlane4|Bunsen_Burner:pPlane4Shape.instObjGroups.objectGroups[0].objectGrpColor" 
 		""
 		3 "|Objects|Bunsen_Burner:pPlane4|Bunsen_Burner:pPlane4Shape.instObjGroups.objectGroups[0]" 
 		":initialShadingGroup.dagSetMembers" "-na"
+		3 "Bunsen_Burner:groupId1.message" ":initialShadingGroup.groupNodes" "-na"
+		
 		5 3 "Bunsen_BurnerRN" "|Objects|Bunsen_Burner:pPlane4|Bunsen_Burner:pPlane4Shape.instObjGroups" 
 		"Bunsen_BurnerRN.placeHolderList[1]" "";
 	setAttr ".ptag" -type "string" "";
@@ -31214,13 +31213,13 @@ createNode reference -n "ClipboardRN";
 		2 "Clipboard:file1" "fileTextureName" " -type \"string\" \"D:/UVU/UVU-AGD-Portfolio/ViralClearance/Lab Models/Lab Model Textures/Clipboard Textures/Clipboard_standardSurface1_BaseColor.1001.png\""
 		
 		2 "Clipboard:file1" "colorSpace" " -type \"string\" \"sRGB\""
+		3 "Clipboard:groupId1.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "Clipboard:groupId1.groupId" "|Objects|Clipboard:pCube3|Clipboard:pCube3Shape.instObjGroups.objectGroups[0].objectGroupId" 
 		""
 		3 ":initialShadingGroup.memberWireframeColor" "|Objects|Clipboard:pCube3|Clipboard:pCube3Shape.instObjGroups.objectGroups[0].objectGrpColor" 
 		""
 		3 "|Objects|Clipboard:pCube3|Clipboard:pCube3Shape.instObjGroups.objectGroups[0]" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "Clipboard:groupId1.message" ":initialShadingGroup.groupNodes" "-na"
 		5 3 "ClipboardRN" "|Objects|Clipboard:pCube3|Clipboard:pCube3Shape.instObjGroups" 
 		"ClipboardRN.placeHolderList[1]" "";
 	setAttr ".ptag" -type "string" "";
@@ -31241,6 +31240,7 @@ createNode reference -n "Hot_PlateRN";
 		2 "Hot_Plate:file1" "fileTextureName" " -type \"string\" \"D:/UVU/UVU-AGD-Portfolio/ViralClearance/Lab Models/Lab Model Textures/Hot Plate Textures/Hot Plate_standardSurface1_BaseColor.1001.png\""
 		
 		2 "Hot_Plate:file1" "colorSpace" " -type \"string\" \"sRGB\""
+		3 "Hot_Plate:groupId2.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "Hot_Plate:groupId3.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "Hot_Plate:groupId1.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "Hot_Plate:groupId1.groupId" "|Objects|Hot_Plate:Hot_Plate|Hot_Plate:Hot_PlateShape.instObjGroups.objectGroups[0].objectGroupId" 
@@ -31261,7 +31261,6 @@ createNode reference -n "Hot_PlateRN";
 		""
 		3 "|Objects|Hot_Plate:Hot_Plate|Hot_Plate:Hot_PlateShape.instObjGroups.objectGroups[2]" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "Hot_Plate:groupId2.message" ":initialShadingGroup.groupNodes" "-na"
 		5 3 "Hot_PlateRN" "|Objects|Hot_Plate:Hot_Plate|Hot_Plate:Hot_PlateShape.instObjGroups" 
 		"Hot_PlateRN.placeHolderList[1]" "";
 	setAttr ".ptag" -type "string" "";
@@ -31314,7 +31313,6 @@ createNode reference -n "ScaleRN";
 		
 		2 "Scale:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		3 "Scale:groupId2.message" ":initialShadingGroup.groupNodes" "-na"
-		3 "Scale:groupId1.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "Scale:groupId1.groupId" "|Objects|Scale:polySurface1|Scale:polySurfaceShape1.instObjGroups.objectGroups[0].objectGroupId" 
 		""
 		3 ":initialShadingGroup.memberWireframeColor" "|Objects|Scale:polySurface1|Scale:polySurfaceShape1.instObjGroups.objectGroups[0].objectGrpColor" 
@@ -31327,6 +31325,7 @@ createNode reference -n "ScaleRN";
 		""
 		3 "|Objects|Scale:polySurface1|Scale:polySurfaceShape1.instObjGroups.objectGroups[1]" 
 		":initialShadingGroup.dagSetMembers" "-na"
+		3 "Scale:groupId1.message" ":initialShadingGroup.groupNodes" "-na"
 		5 3 "ScaleRN" "|Objects|Scale:polySurface1|Scale:polySurfaceShape1.instObjGroups" 
 		"ScaleRN.placeHolderList[1]" "";
 	setAttr ".ptag" -type "string" "";
@@ -31637,8 +31636,6 @@ createNode reference -n "ComputerRN";
 		
 		2 "|Objects|Computer:Computer_Geo|Computer:pCube3" "translate" " -type \"double3\" 0 0 -0.2443645369035799"
 		
-		3 "|Objects|Computer:Computer_Geo|Computer:pCube2|Computer:pCubeShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
 		3 "Computer:groupId169.groupId" "|Objects|Computer:Computer_Geo|Computer:pCube87|Computer:pCube87Shape.instObjGroups.objectGroups[0].objectGroupId" 
 		""
 		3 ":initialShadingGroup.memberWireframeColor" "|Objects|Computer:Computer_Geo|Computer:pCube87|Computer:pCube87Shape.instObjGroups.objectGroups[0].objectGrpColor" 
@@ -31649,13 +31646,15 @@ createNode reference -n "ComputerRN";
 		""
 		3 "|Objects|Computer:Computer_Geo|Computer:pCube87|Computer:pCube87Shape.compInstObjGroups.compObjectGroups[0]" 
 		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Objects|Computer:Computer_Geo|Computer:pCube3|Computer:pCubeShape3.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Objects|Computer:Computer_Geo|Computer:pCube88|Computer:pCubeShape87.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Objects|Computer:Computer_Geo|Computer:pCube3|Computer:pCubeShape3.instObjGroups" 
+		3 "Computer:groupId169.message" ":initialShadingGroup.groupNodes" "-na"
+		3 "|Objects|Computer:Computer_Geo|Computer:pCube2|Computer:pCubeShape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Objects|Computer:Computer_Geo|Computer:pCube1|Computer:pCubeShape1.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "Computer:groupId169.message" ":initialShadingGroup.groupNodes" "-na"
 		5 1 "ComputerRN" "|Objects|Computer:Computer_Geo|Computer:pCube88|Computer:pCubeShape87.instObjGroups" 
 		"ComputerRN.placeHolderList[1]" ":initialShadingGroup.dsm"
 		5 1 "ComputerRN" "|Objects|Computer:Computer_Geo|Computer:pCube87|Computer:pCube87Shape.instObjGroups" 
@@ -33935,26 +33934,14 @@ createNode reference -n "LowPolyHumanSceneControlsRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"LowPolyHumanSceneControlsRN"
 		"LowPolyHumanSceneControlsRN" 0
-		"LowPolyHumanSceneControlsRN" 248
+		"LowPolyHumanSceneControlsRN" 200
 		2 "|LowPolyHumanSceneControls:Man" "scale" " -type \"double3\" 1 1 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl" 
-		"rotate" " -type \"double3\" 27.45064628920512106 0 0"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl" 
-		"rotateX" " -av"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl" 
-		"rotateY" " -av"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl" 
-		"rotateZ" " -av"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_02_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_01_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_02_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_02_FK_Ctrl" 
-		"FollowTranslate" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_02_FK_Ctrl" 
-		"FollowRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 13.9161201975309119"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl" 
@@ -33999,94 +33986,10 @@ createNode reference -n "LowPolyHumanSceneControlsRN";
 		"rotate" " -type \"double3\" 0 0 13.9161201975309119"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"Follow" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"RockFoot" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"HeelRotate" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"HeelPivot" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"HeelTwist" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ToeRotate" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ToePivot" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ToeTwist" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"BallRotate" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"BallPivot" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"BallTwist" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ToeTapRotate" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ToeTapPivot" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ToeTapTwist" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"FootRoll" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ControlVis" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"Stretch" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"MaxStretch" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"LegLength" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"UpperLegLength" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"LowerLegLength" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl|LowPolyHumanSceneControls:L_Foot_IK_Out_Ctrl_Grp|LowPolyHumanSceneControls:L_Foot_IK_Out_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Foot_IK_Out_Ctrl|LowPolyHumanSceneControls:L_Foot_IK_In_Ctrl_Grp|LowPolyHumanSceneControls:L_Foot_IK_In_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Foot_IK_In_Ctrl|LowPolyHumanSceneControls:L_Foot_IK_Heel_Ctrl_Grp|LowPolyHumanSceneControls:L_Foot_IK_Heel_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Foot_IK_Heel_Ctrl_Offset_02_Grp|LowPolyHumanSceneControls:L_Foot_IK_Heel_Ctrl|LowPolyHumanSceneControls:L_Foot_IK_Toe_Ctrl_Grp|LowPolyHumanSceneControls:L_Foot_IK_Toe_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Foot_IK_Toe_Ctrl_Offset_02_Grp|LowPolyHumanSceneControls:L_Foot_IK_Toe_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"Follow" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"RockFoot" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"HeelRotate" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"HeelPivot" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"HeelTwist" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ToeRotate" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ToePivot" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ToeTwist" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"BallRotate" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"BallPivot" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"BallTwist" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ToeTapRotate" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ToeTapPivot" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ToeTapTwist" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"FootRoll" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ControlVis" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"Stretch" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"MaxStretch" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"LegLength" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"UpperLegLength" " -k 1"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"LowerLegLength" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "LowPolyHumanSceneControls:Geo_Layer" "visibility" " 1"
@@ -34492,15 +34395,15 @@ createNode animCurveTL -n "COG_Ctrl_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 0 45 -0.13959696362187779 52 -0.04018003799260262
-		 59 -0.13922018656158561 67 -0.083127666632875338 73 -0.16978863678367448 80 -0.024038576983131124
-		 91 -0.11860932111327203 99 -0.013017857034871049 109 -0.08077792875515527 120 -0.028420656193497981;
+		 59 -0.13922018656158561 67 -0.083127666632875352 73 -0.16978863678367451 80 -0.024038576983131124
+		 91 -0.11860932111327203 99 -0.013017857034871049 109 -0.08077792875515527 120 -0.028420656193497984;
 createNode animCurveTL -n "COG_Ctrl_translateZ";
 	rename -uid "82E0FA45-43CE-7CA0-5AAA-3DA1CC92719B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  1 0 27 0 45 1.6920430415980312 52 2.9564655229334282
-		 59 4.461873377710643 67 6.218579015292657 73 7.3859172999469296 80 8.4620850717740019
-		 91 10.173681204373704 99 11.346346243344106 109 12.617549807772917 120 13.693853462559085;
+	setAttr -s 12 ".ktv[0:11]"  1 0 27 0 45 1.6920430415980312 52 2.9564655229334287
+		 59 4.4618733777106439 67 6.218579015292657 73 7.3859172999469296 80 8.4620850717740019
+		 91 10.173681204373704 99 11.346346243344106 109 12.617549807772919 120 13.693853462559087;
 	setAttr -s 12 ".kit[5:11]"  1 18 18 18 18 18 18;
 	setAttr -s 12 ".kot[5:11]"  1 18 18 18 18 18 18;
 	setAttr -s 12 ".kix[5:11]"  0.0021314559998250699 0.0026403842472926924 
@@ -34591,7 +34494,7 @@ createNode animCurveTL -n "L_Leg_IK_Ctrl_translateZ";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  27 0 45 2.7340713985275338 52 2.7340713985275338
 		 59 2.7340713985275338 67 5.347873288563167 73 8.5455253937433184 80 8.5455253937433184
-		 91 8.5455253937433184 99 11.27805427122631 109 13.365091834288622 120 13.365091834288622;
+		 91 8.5455253937433184 99 11.27805427122631 109 13.365091834288624 120 13.365091834288624;
 	setAttr -s 11 ".kit[10]"  1;
 	setAttr -s 11 ".kot[10]"  1;
 	setAttr -s 11 ".kix[10]"  0.011011339827276373;
@@ -34603,7 +34506,7 @@ createNode animCurveTL -n "R_Leg_IK_Ctrl_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  27 0 45 0 52 0 59 0 67 0 73 0 80 0 91 0
-		 99 0 109 -0.1720534709061449 114 -0.1345821733102425 120 0.99707979302519711;
+		 99 0 109 -0.1720534709061449 114 -0.1345821733102425 120 0.99707979302519723;
 createNode animCurveTL -n "R_Leg_IK_Ctrl_translateY";
 	rename -uid "22CE1045-4DFC-BA4F-09D0-4BABF2E67592";
 	setAttr ".tan" 18;
@@ -34615,8 +34518,8 @@ createNode animCurveTL -n "R_Leg_IK_Ctrl_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  27 0 45 0 52 2.549566888802048 59 5.6188527465326867
-		 67 5.6188527465326867 73 5.6188527465326867 80 8.2590180637535777 91 11.19014133124268
-		 99 11.19014133124268 109 11.13195835761821 114 12.962832233895199 120 14.443108939690354;
+		 67 5.6188527465326867 73 5.6188527465326867 80 8.2590180637535777 91 11.190141331242682
+		 99 11.190141331242682 109 11.13195835761821 114 12.962832233895201 120 14.443108939690354;
 createNode animCurveTA -n "L_Leg_IK_Ctrl_rotateX";
 	rename -uid "414AD724-4E30-7652-14EB-7FA220A75884";
 	setAttr ".tan" 18;
@@ -34634,7 +34537,7 @@ createNode animCurveTA -n "L_Leg_IK_Ctrl_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  27 0 45 0 52 0 59 0 67 0 73 0 80 0 91 0
-		 99 22.219763325095055 109 25.423232222635196 120 54.845268489291676;
+		 99 22.219763325095055 109 25.4232322226352 120 54.845268489291684;
 	setAttr -s 11 ".kit[10]"  1;
 	setAttr -s 11 ".kot[10]"  1;
 	setAttr -s 11 ".kix[10]"  1;
@@ -35154,7 +35057,7 @@ createNode animCurveTA -n "R_Arm_01_FK_Ctrl_rotateZ";
 	setAttr ".wgt" no;
 	setAttr -s 9 ".ktv[0:8]"  27 0.25489065920041359 45 59.260005707749478
 		 60 -75.256173193916084 73 56.505466682195994 91 -69.822772900278963 110 68.755591060406999
-		 130 -52.586092693167068 145 17.136840860456573 150 -28.421747177275694;
+		 130 -52.586092693167068 145 17.136840860456577 150 -28.421747177275694;
 createNode animCurveTU -n "R_Arm_01_FK_Ctrl_scaleX";
 	rename -uid "BD0226E3-4E6B-4D73-D69A-138D753D044B";
 	setAttr ".tan" 18;
@@ -35563,7 +35466,7 @@ createNode animCurveTA -n "Pelvis_FK_Ctrl_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  27 0 47 0 52 -0.25995922796515764 59 -0.17368417887371565
-		 69 -0.46757800005204325 74 0.07001263432496127 81 -1.1797561076124237 90 -0.28305943919697812
+		 69 -0.46757800005204325 74 0.07001263432496127 81 -1.1797561076124237 90 -0.28305943919697818
 		 98 -1.0719616958240921 108 -1.3404502232844093 114 -1.5980724021989698 125 -1.7134636520718169;
 createNode animCurveTL -n "Pelvis_FK_Ctrl_translateX";
 	rename -uid "39C3079C-439E-8932-45C7-2DA44485F249";
@@ -35618,8 +35521,8 @@ select -ne :time1;
 	setAttr -av -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 89;
-	setAttr -av ".unw" 89;
+	setAttr -k on ".o" 32;
+	setAttr -av ".unw" 32;
 	setAttr -av -k on ".etw";
 	setAttr -av -k on ".tps";
 	setAttr -av -k on ".tms";
