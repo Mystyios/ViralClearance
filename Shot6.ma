@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
-//Name: Shot5.ma
-//Last modified: Sat, Apr 25, 2026 05:27:27 PM
+//Name: Shot6.ma
+//Last modified: Sat, Apr 25, 2026 06:56:42 PM
 //Codeset: 1252
 file -rdi 1 -ns "Desk" -rfn "DeskRN" -op "v=0;" -typ "mayaAscii" "D:/UVU/UVU-AGD-Portfolio/ViralClearance/Desk.ma";
 file -rdi 1 -ns "GlassEquipment" -rfn "GlassEquipmentRN" -op "v=0;" -typ "mayaAscii"
@@ -134,12 +134,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "8C2A6CDC-479A-FA31-F44C-9CB23678375E";
+fileInfo "UUID" "C40CFA52-4972-34D0-7624-9F97B8A0ADD3";
 createNode transform -s -n "persp";
 	rename -uid "746A465E-4F6D-437B-4A04-12BE53AE700F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.3408876119346638 1.7702770684273443 1.6203288173127144 ;
-	setAttr ".r" -type "double3" 18.600000000003931 821.99999999962608 0 ;
+	setAttr ".t" -type "double3" 1.035620857820688 1.1504928636614187 0.13711654228706088 ;
+	setAttr ".r" -type "double3" 1.7999999999998626 1226.4000000003364 0 ;
 	setAttr ".rpt" -type "double3" 1.7042093300123319e-17 -3.8543405530422591e-18 -1.3481871230152881e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CA34C914-496A-CE53-3116-29B1F982CD48";
@@ -147,12 +147,12 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".fl" 34.999999999999979;
 	setAttr ".fcp" 1000.0000000000002;
 	setAttr ".fd" 0.054680664916885391;
-	setAttr ".coi" 0.65470246989972125;
+	setAttr ".coi" 1.6246299736937959;
 	setAttr ".ow" 0.10936132983377078;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 150.15391734818402 130.64206212512892 131.16141660204633 ;
+	setAttr ".tp" -type "double3" 14.073862645821082 124.58305480018565 132.45035918690147 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "DCB130B7-4B2B-4811-522A-8D9BCD346F2F";
@@ -25675,6 +25675,9 @@ createNode mesh -n "pCylinderShape4" -p "pCylinder4";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pCylinder5";
 	rename -uid "BEBAFA89-487C-50F2-AF85-33AFF2DBF874";
+	setAttr ".t" -type "double3" 1.7236485986050452 0.94839946118809781 0.65397056397221653 ;
+	setAttr ".r" -type "double3" 37.594736685096912 0 0 ;
+	setAttr ".s" -type "double3" 0.049184852015650836 0.010700064666699132 0.049184852015650836 ;
 	setAttr ".rp" -type "double3" 0 -0.0067591561668770284 -4.7296669832765483e-17 ;
 	setAttr ".rpt" -type "double3" 0 0.0014035679149237874 -0.0041235744886896101 ;
 	setAttr ".sp" -type "double3" 0 -0.99999955607326951 -9.6161049376982069e-16 ;
@@ -29808,7 +29811,7 @@ createNode camera -n "Main_Camera_Shape1" -p "Main_Camera_1";
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
 	setAttr ".fl" 20;
-	setAttr ".coi" 2.2015372245949263;
+	setAttr ".coi" 1.2735696031198547;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
@@ -30123,9 +30126,9 @@ createNode mesh -n "pPlaneShape7" -p "pPlane7";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "locator1";
 	rename -uid "CEEE87C7-4301-EAF3-448C-FDA187BB10C4";
-	setAttr ".t" -type "double3" -3.8039498933752034 0.12137210901015075 6.154327739822957 ;
-	setAttr ".r" -type "double3" 0 90 0 ;
-	setAttr ".s" -type "double3" 0.25 0.25000000000000022 0.25 ;
+	setAttr ".t" -type "double3" -0.023500516975781014 0.88469473242320951 1.3234064839169655 ;
+	setAttr ".r" -type "double3" -40.974708722895613 73.202352205754664 -36.55071176956551 ;
+	setAttr ".s" -type "double3" 0.25 0.25 0.25 ;
 createNode locator -n "locatorShape1" -p "locator1";
 	rename -uid "1F7DF9AE-4DDC-7029-744B-35979DCA96C8";
 	setAttr -k off ".v";
@@ -30161,12 +30164,12 @@ createNode parentConstraint -n "Sample_parentConstraint1" -p "Sample";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -0.7039362254300171 -0.36599038959147479 0.27782217556422223 ;
 	setAttr ".tg[0].tor" -type "double3" 88.995095668600726 7.781278429548542 142.18568936022527 ;
-	setAttr ".lr" -type "double3" 28.469703017610446 27.742623036597834 367.92469286726634 ;
+	setAttr ".lr" -type "double3" 177.4648523004596 101.83923192754848 161.65289857209166 ;
 	setAttr ".rst" -type "double3" 2.5854040096555786 0.83993835805389538 1.7741484107057328 ;
 	setAttr ".rsrr" -type "double3" 97.458705308767691 180 180 ;
 	setAttr -k on ".w0";
 createNode fosterParent -n "Viral_ContainerRNfosterParent1";
-	rename -uid "C379F96F-473C-A355-8FA8-D8BE88267E28";
+	rename -uid "A39EB676-41AE-26D3-C459-76BC442FBB07";
 createNode mesh -n "Viral_ContainerShape1" -p "Viral_ContainerRNfosterParent1";
 	rename -uid "7577E367-4D7D-D482-BD3B-65926360F70C";
 	setAttr -k off ".v";
@@ -32780,7 +32783,7 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "7B904C25-4400-C716-46FB-82AAA7DD80C8";
-	setAttr ".b" -type "string" "playbackOptions -min 1 -max 150 -ast 1 -aet 150 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 170 -ast 1 -aet 170 ";
 	setAttr ".st" 6;
 createNode groupId -n "groupId21";
 	rename -uid "5CE2DFA1-4B73-82CB-847B-5DB7AA155960";
@@ -33285,7 +33288,7 @@ createNode groupId -n "groupId218";
 	setAttr ".ihi" 0;
 createNode reference -n "MicroscopeRN";
 	rename -uid "DCD58949-4E00-2422-DB9D-16941BBBC990";
-	setAttr -s 8 ".phl";
+	setAttr -s 18 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -33294,10 +33297,20 @@ createNode reference -n "MicroscopeRN";
 	setAttr ".phl[6]" 0;
 	setAttr ".phl[7]" 0;
 	setAttr ".phl[8]" 0;
+	setAttr ".phl[9]" 0;
+	setAttr ".phl[10]" 0;
+	setAttr ".phl[11]" 0;
+	setAttr ".phl[12]" 0;
+	setAttr ".phl[13]" 0;
+	setAttr ".phl[14]" 0;
+	setAttr ".phl[15]" 0;
+	setAttr ".phl[16]" 0;
+	setAttr ".phl[17]" 0;
+	setAttr ".phl[18]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"MicroscopeRN"
 		"MicroscopeRN" 0
-		"MicroscopeRN" 24
+		"MicroscopeRN" 34
 		0 "|Microscope:Microscope_Geo" "|Objects" "-s -r "
 		2 "|Objects|Microscope:Microscope_Geo" "translate" " -type \"double3\" 0.46716982838194482 0 1.03648123661531422"
 		
@@ -33343,7 +33356,27 @@ createNode reference -n "MicroscopeRN";
 		5 1 "MicroscopeRN" "|Objects|Microscope:Microscope_Geo|Microscope:pCylinder3|Microscope:pCylinderShape3.instObjGroups" 
 		"MicroscopeRN.placeHolderList[7]" ":initialShadingGroup.dsm"
 		5 1 "MicroscopeRN" "|Objects|Microscope:Microscope_Geo|Microscope:pCylinder1|Microscope:pCylinderShape1.instObjGroups" 
-		"MicroscopeRN.placeHolderList[8]" ":initialShadingGroup.dsm";
+		"MicroscopeRN.placeHolderList[8]" ":initialShadingGroup.dsm"
+		5 4 "MicroscopeRN" "|Objects|Microscope:Microscope_Geo|Microscope:pCube5.translateX" 
+		"MicroscopeRN.placeHolderList[9]" ""
+		5 4 "MicroscopeRN" "|Objects|Microscope:Microscope_Geo|Microscope:pCube5.translateY" 
+		"MicroscopeRN.placeHolderList[10]" ""
+		5 4 "MicroscopeRN" "|Objects|Microscope:Microscope_Geo|Microscope:pCube5.translateZ" 
+		"MicroscopeRN.placeHolderList[11]" ""
+		5 4 "MicroscopeRN" "|Objects|Microscope:Microscope_Geo|Microscope:pCube5.visibility" 
+		"MicroscopeRN.placeHolderList[12]" ""
+		5 4 "MicroscopeRN" "|Objects|Microscope:Microscope_Geo|Microscope:pCube5.rotateX" 
+		"MicroscopeRN.placeHolderList[13]" ""
+		5 4 "MicroscopeRN" "|Objects|Microscope:Microscope_Geo|Microscope:pCube5.rotateY" 
+		"MicroscopeRN.placeHolderList[14]" ""
+		5 4 "MicroscopeRN" "|Objects|Microscope:Microscope_Geo|Microscope:pCube5.rotateZ" 
+		"MicroscopeRN.placeHolderList[15]" ""
+		5 4 "MicroscopeRN" "|Objects|Microscope:Microscope_Geo|Microscope:pCube5.scaleX" 
+		"MicroscopeRN.placeHolderList[16]" ""
+		5 4 "MicroscopeRN" "|Objects|Microscope:Microscope_Geo|Microscope:pCube5.scaleY" 
+		"MicroscopeRN.placeHolderList[17]" ""
+		5 4 "MicroscopeRN" "|Objects|Microscope:Microscope_Geo|Microscope:pCube5.scaleZ" 
+		"MicroscopeRN.placeHolderList[18]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "Desk_ChairRN";
@@ -33423,13 +33456,15 @@ createNode reference -n "CentrifugeRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"CentrifugeRN"
 		"CentrifugeRN" 0
-		"CentrifugeRN" 8
+		"CentrifugeRN" 9
 		0 "|Centrifuge:pCube1" "|Objects|Centrifuge1" "-s -r "
 		0 "|Centrifuge:pCube2" "|Objects|Centrifuge1" "-s -r "
 		0 "|Centrifuge:pCube3" "|Objects|Centrifuge1" "-s -r "
 		0 "|Centrifuge:pCube4" "|Objects|Centrifuge1" "-s -r "
 		0 "|Centrifuge:pCube5" "|Objects|Centrifuge1" "-s -r "
 		0 "|Centrifuge:polySurface1" "|Objects|Centrifuge1" "-s -r "
+		2 "|Objects|Centrifuge1|Centrifuge:polySurface1" "translate" " -type \"double3\" -0.13020401545169796 0 0"
+		
 		2 "Centrifuge:file1" "fileTextureName" " -type \"string\" \"D:/UVU/UVU-AGD-Portfolio/ViralClearance/Lab Models/Lab Model Textures/Centrifuge Textures/Centrifuge_standardSurface1_BaseColor.1001.png\""
 		
 		2 "Centrifuge:file1" "colorSpace" " -type \"string\" \"sRGB\"";
@@ -33997,14 +34032,16 @@ createNode reference -n "ComputerRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"ComputerRN"
 		"ComputerRN" 0
-		"ComputerRN" 20
+		"ComputerRN" 22
 		0 "|Computer:Computer_Geo" "|Objects" "-s -r "
 		2 "|Objects|Computer:Computer_Geo" "translate" " -type \"double3\" 0.93901206231637246 0.0042941617159718134 0.99379703528580554"
 		
+		2 "|Objects|Computer:Computer_Geo|Computer:pCube2" "visibility" " 0"
 		2 "|Objects|Computer:Computer_Geo|Computer:pCube2" "translate" " -type \"double3\" 0 0 -0.2443645369035799"
 		
 		2 "|Objects|Computer:Computer_Geo|Computer:pCube1" "translate" " -type \"double3\" 0 0 -0.2443645369035799"
 		
+		2 "|Objects|Computer:Computer_Geo|Computer:pCube3" "visibility" " 0"
 		2 "|Objects|Computer:Computer_Geo|Computer:pCube3" "translate" " -type \"double3\" 0 0 -0.2443645369035799"
 		
 		3 "|Objects|Computer:Computer_Geo|Computer:pCube3|Computer:pCubeShape3.instObjGroups" 
@@ -35061,17 +35098,17 @@ createNode animCurveTL -n "Main_Camera_1_translateX";
 	rename -uid "036FF87A-404C-C0B7-CFB9-2998F39DDF7E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 2.5306154101603267;
+	setAttr ".ktv[0]"  1 0.93318945930900443;
 createNode animCurveTL -n "Main_Camera_1_translateY";
 	rename -uid "35B58A01-43AD-69B2-3A3C-DEAC91AC23A9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1.8441669101262921;
+	setAttr ".ktv[0]"  1 1.03430134628625;
 createNode animCurveTL -n "Main_Camera_1_translateZ";
 	rename -uid "F954FB4B-47FC-319B-6528-8A9A47FA33D0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1.6467604741023418;
+	setAttr ".ktv[0]"  1 0.52139380314659023;
 createNode animCurveTU -n "Main_Camera_1_visibility";
 	rename -uid "0CC58BD5-4FC2-8FBE-14B7-39956759B1C3";
 	setAttr ".tan" 9;
@@ -35082,17 +35119,17 @@ createNode animCurveTA -n "Main_Camera_1_rotateX";
 	rename -uid "FB621A4F-4438-3EB9-25CD-3EA0C9AAC7C2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 -3.0000000000290203;
+	setAttr ".ktv[0]"  1 2.9999999999874727;
 createNode animCurveTA -n "Main_Camera_1_rotateY";
 	rename -uid "A9B6A79E-4319-0A01-F9AC-C292F6E5888E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 89.599999999995021;
+	setAttr ".ktv[0]"  1 140.7999999999914;
 createNode animCurveTA -n "Main_Camera_1_rotateZ";
 	rename -uid "836263F8-4B1A-8AE5-1F68-7FA1647C3370";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 2.8474037509679708e-14;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTU -n "Main_Camera_1_scaleX";
 	rename -uid "A41160C3-453A-190F-B167-7788D1066348";
 	setAttr ".tan" 18;
@@ -36076,7 +36113,7 @@ createNode animCurveTL -n "Bony_SpineTopIKC_translateZ";
 	setAttr -s 7 ".ktv[0:6]"  1 0 24 0 48 0 59 0 75 0 81 0 100 0;
 createNode reference -n "LowPolyHumanSceneControlsRN";
 	rename -uid "9A9DD504-42DF-C9CE-C1AC-03B9194D3B3D";
-	setAttr -s 435 ".phl";
+	setAttr -s 530 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -36512,40 +36549,205 @@ createNode reference -n "LowPolyHumanSceneControlsRN";
 	setAttr ".phl[433]" 0;
 	setAttr ".phl[434]" 0;
 	setAttr ".phl[435]" 0;
+	setAttr ".phl[436]" 0;
+	setAttr ".phl[437]" 0;
+	setAttr ".phl[438]" 0;
+	setAttr ".phl[439]" 0;
+	setAttr ".phl[440]" 0;
+	setAttr ".phl[441]" 0;
+	setAttr ".phl[442]" 0;
+	setAttr ".phl[443]" 0;
+	setAttr ".phl[444]" 0;
+	setAttr ".phl[445]" 0;
+	setAttr ".phl[446]" 0;
+	setAttr ".phl[447]" 0;
+	setAttr ".phl[448]" 0;
+	setAttr ".phl[449]" 0;
+	setAttr ".phl[450]" 0;
+	setAttr ".phl[451]" 0;
+	setAttr ".phl[452]" 0;
+	setAttr ".phl[453]" 0;
+	setAttr ".phl[454]" 0;
+	setAttr ".phl[455]" 0;
+	setAttr ".phl[456]" 0;
+	setAttr ".phl[457]" 0;
+	setAttr ".phl[458]" 0;
+	setAttr ".phl[459]" 0;
+	setAttr ".phl[460]" 0;
+	setAttr ".phl[461]" 0;
+	setAttr ".phl[462]" 0;
+	setAttr ".phl[463]" 0;
+	setAttr ".phl[464]" 0;
+	setAttr ".phl[465]" 0;
+	setAttr ".phl[466]" 0;
+	setAttr ".phl[467]" 0;
+	setAttr ".phl[468]" 0;
+	setAttr ".phl[469]" 0;
+	setAttr ".phl[470]" 0;
+	setAttr ".phl[471]" 0;
+	setAttr ".phl[472]" 0;
+	setAttr ".phl[473]" 0;
+	setAttr ".phl[474]" 0;
+	setAttr ".phl[475]" 0;
+	setAttr ".phl[476]" 0;
+	setAttr ".phl[477]" 0;
+	setAttr ".phl[478]" 0;
+	setAttr ".phl[479]" 0;
+	setAttr ".phl[480]" 0;
+	setAttr ".phl[481]" 0;
+	setAttr ".phl[482]" 0;
+	setAttr ".phl[483]" 0;
+	setAttr ".phl[484]" 0;
+	setAttr ".phl[485]" 0;
+	setAttr ".phl[486]" 0;
+	setAttr ".phl[487]" 0;
+	setAttr ".phl[488]" 0;
+	setAttr ".phl[489]" 0;
+	setAttr ".phl[490]" 0;
+	setAttr ".phl[491]" 0;
+	setAttr ".phl[492]" 0;
+	setAttr ".phl[493]" 0;
+	setAttr ".phl[494]" 0;
+	setAttr ".phl[495]" 0;
+	setAttr ".phl[496]" 0;
+	setAttr ".phl[497]" 0;
+	setAttr ".phl[498]" 0;
+	setAttr ".phl[499]" 0;
+	setAttr ".phl[500]" 0;
+	setAttr ".phl[501]" 0;
+	setAttr ".phl[502]" 0;
+	setAttr ".phl[503]" 0;
+	setAttr ".phl[504]" 0;
+	setAttr ".phl[505]" 0;
+	setAttr ".phl[506]" 0;
+	setAttr ".phl[507]" 0;
+	setAttr ".phl[508]" 0;
+	setAttr ".phl[509]" 0;
+	setAttr ".phl[510]" 0;
+	setAttr ".phl[511]" 0;
+	setAttr ".phl[512]" 0;
+	setAttr ".phl[513]" 0;
+	setAttr ".phl[514]" 0;
+	setAttr ".phl[515]" 0;
+	setAttr ".phl[516]" 0;
+	setAttr ".phl[517]" 0;
+	setAttr ".phl[518]" 0;
+	setAttr ".phl[519]" 0;
+	setAttr ".phl[520]" 0;
+	setAttr ".phl[521]" 0;
+	setAttr ".phl[522]" 0;
+	setAttr ".phl[523]" 0;
+	setAttr ".phl[524]" 0;
+	setAttr ".phl[525]" 0;
+	setAttr ".phl[526]" 0;
+	setAttr ".phl[527]" 0;
+	setAttr ".phl[528]" 0;
+	setAttr ".phl[529]" 0;
+	setAttr ".phl[530]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"LowPolyHumanSceneControlsRN"
 		"LowPolyHumanSceneControlsRN" 0
-		"LowPolyHumanSceneControlsRN" 525
+		"LowPolyHumanSceneControlsRN" 651
 		2 "|LowPolyHumanSceneControls:Man" "scale" " -type \"double3\" 1 1 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Geometery|LowPolyHumanSceneControls:Shoes_Geo" 
+		"visibility" " 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl" 
+		"FollowRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Neck_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Neck_01_FK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_01_FK_Ctrl" 
 		"rotate" " -type \"double3\" -0.064881109227297937 -84.87377671600368956 0.25489065920041359"
 		
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl" 
+		"Follow" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl" 
+		"Follow" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_01_FK_Ctrl" 
 		"rotate" " -type \"double3\" 0 -85.49773071508373334 0"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_01_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Base_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Base_Ctrl" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl" 
+		"FollowRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl" 
+		"FollowRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl" 
+		"FollowRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl" 
+		"FollowRotate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl" 
+		"FollowRotate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl" 
+		"FollowRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl" 
+		"FollowRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl" 
+		"FollowRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl" 
+		"FollowRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl" 
+		"FollowRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl" 
+		"FollowRotate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl" 
+		"FollowRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl" 
+		"FollowRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl" 
+		"FollowTranslate" " -k 1"
+		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl" 
+		"FollowRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_01_FK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_01_FK_Ctrl" 
@@ -36585,106 +36787,94 @@ createNode reference -n "LowPolyHumanSceneControlsRN";
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
+		"Follow" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"RockFoot" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"Follow" " -k 1 0"
+		"HeelRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"RockFoot" " -k 1 0"
+		"HeelPivot" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"HeelRotate" " -k 1 0"
+		"HeelTwist" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"HeelPivot" " -k 1 0"
+		"ToeRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"HeelTwist" " -k 1 0"
+		"ToePivot" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ToeRotate" " -k 1 0"
+		"ToeTwist" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ToePivot" " -k 1 0"
+		"BallRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ToeTwist" " -k 1 0"
+		"BallPivot" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"BallRotate" " -k 1 0"
+		"BallTwist" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"BallPivot" " -k 1 0"
+		"ToeTapRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"BallTwist" " -k 1 0"
+		"ToeTapPivot" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ToeTapRotate" " -k 1 0"
+		"ToeTapTwist" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ToeTapPivot" " -k 1 0"
+		"FootRoll" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ToeTapTwist" " -k 1 0"
+		"ControlVis" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"FootRoll" " -k 1 0"
+		"Stretch" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"ControlVis" " -k 1 1"
+		"MaxStretch" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"Stretch" " -k 1 0"
+		"LegLength" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"MaxStretch" " -k 1 3"
+		"UpperLegLength" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"LegLength" " -k 1 0"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"UpperLegLength" " -k 1 0"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl" 
-		"LowerLegLength" " -k 1 0"
+		"LowerLegLength" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl|LowPolyHumanSceneControls:L_Foot_IK_Out_Ctrl_Grp|LowPolyHumanSceneControls:L_Foot_IK_Out_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Foot_IK_Out_Ctrl|LowPolyHumanSceneControls:L_Foot_IK_In_Ctrl_Grp|LowPolyHumanSceneControls:L_Foot_IK_In_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Foot_IK_In_Ctrl|LowPolyHumanSceneControls:L_Foot_IK_Heel_Ctrl_Grp|LowPolyHumanSceneControls:L_Foot_IK_Heel_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Foot_IK_Heel_Ctrl_Offset_02_Grp|LowPolyHumanSceneControls:L_Foot_IK_Heel_Ctrl|LowPolyHumanSceneControls:L_Foot_IK_Toe_Ctrl_Grp|LowPolyHumanSceneControls:L_Foot_IK_Toe_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Foot_IK_Toe_Ctrl_Offset_02_Grp|LowPolyHumanSceneControls:L_Foot_IK_Toe_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl" 
-		"translate" " -type \"double3\" 0.10685399466356552 -0.41977614767696519 0.95842783572582391"
-		
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
+		"Follow" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"RockFoot" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"Follow" " -k 1 0"
+		"HeelRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"RockFoot" " -k 1 0"
+		"HeelPivot" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"HeelRotate" " -k 1 0"
+		"HeelTwist" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"HeelPivot" " -k 1 0"
+		"ToeRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"HeelTwist" " -k 1 0"
+		"ToePivot" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ToeRotate" " -k 1 0"
+		"ToeTwist" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ToePivot" " -k 1 0"
+		"BallRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ToeTwist" " -k 1 0"
+		"BallPivot" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"BallRotate" " -k 1 0"
+		"BallTwist" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"BallPivot" " -k 1 0"
+		"ToeTapRotate" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"BallTwist" " -k 1 0"
+		"ToeTapPivot" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ToeTapRotate" " -k 1 0"
+		"ToeTapTwist" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ToeTapPivot" " -k 1 0"
+		"FootRoll" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ToeTapTwist" " -k 1 0"
+		"ControlVis" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"FootRoll" " -k 1 0"
+		"Stretch" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"ControlVis" " -k 1 1"
+		"MaxStretch" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"Stretch" " -k 1 0"
+		"LegLength" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"MaxStretch" " -k 1 3"
+		"UpperLegLength" " -k 1"
 		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"LegLength" " -k 1 0"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"UpperLegLength" " -k 1 0"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl" 
-		"LowerLegLength" " -k 1 0"
-		2 "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl" 
-		"translate" " -type \"double3\" 0.030714772066489017 0.42832792866214503 0.68376418363806557"
-		
+		"LowerLegLength" " -k 1"
+		2 "LowPolyHumanSceneControls:Geo_Layer" "displayType" " 2"
 		2 "LowPolyHumanSceneControls:Geo_Layer" "visibility" " 1"
+		2 "LowPolyHumanSceneControls:Control_Layer" "displayType" " 0"
 		2 "LowPolyHumanSceneControls:Control_Layer" "visibility" " 1"
 		2 "LowPolyHumanSceneControls:Control_Layer" "displayOrder" " 2"
 		2 "LowPolyHumanSceneControls:Joints_Layer" "visibility" " 0"
@@ -36735,839 +36925,1029 @@ createNode reference -n "LowPolyHumanSceneControlsRN";
 		"LowPolyHumanSceneControlsRN.placeHolderList[21]" ""
 		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:COG_Ctrl_Grp|LowPolyHumanSceneControls:COG_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[22]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Pelvis_FK_Ctrl_Grp|LowPolyHumanSceneControls:Pelvis_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[23]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Pelvis_FK_Ctrl_Grp|LowPolyHumanSceneControls:Pelvis_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[24]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Pelvis_FK_Ctrl_Grp|LowPolyHumanSceneControls:Pelvis_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[25]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Pelvis_FK_Ctrl_Grp|LowPolyHumanSceneControls:Pelvis_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[26]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Pelvis_FK_Ctrl_Grp|LowPolyHumanSceneControls:Pelvis_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[27]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Pelvis_FK_Ctrl_Grp|LowPolyHumanSceneControls:Pelvis_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[28]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Pelvis_FK_Ctrl_Grp|LowPolyHumanSceneControls:Pelvis_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[29]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Pelvis_FK_Ctrl_Grp|LowPolyHumanSceneControls:Pelvis_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[30]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Pelvis_FK_Ctrl_Grp|LowPolyHumanSceneControls:Pelvis_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[31]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Pelvis_FK_Ctrl_Grp|LowPolyHumanSceneControls:Pelvis_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[32]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Pelvis_FK_Ctrl_Grp|LowPolyHumanSceneControls:Pelvis_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[33]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[34]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[35]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[36]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[37]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[38]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[39]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[40]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[41]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[42]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[43]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_01_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[44]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[45]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[46]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[47]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[48]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[49]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[50]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[51]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[52]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[53]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[54]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_02_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[55]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[56]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[57]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[58]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[59]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[60]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[61]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[62]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[63]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[64]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[65]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Spine_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:Spine_03_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[66]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[67]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[68]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[69]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[70]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[71]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[72]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[73]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[74]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[75]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[76]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Neck_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl_Grp|LowPolyHumanSceneControls:Head_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[77]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.Follow" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[78]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.Stretch" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[79]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.MaxStretch" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[80]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.ArmLength" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[81]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.UpperArmLength" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[82]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.LowerArmLength" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[83]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[84]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[85]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[86]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[87]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Clav_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[88]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.Follow" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[89]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl.Follow" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.Stretch" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[90]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.MaxStretch" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[91]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.ArmLength" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[92]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.UpperArmLength" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[93]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.LowerArmLength" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[94]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[95]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[96]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[97]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[98]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[99]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[100]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl.Follow" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[101]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[102]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[103]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Arm_PV_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[104]" ""
-		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.scale" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[105]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.Follow" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[106]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.Stretch" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[107]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.MaxStretch" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[108]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.ArmLength" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[109]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.UpperArmLength" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[110]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.LowerArmLength" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[111]" ""
-		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.translate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[112]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[113]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[114]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Clav_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[115]" ""
-		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotatePivot" 
+		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.scale" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[116]" ""
-		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotatePivotTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.Follow" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[117]" ""
-		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.Stretch" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[118]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.MaxStretch" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[119]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.ArmLength" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[120]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.UpperArmLength" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[121]" ""
-		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotateOrder" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.LowerArmLength" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[122]" ""
-		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.parentMatrix" 
+		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.translate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[123]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl.Follow" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[124]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[125]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[126]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl.translateZ" 
+		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotatePivot" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[127]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.FollowTranslate" 
+		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotatePivotTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[128]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.FollowRotate" 
+		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[129]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[130]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[131]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[132]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.rotateX" 
+		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.rotateOrder" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[133]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.rotateY" 
+		5 3 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl.parentMatrix" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[134]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl.Follow" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[135]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[136]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[137]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Arm_PV_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[138]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[139]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[140]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[141]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[142]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[143]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[144]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[145]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[146]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[147]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[148]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_01_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[149]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[150]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[151]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[152]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[153]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[154]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[155]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[156]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[157]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[158]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[159]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_02_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[160]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[161]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[162]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[163]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[164]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[165]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[166]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[167]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[168]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[169]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[170]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_03_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[171]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[172]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[173]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[174]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[175]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[176]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[177]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[178]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[179]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[180]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[181]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_01_Knuckle_04_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[182]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[183]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[184]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[185]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[186]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[187]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[188]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[189]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[190]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[191]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[192]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_01_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[193]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[194]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[195]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[196]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[197]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[198]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[199]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[200]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[201]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[202]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[203]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_02_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[204]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[205]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[206]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[207]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[208]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[209]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[210]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[211]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[212]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[213]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[214]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_02_Knuckle_03_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[215]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[216]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[217]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[218]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[219]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[220]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[221]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[222]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[223]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[224]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[225]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_01_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[226]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[227]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[228]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[229]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[230]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[231]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[232]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[233]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[234]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[235]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[236]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_02_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[237]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[238]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[239]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[240]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[241]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[242]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[243]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[244]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[245]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[246]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[247]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_03_Knuckle_03_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[248]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[249]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[250]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[251]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[252]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[253]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[254]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[255]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[256]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[257]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[258]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_01_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[259]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[260]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[261]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[262]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[263]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[264]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[265]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[266]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[267]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[268]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[269]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_02_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[270]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[271]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[272]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[273]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[274]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[275]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[276]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[277]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[278]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[279]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[280]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_04_Knuckle_03_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[281]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[282]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[283]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[284]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[285]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[286]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[287]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[288]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[289]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[290]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[291]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_01_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[292]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[293]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[294]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[295]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[296]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[297]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[298]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[299]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[300]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[301]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[302]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_02_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[303]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[304]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[305]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[306]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[307]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[308]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[309]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[310]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[311]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[312]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[313]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:L_Hand_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:L_Finger_05_Knuckle_03_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[314]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[315]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[316]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[317]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[318]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[319]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[320]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[321]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[322]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[323]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[324]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_02_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[325]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[326]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[327]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[328]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[329]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[330]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[331]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[332]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[333]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[334]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[335]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_01_Knuckle_03_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[336]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[337]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[338]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[339]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[340]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[341]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[342]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[343]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[344]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[345]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[346]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_01_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[347]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[348]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[349]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[350]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[351]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[352]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[353]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[354]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[355]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[356]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[357]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_02_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[358]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[359]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[360]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[361]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[362]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[363]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[364]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[365]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[366]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[367]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[368]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_02_Knuckle_03_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[369]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[370]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[371]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[372]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[373]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[374]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[375]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[376]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[377]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[378]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[379]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_01_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[380]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[381]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[382]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[383]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[384]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[385]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[386]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[387]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[388]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[389]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[390]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_02_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[391]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[392]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[393]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[394]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[395]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[396]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[397]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[398]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[399]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[400]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[401]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_03_Knuckle_03_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[402]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[403]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[404]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[405]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[406]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[407]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[408]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[409]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[410]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[411]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[412]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_01_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[413]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[414]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[415]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[416]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[417]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[418]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[419]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[420]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[421]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[422]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[423]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.scaleZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_02_FK_Ctrl.scaleZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[424]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.FollowTranslate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.FollowTranslate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[425]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.FollowRotate" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.FollowRotate" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[426]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.translateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.translateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[427]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.translateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.translateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[428]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.translateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.translateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[429]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.rotateX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.rotateX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[430]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.rotateY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.rotateY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[431]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.rotateZ" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.rotateZ" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[432]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.scaleX" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.scaleX" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[433]" ""
-		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.scaleY" 
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.scaleY" 
 		"LowPolyHumanSceneControlsRN.placeHolderList[434]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_04_Knuckle_03_FK_Ctrl.scaleZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[435]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.FollowTranslate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[436]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.FollowRotate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[437]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.translateX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[438]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.translateY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[439]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.translateZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[440]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.rotateX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[441]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.rotateY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[442]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.rotateZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[443]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.scaleX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[444]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.scaleY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[445]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_01_FK_Ctrl.scaleZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[446]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.FollowTranslate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[447]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.FollowRotate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[448]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.translateX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[449]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.translateY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[450]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.translateZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[451]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.rotateX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[452]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.rotateY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[453]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.rotateZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[454]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.scaleX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[455]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.scaleY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[456]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_02_FK_Ctrl.scaleZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[457]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.FollowTranslate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[458]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.FollowRotate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[459]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.translateX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[460]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.translateY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[461]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.translateZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[462]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.rotateX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[463]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.rotateY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[464]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.rotateZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[465]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.scaleX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[466]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.scaleY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[467]" ""
 		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Arms_Ctrl_Grp|LowPolyHumanSceneControls:R_Hand_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl_Grp|LowPolyHumanSceneControls:R_Finger_05_Knuckle_03_FK_Ctrl.scaleZ" 
-		"LowPolyHumanSceneControlsRN.placeHolderList[435]" "";
+		"LowPolyHumanSceneControlsRN.placeHolderList[468]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.Follow" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[469]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.RockFoot" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[470]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.HeelRotate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[471]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.HeelPivot" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[472]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.HeelTwist" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[473]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.ToeRotate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[474]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.ToePivot" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[475]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.ToeTwist" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[476]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.BallRotate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[477]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.BallPivot" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[478]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.BallTwist" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[479]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.ToeTapRotate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[480]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.ToeTapPivot" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[481]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.ToeTapTwist" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[482]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.FootRoll" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[483]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.ControlVis" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[484]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.Stretch" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[485]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.MaxStretch" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[486]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.LegLength" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[487]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.UpperLegLength" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[488]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.LowerLegLength" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[489]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.translateX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[490]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.translateY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[491]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.translateZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[492]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.rotateX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[493]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.rotateY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[494]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl.rotateZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[495]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl.Follow" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[496]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl.translateX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[497]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl.translateY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[498]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:L_Leg_PV_Ctrl.translateZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[499]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.Follow" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[500]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.RockFoot" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[501]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.HeelRotate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[502]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.HeelPivot" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[503]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.HeelTwist" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[504]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.ToeRotate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[505]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.ToePivot" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[506]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.ToeTwist" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[507]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.BallRotate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[508]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.BallPivot" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[509]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.BallTwist" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[510]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.ToeTapRotate" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[511]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.ToeTapPivot" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[512]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.ToeTapTwist" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[513]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.FootRoll" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[514]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.ControlVis" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[515]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.Stretch" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[516]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.MaxStretch" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[517]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.LegLength" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[518]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.UpperLegLength" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[519]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.LowerLegLength" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[520]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.translateX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[521]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.translateY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[522]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.translateZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[523]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.rotateX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[524]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.rotateY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[525]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl.rotateZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[526]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl.Follow" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[527]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl.translateX" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[528]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl.translateY" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[529]" ""
+		5 4 "LowPolyHumanSceneControlsRN" "|LowPolyHumanSceneControls:Man|LowPolyHumanSceneControls:Controls|LowPolyHumanSceneControls:Legs_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_IK_Ctrl_Main_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl_Offset_Grp|LowPolyHumanSceneControls:R_Leg_PV_Ctrl.translateZ" 
+		"LowPolyHumanSceneControlsRN.placeHolderList[530]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode animCurveTL -n "Transform_Ctrl_translateX";
 	rename -uid "E52B1CCE-41E9-2986-5C54-A98C7C249C87";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1.4652863977001724;
+	setAttr ".ktv[0]"  1 0.44122814613560435;
 createNode animCurveTL -n "Transform_Ctrl_translateY";
 	rename -uid "9F67FAFB-45A9-F84F-FDE8-8EBEB4280858";
 	setAttr ".tan" 18;
@@ -37587,7 +37967,7 @@ createNode animCurveTA -n "Transform_Ctrl_rotateY";
 	rename -uid "99180185-4FA9-08B4-19B8-C1AE7A98DD6C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 90;
+	setAttr ".ktv[0]"  1 178.25780106247734;
 createNode animCurveTA -n "Transform_Ctrl_rotateZ";
 	rename -uid "EE087706-499B-B412-3B8C-A788844AE15B";
 	setAttr ".tan" 18;
@@ -37622,444 +38002,470 @@ createNode animCurveTL -n "COG_Ctrl_translateX";
 	rename -uid "FB6AF9AF-4343-0EC4-B4B2-44AAC19DFE8B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 6 ".ktv[0:5]"  1 2.7288075194382621e-16 85 2.7288075194382621e-16
+		 95 -0.012361038682334459 105 -0.021271369525722981 115 -0.021733134583608989 135 -0.012884059824345651;
 createNode animCurveTL -n "COG_Ctrl_translateY";
 	rename -uid "994A8841-49BB-533B-9155-D29551D95B87";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 6 ".ktv[0:5]"  1 -0.88599368361399478 85 -0.88599368361399478
+		 95 -1.1124510607155174 105 -1.3389084378170397 115 -1.3748118389906177 135 -1.7240382556276688;
 createNode animCurveTL -n "COG_Ctrl_translateZ";
 	rename -uid "82E0FA45-43CE-7CA0-5AAA-3DA1CC92719B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 6 ".ktv[0:5]"  1 -1.2521694400623659e-15 85 -1.2521694400623659e-15
+		 95 -0.40639277289133613 105 -0.69933693008409714 115 -0.71451833895444739 135 -0.42358809260884317;
 createNode animCurveTA -n "COG_Ctrl_rotateX";
 	rename -uid "C77CEEBD-48BE-6C7F-2601-648B365D5DD1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 85 0 95 0 105 0 115 0 135 0;
 createNode animCurveTA -n "COG_Ctrl_rotateY";
 	rename -uid "483CE59D-4E71-1DD3-2249-98AACCB8EB87";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 23.801992370525717;
+	setAttr -s 6 ".ktv[0:5]"  1 0 85 0 95 0 105 0 115 0 135 0;
 createNode animCurveTA -n "COG_Ctrl_rotateZ";
 	rename -uid "400C5342-454C-B7E9-CB05-239839BA5511";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 85 0 95 0 105 0 115 0 135 0;
 createNode animCurveTU -n "COG_Ctrl_scaleX";
 	rename -uid "3C33E0DA-41C5-D5BA-CA40-F5BEAC5A4861";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "COG_Ctrl_scaleY";
 	rename -uid "AEF0CB22-45E0-0A4A-6D36-2D824AB915C1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "COG_Ctrl_scaleZ";
 	rename -uid "43058C1D-460E-2336-80D8-29B35B9B3612";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "COG_Ctrl_FollowTranslate";
 	rename -uid "0BD40CE9-4CEB-CCC4-2190-2A995A4627C9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "COG_Ctrl_FollowRotate";
 	rename -uid "8D962A9D-49E3-53DD-748F-BF920009AB5B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTL -n "L_Arm_IK_Ctrl_translateX";
 	rename -uid "FE284788-42DA-26CF-20B4-B3985E88E8E5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 -2.0612766036338397 12 -2.0612766036338397
-		 25 -2.3889609186364149 36 -2.6439763683104025 54 -2.6439763683104025 62 -2.6439763683104025
-		 95 -2.173339085700146;
-	setAttr -s 7 ".kit[0:6]"  2 18 18 18 18 18 18;
-	setAttr -s 7 ".kot[0:6]"  2 18 18 18 18 18 18;
+	setAttr -s 8 ".ktv[0:7]"  1 -3.2352817091979693 90 -3.2352817091979693
+		 95 -3.2550802036769979 100 -3.2805753379764471 115 -3.2805753379764471 116 -1.2866586748321178
+		 132 -1.5918881783521013 145 -1.6828554858140716;
+	setAttr -s 8 ".kit[0:7]"  2 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kot[0:7]"  2 18 18 18 18 18 18 18;
 createNode animCurveTL -n "L_Arm_IK_Ctrl_translateY";
 	rename -uid "03C61778-47CE-2C4B-B222-C8A7D0EB23CA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 -2.1089812649486381 12 -2.1089812649486381
-		 25 -0.85339360484829296 36 0.12374883708727223 54 -0.0017921333645877354 62 -0.16365816451053802
-		 95 -2.2366082362107274;
-	setAttr -s 7 ".kit[0:6]"  2 18 18 18 18 18 18;
-	setAttr -s 7 ".kot[0:6]"  2 18 18 18 18 18 18;
+	setAttr -s 8 ".ktv[0:7]"  1 -5.6560813175737152 90 -5.6560813175737152
+		 95 -5.6292498317672273 100 -5.655015296692989 115 -5.655015296692989 116 -1.6315600072337624
+		 132 -0.023253535261740572 145 0.13596822568455097;
+	setAttr -s 8 ".kit[0:7]"  2 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kot[0:7]"  2 18 18 18 18 18 18 18;
 createNode animCurveTL -n "L_Arm_IK_Ctrl_translateZ";
 	rename -uid "03F0E55B-4CA6-1E7D-EB6B-0AAF28B97B07";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 0.30763844641766552 12 0.30763844641766552
-		 25 1.0614344724958591 36 0.80576907012890386 54 0.97754975121545806 62 0.97754975121545806
-		 95 0.34178346718168179;
-	setAttr -s 7 ".kit[0:6]"  2 18 18 18 18 18 18;
-	setAttr -s 7 ".kot[0:6]"  2 18 18 18 18 18 18;
+	setAttr -s 8 ".ktv[0:7]"  1 1.5904344998680204 90 1.5904344998680204
+		 95 1.6073167868349079 100 1.6073167868349085 115 1.6073167868349085 116 2.4154738352894474
+		 132 2.2382887896024153 145 2.1045280336819956;
+	setAttr -s 8 ".kit[0:7]"  2 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kot[0:7]"  2 18 18 18 18 18 18 18;
 createNode animCurveTA -n "L_Arm_IK_Ctrl_rotateX";
 	rename -uid "76A27A50-4365-11D5-1E71-F18A08B0C78B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 -170.57563938879341 12 -170.57563938879341
-		 25 -120.61331484446798 36 -81.73087806891246 54 -81.73087806891246 62 -81.73087806891246
-		 95 -122.84866820917253;
-	setAttr -s 7 ".kit[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kot[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kix[0:6]"  1 1 0.54197042686749908 1 1 1 1;
-	setAttr -s 7 ".kiy[0:6]"  0 0 0.84039755854063558 0 0 0 0;
-	setAttr -s 7 ".kox[0:6]"  1 1 0.54197042686749908 1 1 1 1;
-	setAttr -s 7 ".koy[0:6]"  0 0 0.84039755854063547 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 -40.97470872289562 90 -40.97470872289562
+		 95 -48.302922849409768 100 -87.239160788103192 115 -87.239160788103192 116 -44.876258567937626
+		 132 1.3329887952863009 145 -5.8241986484824322;
+	setAttr -s 8 ".kit[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kot[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kix[0:7]"  1 1 0.47715671793954084 1 1 0.41656091163834247 
+		1 1;
+	setAttr -s 8 ".kiy[0:7]"  0 0 -0.87881822154821387 0 0 0.90910780818065406 
+		0 0;
+	setAttr -s 8 ".kox[0:7]"  1 1 0.47715671793954084 1 1 0.41656091163834241 
+		1 1;
+	setAttr -s 8 ".koy[0:7]"  0 0 -0.87881822154821387 0 0 0.90910780818065406 
+		0 0;
 createNode animCurveTA -n "L_Arm_IK_Ctrl_rotateY";
 	rename -uid "123C0ADF-4491-0E59-8257-61A704B5124A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 -171.50946725831531 12 -171.50946725831531
-		 25 -174.36619485921153 36 -176.58940067158895 54 -176.58940067158895 62 -176.58940067158895
-		 95 -173.06898357992284;
-	setAttr -s 7 ".kit[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kot[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kix[0:6]"  1 1 0.99609258528450373 1 1 1 1;
-	setAttr -s 7 ".kiy[0:6]"  0 0 -0.088315126344437167 0 0 0 0;
-	setAttr -s 7 ".kox[0:6]"  1 1 0.99609258528450362 1 1 1 1;
-	setAttr -s 7 ".koy[0:6]"  0 0 -0.088315126344437153 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 73.202352205754664 90 73.202352205754664
+		 95 70.852023398313065 100 79.830662333296928 115 79.830662333296928 116 -105.43199945991492
+		 132 -126.62865682069399 145 -167.01259692911688;
+	setAttr -s 8 ".kit[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kot[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kix[0:7]"  1 1 1 1 1 0.51492393166269801 0.74719123983954572 
+		1;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 -0.85723587454155759 -0.66460909646727118 
+		0;
+	setAttr -s 8 ".kox[0:7]"  1 1 1 1 1 0.51492393166269801 0.74719123983954561 
+		1;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 -0.85723587454155747 -0.66460909646727118 
+		0;
 createNode animCurveTA -n "L_Arm_IK_Ctrl_rotateZ";
 	rename -uid "0C13BDAC-4A73-7987-E642-0883A320F27D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 92.70304035419791 12 92.70304035419791
-		 25 25.797299826520291 36 -26.271098706081876 54 -26.271098706081876 62 -26.271098706081876
-		 95 80.868604438047626;
-	setAttr -s 7 ".kit[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kot[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kix[0:6]"  1 1 0.43388898785804991 1 1 1 1;
-	setAttr -s 7 ".kiy[0:6]"  0 0 -0.90096634022338318 0 0 0 0;
-	setAttr -s 7 ".kox[0:6]"  1 1 0.43388898785804997 1 1 1 1;
-	setAttr -s 7 ".koy[0:6]"  0 0 -0.90096634022338329 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 -36.550711769565517 90 -36.550711769565517
+		 95 -44.252145790921318 100 -83.826530399858157 115 -83.826530399858157 116 40.299337053610401
+		 132 -69.415603327143202 145 -50.181740254126161;
+	setAttr -s 8 ".kit[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kot[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kix[0:7]"  1 1 0.45900178033963729 1 1 1 1 1;
+	setAttr -s 8 ".kiy[0:7]"  0 0 -0.88843534691334936 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  1 1 0.45900178033963729 1 1 1 1 1;
+	setAttr -s 8 ".koy[0:7]"  0 0 -0.88843534691334936 0 0 0 0 0;
 createNode animCurveTU -n "L_Arm_IK_Ctrl_Follow";
 	rename -uid "E91AEF0D-4F9F-4C73-78B0-178A28C6EB98";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 1 12 1 25 1 36 1 54 1 62 1 95 1;
-	setAttr -s 7 ".kit[0:6]"  1 9 9 9 9 9 9;
-	setAttr -s 7 ".kix[0:6]"  1 1 1 1 1 1 1;
-	setAttr -s 7 ".kiy[0:6]"  0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 2 90 2 95 2 100 2 115 2 116 1 132 1 145 1;
+	setAttr -s 8 ".kit[0:7]"  1 9 9 9 9 9 9 9;
+	setAttr -s 8 ".kix[0:7]"  1 1 1 1 0.55470019622522881 0.57801734078033895 
+		1 1;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 -0.83205029433784394 -0.81602448110165526 
+		0 0;
 createNode animCurveTU -n "L_Arm_IK_Ctrl_Stretch";
 	rename -uid "2297ECEE-46E0-F3C4-DC78-9AAC1B98F9E8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 1 12 1 25 1 36 1 54 1 62 1 95 1;
-	setAttr -s 7 ".kit[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kot[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kix[0:6]"  1 1 1 1 1 1 1;
-	setAttr -s 7 ".kiy[0:6]"  0 0 0 0 0 0 0;
-	setAttr -s 7 ".kox[0:6]"  1 1 1 1 1 1 1;
-	setAttr -s 7 ".koy[0:6]"  0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 1 90 1 95 1 100 1 115 1 116 1 132 1 145 1;
+	setAttr -s 8 ".kit[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kot[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kix[0:7]"  1 1 1 1 1 1 1 1;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  1 1 1 1 1 1 1 1;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "L_Arm_IK_Ctrl_MaxStretch";
 	rename -uid "44A2B3EB-456D-8442-11D9-C196F281F761";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 3 12 3 25 3 36 3 54 3 62 3 95 3;
-	setAttr -s 7 ".kit[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kot[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kix[0:6]"  1 1 1 1 1 1 1;
-	setAttr -s 7 ".kiy[0:6]"  0 0 0 0 0 0 0;
-	setAttr -s 7 ".kox[0:6]"  1 1 1 1 1 1 1;
-	setAttr -s 7 ".koy[0:6]"  0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 3 90 3 95 3 100 3 115 3 116 3 132 3 145 3;
+	setAttr -s 8 ".kit[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kot[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kix[0:7]"  1 1 1 1 1 1 1 1;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  1 1 1 1 1 1 1 1;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "L_Arm_IK_Ctrl_ArmLength";
 	rename -uid "9C390528-4890-308A-B4E2-329B143F063F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 0 12 0 25 0 36 0 54 0 62 0 95 0;
-	setAttr -s 7 ".kit[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kot[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kix[0:6]"  1 1 1 1 1 1 1;
-	setAttr -s 7 ".kiy[0:6]"  0 0 0 0 0 0 0;
-	setAttr -s 7 ".kox[0:6]"  1 1 1 1 1 1 1;
-	setAttr -s 7 ".koy[0:6]"  0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 90 0 95 0 100 0 115 0 116 0 132 0 145 0;
+	setAttr -s 8 ".kit[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kot[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kix[0:7]"  1 1 1 1 1 1 1 1;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  1 1 1 1 1 1 1 1;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "L_Arm_IK_Ctrl_UpperArmLength";
 	rename -uid "719CF2CD-419E-B4A0-5F1B-1EB050C3E756";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 0 12 0 25 0 36 0 54 0 62 0 95 0;
-	setAttr -s 7 ".kit[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kot[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kix[0:6]"  1 1 1 1 1 1 1;
-	setAttr -s 7 ".kiy[0:6]"  0 0 0 0 0 0 0;
-	setAttr -s 7 ".kox[0:6]"  1 1 1 1 1 1 1;
-	setAttr -s 7 ".koy[0:6]"  0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 90 0 95 0 100 0 115 0 116 0 132 0 145 0;
+	setAttr -s 8 ".kit[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kot[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kix[0:7]"  1 1 1 1 1 1 1 1;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  1 1 1 1 1 1 1 1;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "L_Arm_IK_Ctrl_LowerArmLength";
 	rename -uid "7BFC5EAB-416C-362D-ED24-49BF3A8FB77D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 0 12 0 25 0 36 0 54 0 62 0 95 0;
-	setAttr -s 7 ".kit[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kot[0:6]"  1 18 18 18 18 18 18;
-	setAttr -s 7 ".kix[0:6]"  1 1 1 1 1 1 1;
-	setAttr -s 7 ".kiy[0:6]"  0 0 0 0 0 0 0;
-	setAttr -s 7 ".kox[0:6]"  1 1 1 1 1 1 1;
-	setAttr -s 7 ".koy[0:6]"  0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 90 0 95 0 100 0 115 0 116 0 132 0 145 0;
+	setAttr -s 8 ".kit[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kot[0:7]"  1 18 18 18 18 18 18 18;
+	setAttr -s 8 ".kix[0:7]"  1 1 1 1 1 1 1 1;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  1 1 1 1 1 1 1 1;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "R_Arm_IK_Ctrl_translateX";
 	rename -uid "D6696806-413B-9458-AE76-D78961E285F6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 2.6341497796674207 12 2.5510481537231122
-		 24 2.6341497796674207 50 2.4932381870253817 64 2.4475908215776103 85 3.3451623490584943
-		 100 3.8863696708234095 125 3.8863696708234095 150 3.8863696708234095;
+	setAttr -s 10 ".ktv[0:9]"  1 2.6676924285056365 24 2.6600229615108293
+		 50 2.6069180882491501 55 2.4329395983756923 60 2.4328551316310705 85 2.4214594159670981
+		 105 1.7829120527629227 115 1.7829120527629227 140 2.2917290648143527 170 2.2917290648143527;
 createNode animCurveTL -n "R_Arm_IK_Ctrl_translateY";
 	rename -uid "3299EED0-4FC4-CF08-B696-1B81FC5ADA49";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 -0.040763105279457569 12 0.38813277405401941
-		 24 0.2896754588664493 50 1.0036860261098879 64 0.92970300549308338 85 -1.1377113844449869
-		 100 -0.8425329947221869 125 -1.0139010962619797 150 -0.98763560132194472;
+	setAttr -s 10 ".ktv[0:9]"  1 -1.1341126097210208 24 -0.99393915300008295
+		 50 -0.9939391530000824 55 -0.8709369020484411 60 -0.99393915300008362 85 -0.99393915300008417
+		 105 -1.5673449427371726 115 -1.5673449427371726 140 -0.76823280072540612 170 -0.76823280072540612;
 createNode animCurveTL -n "R_Arm_IK_Ctrl_translateZ";
 	rename -uid "C385FBDD-4761-DA2C-0AD3-4DB23E0EBE9F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 1.350376400208555 12 1.3741959799682864
-		 24 1.2522968923202671 50 1.2522968923202671 64 1.2351506333027098 85 1.2990637870016151
-		 100 1.3376014028683025 125 1.3376014028683025 150 1.3376014028683025;
+	setAttr -s 10 ".ktv[0:9]"  1 2.4531550923392667 24 2.4533883705482302
+		 50 2.4550036339987531 55 2.422322808442575 60 2.0633039606030881 85 1.6886480270057815
+		 105 2.5076334371599756 115 2.5076334371599756 140 2.2604188361965485 170 2.2604188361965485;
 createNode animCurveTA -n "R_Arm_IK_Ctrl_rotateX";
 	rename -uid "4BA74D93-47B8-A404-C54E-AF96C0FEC4AA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 86.35447759773335 12 81.724519489298828
-		 24 86.35447759773335 50 233.58045967691834 64 233.58045967691834 85 102.34317364470677
-		 100 130.6019409356646 125 116.78062470441138 150 55.778961255537098;
+	setAttr -s 10 ".ktv[0:9]"  1 45.250313674956907 24 175.91666128582801
+		 50 175.91666128582801 55 125.31693692492294 60 58.307613251652342 85 -53.81772908728756
+		 105 124.46820747702336 115 124.46820747702336 140 90.75068773735012 170 67.571478135120088;
 createNode animCurveTA -n "R_Arm_IK_Ctrl_rotateY";
 	rename -uid "B4F6D4E0-4894-1897-C71A-C3B4AF284E16";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 24.069854265495191 12 22.95828320653041
-		 24 24.069854265495191 50 25.32858932036401 64 25.32858932036401 85 23.58566845495287
-		 100 6.5012361934936322 125 8.1420882960417256 150 -8.3599119789081868;
+	setAttr -s 10 ".ktv[0:9]"  1 86.670426895139883 24 70.819951819118117
+		 50 70.819951819118117 55 70.819951819118089 60 70.819951819118046 85 65.587624673261786
+		 105 70.179515449697746 115 70.179515449697746 140 56.339854060289987 170 51.893915811866158;
 createNode animCurveTA -n "R_Arm_IK_Ctrl_rotateZ";
 	rename -uid "D4AD4DAF-4EA0-FD18-EA5D-46913F1F78EB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 206.36620965230858 12 194.79526967850856
-		 24 206.36620965230858 50 256.36698316401072 64 256.36698316401072 85 176.30141527134094
-		 100 179.76430337759339 125 175.41259641369697 150 185.06611878923152;
+	setAttr -s 10 ".ktv[0:9]"  1 119.522313207335 24 139.38257163308668
+		 50 139.38257163308668 55 139.38257163308674 60 139.38257163308677 85 39.375050889563397
+		 105 208.67378206257146 115 208.67378206257146 140 208.14413226195498 170 211.48515131360145;
 createNode animCurveTU -n "R_Arm_IK_Ctrl_Follow";
 	rename -uid "481D90E6-4ADF-3F8B-8B9A-06A57DB165FC";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 1 12 1 24 1 50 1 64 1 85 1 100 1 125 1
-		 150 1;
-	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
-		5;
+	setAttr -s 10 ".ktv[0:9]"  1 1 24 1 50 1 55 1 60 1 85 1 105 1 115 1
+		 140 1 170 1;
+	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
+		5 5;
 createNode animCurveTU -n "R_Arm_IK_Ctrl_Stretch";
 	rename -uid "6F9659D4-4C6A-055B-5C63-EE9153A587AA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 1 12 1 24 1 50 1 64 1 85 1 100 1 125 1
-		 150 1;
+	setAttr -s 10 ".ktv[0:9]"  1 1 24 1 50 1 55 1 60 1 85 1 105 1 115 1
+		 140 1 170 1;
 createNode animCurveTU -n "R_Arm_IK_Ctrl_MaxStretch";
 	rename -uid "A14568C9-4B43-D50E-D9A0-CEB332CAC893";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 3 12 3 24 3 50 3 64 3 85 3 100 3 125 3
-		 150 3;
+	setAttr -s 10 ".ktv[0:9]"  1 3 24 3 50 3 55 3 60 3 85 3 105 3 115 3
+		 140 3 170 3;
 createNode animCurveTU -n "R_Arm_IK_Ctrl_ArmLength";
 	rename -uid "22AA5DA9-4D42-826B-0DEA-738B5F33757E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 0 12 0 24 0 50 0 64 0 85 0 100 0 125 0
-		 150 0;
+	setAttr -s 10 ".ktv[0:9]"  1 0 24 0 50 0 55 0 60 0 85 0 105 0 115 0
+		 140 0 170 0;
 createNode animCurveTU -n "R_Arm_IK_Ctrl_UpperArmLength";
 	rename -uid "2576212E-45F3-8718-C04A-1A8CF4FDB488";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 0 12 0 24 0 50 0 64 0 85 0 100 0 125 0
-		 150 0;
+	setAttr -s 10 ".ktv[0:9]"  1 0 24 0 50 0 55 0 60 0 85 0 105 0 115 0
+		 140 0 170 0;
 createNode animCurveTU -n "R_Arm_IK_Ctrl_LowerArmLength";
 	rename -uid "2C8913C4-4A99-0B65-13F5-AD85C417A6CC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 0 12 0 24 0 50 0 64 0 85 0 100 0 125 0
-		 150 0;
+	setAttr -s 10 ".ktv[0:9]"  1 0 24 0 50 0 55 0 60 0 85 0 105 0 115 0
+		 140 0 170 0;
 createNode animCurveTA -n "Head_FK_Ctrl_rotateX";
 	rename -uid "91171549-4302-DF00-BD11-588D4B48E143";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 0 12 0 24 0 50 0 64 0 70 42.366025747116275
-		 90 40.570983663277993 102 43.155148773853263 150 -34.192525131926274;
+	setAttr -s 9 ".ktv[0:8]"  1 -10.907646412358549 25 -3.2290959829157044
+		 50 -3.5125651067258339 60 -3.6228859875069577 85 -2.6449783222310468 105 0 115 0
+		 135 -25.288769882977125 170 -25.571746679511602;
 createNode animCurveTA -n "Head_FK_Ctrl_rotateY";
 	rename -uid "9BD629DC-44A0-C845-A794-3685E12160C6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 0 12 0 24 0 50 0 64 0 70 0 90 -13.421552687670454
-		 102 -9.0154465441696363 150 11.18924997709833;
+	setAttr -s 9 ".ktv[0:8]"  1 1.6414971314020448 25 1.8844972882576347
+		 50 -8.0200553930569285 60 1.5619258027233276 85 0.24104813385296309 105 0 115 0 135 -8.9105675063745711
+		 170 -12.116567783789705;
 createNode animCurveTA -n "Head_FK_Ctrl_rotateZ";
 	rename -uid "4D3CBA9F-4574-C4EA-B12F-F991E2D96616";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 17.894444544319249 12 11.952223640372322
-		 24 9.4525103697690191 50 -6.9444810955786558 64 -6.9444810955786558 70 -6.9444810955786656
-		 90 8.2232633725871978 102 5.253504571259656 150 18.036991905106323;
+	setAttr -s 9 ".ktv[0:8]"  1 8.4549749066750213 25 19.58332650873048
+		 50 19.879625065692263 60 19.279424768715419 85 21.111864119570726 105 -41.741310429528134
+		 115 -41.741310429528134 135 5.2849519446047193 170 6.835080318541193;
 createNode animCurveTL -n "Head_FK_Ctrl_translateX";
 	rename -uid "7684D89A-41A5-0193-4A2D-4BA078002A08";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 0 12 0 24 0 50 0 64 0 70 0 90 0 102 0
-		 150 0;
+	setAttr -s 9 ".ktv[0:8]"  1 0 25 0 50 0 60 0 85 0 105 0 115 0 135 0.012382800838266303
+		 170 0.012382800838266303;
 createNode animCurveTL -n "Head_FK_Ctrl_translateY";
 	rename -uid "4B4BE648-4B1C-404E-E0F0-0082565AD6F9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 0 12 0 24 0 50 0 64 0 70 0 90 0 102 0
-		 150 0.15064949683593679;
+	setAttr -s 9 ".ktv[0:8]"  1 0 25 0 50 0 60 0 85 0 105 0 115 0 135 -0.01215499667380794
+		 170 -0.01215499667380794;
 createNode animCurveTL -n "Head_FK_Ctrl_translateZ";
 	rename -uid "E8F16CB5-451F-A753-F64C-FF8A57E29146";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 0 12 0 24 0 50 0 64 0 70 0 90 0 102 0
-		 150 -0.051311982701141318;
+	setAttr -s 9 ".ktv[0:8]"  1 0 25 0 50 0 60 0 85 0 105 0 115 0 135 0.09196167517572075
+		 170 0.09196167517572075;
 createNode animCurveTU -n "Head_FK_Ctrl_scaleX";
 	rename -uid "7B3A5C1C-4EE9-D924-871E-918945E83C12";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 1 12 1 24 1 50 1 64 1 70 1 90 1 102 1
-		 150 1;
+	setAttr -s 9 ".ktv[0:8]"  1 1 25 1 50 1 60 1 85 1 105 1 115 1 135 1
+		 170 1;
 createNode animCurveTU -n "Head_FK_Ctrl_scaleY";
 	rename -uid "B7152CF6-4CB6-C582-1BCC-9DB803FCD657";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 1 12 1 24 1 50 1 64 1 70 1 90 1 102 1
-		 150 1;
+	setAttr -s 9 ".ktv[0:8]"  1 1 25 1 50 1 60 1 85 1 105 1 115 1 135 1
+		 170 1;
 createNode animCurveTU -n "Head_FK_Ctrl_scaleZ";
 	rename -uid "35CB6CBE-486B-7E88-A9CE-8BAA26C5CE81";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 1 12 1 24 1 50 1 64 1 70 1 90 1 102 1
-		 150 1;
+	setAttr -s 9 ".ktv[0:8]"  1 1 25 1 50 1 60 1 85 1 105 1 115 1 135 1
+		 170 1;
 createNode animCurveTU -n "Head_FK_Ctrl_FollowTranslate";
 	rename -uid "569A6DD8-4275-4DA4-5564-93BC0ACF90E4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 1 12 1 24 1 50 1 64 1 70 1 90 1 102 1
-		 150 1;
+	setAttr -s 9 ".ktv[0:8]"  1 1 25 1 50 1 60 1 85 1 105 1 115 1 135 1
+		 170 1;
 createNode animCurveTU -n "Head_FK_Ctrl_FollowRotate";
 	rename -uid "0F95544E-4FF8-594C-6B15-B9AF2834D11E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 1 12 1 24 1 50 1 64 1 70 1 90 1 102 1
-		 150 1;
+	setAttr -s 9 ".ktv[0:8]"  1 1 25 1 50 1 60 1 85 1 105 1 115 1 135 1
+		 170 1;
 createNode animCurveTA -n "Spine_03_FK_Ctrl_rotateX";
 	rename -uid "C0C5DAE1-41AC-E844-B008-3C97BC039A0A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 25.060764648974725;
+	setAttr -s 7 ".ktv[0:6]"  1 -16.452494658678908 60 -16.452494658678908
+		 85 -20.67370682717722 95 -10.41513491676981 105 0 115 0 135 0;
 createNode animCurveTA -n "Spine_03_FK_Ctrl_rotateY";
 	rename -uid "393A7828-4592-1D56-31E0-E6BF1E4F419E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 -3.9756933518293969e-16 60 -3.9756933518293969e-16
+		 85 2.6044021971041498 95 -0.23104466585457439 105 0 115 0 135 0;
 createNode animCurveTA -n "Spine_03_FK_Ctrl_rotateZ";
 	rename -uid "B994791A-412A-2001-5873-2EAF9AA043F5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 12.242284251523911 60 12.242284251523911
+		 85 21.102797154298337 95 11.814514872338243 105 19.244263486228476 115 19.244263486228476
+		 135 16.525131124466185;
 createNode animCurveTL -n "Spine_03_FK_Ctrl_translateX";
 	rename -uid "AD683999-4585-178A-49CA-489424E879EA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 60 0 85 0 95 0 105 0 115 0 135 0;
 createNode animCurveTL -n "Spine_03_FK_Ctrl_translateY";
 	rename -uid "E7C3B4C1-4EB0-C0EA-DF04-CE866D07D393";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 60 0 85 0 95 0 105 0 115 0 135 0;
 createNode animCurveTL -n "Spine_03_FK_Ctrl_translateZ";
 	rename -uid "75953315-4024-040A-CE71-01BD8365DA6A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 60 0 85 0 95 0 105 0 115 0 135 0;
 createNode animCurveTU -n "Spine_03_FK_Ctrl_scaleX";
 	rename -uid "9770A92A-4078-4DF2-A8E7-49B69ACD932A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "Spine_03_FK_Ctrl_scaleY";
 	rename -uid "EF22F916-44E4-0CF9-AA6C-46A4B8B8CA7D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "Spine_03_FK_Ctrl_scaleZ";
 	rename -uid "7AFF69B8-42CD-D846-ACFA-D697443A94E7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "Spine_03_FK_Ctrl_FollowTranslate";
 	rename -uid "ACA4AF46-422A-323C-0184-03A72D3D54CA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "Spine_03_FK_Ctrl_FollowRotate";
 	rename -uid "BD3D12F8-464B-03D4-9678-81BFC4DE2BD0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTA -n "Spine_02_FK_Ctrl_rotateX";
 	rename -uid "61F11865-4CF8-B03D-0620-BDB40B76DA67";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 19.74329657736665;
+	setAttr -s 7 ".ktv[0:6]"  1 -5.980794269238717 60 -5.980794269238717
+		 85 -10.138125647715858 95 -4.6334876188465302 105 -0.45006592811741591 115 -0.45006592811741591
+		 135 -0.45006592811741591;
 createNode animCurveTA -n "Spine_02_FK_Ctrl_rotateY";
 	rename -uid "082376BB-4C67-D83B-9924-5E8442939073";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 -3.5160522067086672 60 -3.5160522067086672
+		 85 -3.6458302935779865 95 -4.3913539026384747 105 -3.4871641706644918 115 -3.4871641706644918
+		 135 -3.4871641706644918;
 createNode animCurveTA -n "Spine_02_FK_Ctrl_rotateZ";
 	rename -uid "D9C31DEA-46C1-A638-F268-70AB9E7415E0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 19.633670617184279 60 19.633670617184279
+		 85 18.384337257798379 95 13.190067851979151 105 26.992457926012598 115 26.992457926012598
+		 135 0;
 createNode animCurveTL -n "Spine_02_FK_Ctrl_translateX";
 	rename -uid "499BB7C7-42C9-64D6-CA6C-CF8B55283714";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 60 0 85 0 95 0 105 0 115 0 135 0;
 createNode animCurveTL -n "Spine_02_FK_Ctrl_translateY";
 	rename -uid "119DF9BF-4543-7F7D-B380-4A9C764ADE83";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 4.8566186554031349e-18 62 4.8566186554031349e-18
-		 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 4.8566186554031349e-18 60 4.8566186554031349e-18
+		 85 4.8566186554031349e-18 95 4.8566186554031349e-18 105 4.8566186554031349e-18 115 4.8566186554031349e-18
+		 135 4.8566186554031349e-18;
 createNode animCurveTL -n "Spine_02_FK_Ctrl_translateZ";
 	rename -uid "772F44E6-4A86-80C3-2DA7-A0BC748AA291";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 60 0 85 0 95 0 105 0 115 0 135 0;
 createNode animCurveTU -n "Spine_02_FK_Ctrl_scaleX";
 	rename -uid "E2AC0939-485D-1E00-0C9B-60A81DDBB247";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "Spine_02_FK_Ctrl_scaleY";
 	rename -uid "E61C879A-4606-C760-5750-C8A37AF7C16B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "Spine_02_FK_Ctrl_scaleZ";
 	rename -uid "8555D1FF-4746-1686-F1B1-A299641FA7B8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "Spine_02_FK_Ctrl_FollowTranslate";
 	rename -uid "00AD8DE1-4788-38DF-80C0-11B5912422C9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "Spine_02_FK_Ctrl_FollowRotate";
 	rename -uid "310A75F2-4D11-4263-E607-06B55A742E37";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTL -n "R_Finger_01_Knuckle_02_FK_Ctrl_translateX";
 	rename -uid "987FF268-4C89-1E01-497C-A9AAF3EC225C";
 	setAttr ".tan" 18;
@@ -38174,393 +38580,459 @@ createNode animCurveTL -n "R_Finger_02_Knuckle_01_FK_Ctrl_translateX";
 	rename -uid "17625C58-4172-231C-37A2-14AA497F3B9E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 30 0 33 0 36 0 37 0 40 0 43 0;
+	setAttr -s 7 ".kit[4:6]"  1 1 1;
+	setAttr -s 7 ".kot[4:6]"  1 1 1;
+	setAttr -s 7 ".kix[4:6]"  1 1 1;
+	setAttr -s 7 ".kiy[4:6]"  0 0 0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTL -n "R_Finger_02_Knuckle_01_FK_Ctrl_translateY";
 	rename -uid "936C22B9-4168-EFDA-0C57-E0B88FAEBB2B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 30 0 33 0 36 0 37 0 40 0 43 0;
+	setAttr -s 7 ".kit[4:6]"  1 1 1;
+	setAttr -s 7 ".kot[4:6]"  1 1 1;
+	setAttr -s 7 ".kix[4:6]"  1 1 1;
+	setAttr -s 7 ".kiy[4:6]"  0 0 0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTL -n "R_Finger_02_Knuckle_01_FK_Ctrl_translateZ";
 	rename -uid "648FC6CC-4B8D-AC7B-2B1F-14AAC1BBD693";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 30 0 33 0 36 0 37 0 40 0 43 0;
+	setAttr -s 7 ".kit[4:6]"  1 1 1;
+	setAttr -s 7 ".kot[4:6]"  1 1 1;
+	setAttr -s 7 ".kix[4:6]"  1 1 1;
+	setAttr -s 7 ".kiy[4:6]"  0 0 0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTA -n "R_Finger_02_Knuckle_01_FK_Ctrl_rotateX";
 	rename -uid "B490F9A2-4732-95C2-F5CE-828EFFF3CF38";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 30 0 33 0 36 0 37 0 40 0 43 0;
+	setAttr -s 7 ".kit[4:6]"  1 1 1;
+	setAttr -s 7 ".kot[4:6]"  1 1 1;
+	setAttr -s 7 ".kix[4:6]"  1 1 1;
+	setAttr -s 7 ".kiy[4:6]"  0 0 0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTA -n "R_Finger_02_Knuckle_01_FK_Ctrl_rotateY";
 	rename -uid "C78B8375-4C06-F90F-9DF3-7885615217AF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 30 0 33 0 36 0 37 0 40 0 43 0;
+	setAttr -s 7 ".kit[4:6]"  1 1 1;
+	setAttr -s 7 ".kot[4:6]"  1 1 1;
+	setAttr -s 7 ".kix[4:6]"  1 1 1;
+	setAttr -s 7 ".kiy[4:6]"  0 0 0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTA -n "R_Finger_02_Knuckle_01_FK_Ctrl_rotateZ";
 	rename -uid "2D49726D-47B1-FB45-621A-6D9EDEAB01A7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 49.920667324717314;
+	setAttr -s 7 ".ktv[0:6]"  1 49.920667324717314 30 49.920667324717314
+		 33 18.100205643943529 36 49.671853107139945 37 49.671853107139945 40 18.100205643943529
+		 43 49.671853107139945;
+	setAttr -s 7 ".kit[4:6]"  1 1 1;
+	setAttr -s 7 ".kot[4:6]"  1 1 1;
+	setAttr -s 7 ".kix[4:6]"  1 1 1;
+	setAttr -s 7 ".kiy[4:6]"  0 0 0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTU -n "R_Finger_02_Knuckle_01_FK_Ctrl_scaleX";
 	rename -uid "0D65A07A-49DF-8E74-0CAA-689E89B98294";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 30 1 33 1 36 1 37 1 40 1 43 1;
+	setAttr -s 7 ".kit[4:6]"  1 1 1;
+	setAttr -s 7 ".kot[4:6]"  1 1 1;
+	setAttr -s 7 ".kix[4:6]"  1 1 1;
+	setAttr -s 7 ".kiy[4:6]"  0 0 0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTU -n "R_Finger_02_Knuckle_01_FK_Ctrl_scaleY";
 	rename -uid "7F1323FE-4DC3-DE38-F7E7-828CC1F08C85";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 30 1 33 1 36 1 37 1 40 1 43 1;
+	setAttr -s 7 ".kit[4:6]"  1 1 1;
+	setAttr -s 7 ".kot[4:6]"  1 1 1;
+	setAttr -s 7 ".kix[4:6]"  1 1 1;
+	setAttr -s 7 ".kiy[4:6]"  0 0 0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTU -n "R_Finger_02_Knuckle_01_FK_Ctrl_scaleZ";
 	rename -uid "39C74270-4C79-4891-D9BA-D3962DB96998";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 30 1 33 1 36 1 37 1 40 1 43 1;
+	setAttr -s 7 ".kit[4:6]"  1 1 1;
+	setAttr -s 7 ".kot[4:6]"  1 1 1;
+	setAttr -s 7 ".kix[4:6]"  1 1 1;
+	setAttr -s 7 ".kiy[4:6]"  0 0 0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTU -n "R_Finger_02_Knuckle_01_FK_Ctrl_FollowTranslate";
 	rename -uid "4DB07563-450B-2324-D432-9B954AD5E28B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 30 1 33 1 36 1 37 1 40 1 43 1;
+	setAttr -s 7 ".kit[4:6]"  1 1 1;
+	setAttr -s 7 ".kot[4:6]"  1 1 1;
+	setAttr -s 7 ".kix[4:6]"  1 1 1;
+	setAttr -s 7 ".kiy[4:6]"  0 0 0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTU -n "R_Finger_02_Knuckle_01_FK_Ctrl_FollowRotate";
 	rename -uid "D15B443A-444F-E789-00AF-A3BF6820293E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 30 1 33 1 36 1 37 1 40 1 43 1;
+	setAttr -s 7 ".kit[4:6]"  1 1 1;
+	setAttr -s 7 ".kot[4:6]"  1 1 1;
+	setAttr -s 7 ".kix[4:6]"  1 1 1;
+	setAttr -s 7 ".kiy[4:6]"  0 0 0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTL -n "R_Finger_03_Knuckle_01_FK_Ctrl_translateX";
 	rename -uid "A7E7DE46-456A-1097-E729-2B92CD27D42E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTL -n "R_Finger_03_Knuckle_01_FK_Ctrl_translateY";
 	rename -uid "337CC7E8-4766-A413-1D4D-C5B5474B2028";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTL -n "R_Finger_03_Knuckle_01_FK_Ctrl_translateZ";
 	rename -uid "6DF9A91B-4DBF-D472-B862-B18677A45875";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTA -n "R_Finger_03_Knuckle_01_FK_Ctrl_rotateX";
 	rename -uid "FE518997-4335-37A6-AB99-35BAC7F797D0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTA -n "R_Finger_03_Knuckle_01_FK_Ctrl_rotateY";
 	rename -uid "C1E1878D-47E5-5B6C-A7D0-06953CDE3DD7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTA -n "R_Finger_03_Knuckle_01_FK_Ctrl_rotateZ";
 	rename -uid "3BF7753C-47CA-D984-DCBF-A28F12ABFB8D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 49.319999299709004 45 49.319999299709004
-		 65 70.536706641759778;
+	setAttr ".ktv[0]"  1 37.084648658238208;
 createNode animCurveTU -n "R_Finger_03_Knuckle_01_FK_Ctrl_scaleX";
 	rename -uid "3FD8D352-4BE0-93E5-052A-2DA214CAC771";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTU -n "R_Finger_03_Knuckle_01_FK_Ctrl_scaleY";
 	rename -uid "3E1C8A4B-4815-C0A7-852B-E09A543ED734";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTU -n "R_Finger_03_Knuckle_01_FK_Ctrl_scaleZ";
 	rename -uid "74ED0603-4D57-FBAE-80F2-C9AEE3A4F53D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTU -n "R_Finger_03_Knuckle_01_FK_Ctrl_FollowTranslate";
 	rename -uid "583C6FAA-4A7F-1D31-CDE9-B7BEA4E1B7E4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTU -n "R_Finger_03_Knuckle_01_FK_Ctrl_FollowRotate";
 	rename -uid "3FA61CB6-402B-81A6-E7A8-7AB6529244B5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTL -n "R_Finger_04_Knuckle_01_FK_Ctrl_translateX";
 	rename -uid "183D6939-47CC-76A1-6C03-38BDCE1460CE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTL -n "R_Finger_04_Knuckle_01_FK_Ctrl_translateY";
 	rename -uid "D9DED0AA-46A0-F4BC-E4C9-6A945CF3E30F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTL -n "R_Finger_04_Knuckle_01_FK_Ctrl_translateZ";
 	rename -uid "87A31E55-41A1-EAB7-BF4C-E6B2F9BF7FD6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_04_Knuckle_01_FK_Ctrl_rotateX";
 	rename -uid "129B8D40-4995-FDEE-1FB6-CFA91867DD23";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_04_Knuckle_01_FK_Ctrl_rotateY";
 	rename -uid "D98668F9-48EB-0E81-5B75-10A9794D3192";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_04_Knuckle_01_FK_Ctrl_rotateZ";
 	rename -uid "264E34D6-4ABF-74F0-A22D-ADA286054A36";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 49.319999299709004 45 49.319999299709004
-		 65 70.536706641759778;
+	setAttr -s 6 ".ktv[0:5]"  1 49.319999299709004 15 49.319999299709004
+		 33 61.65632811570034 43 61.65632811570034 51 48.550889285703953 62 35.454561107588333;
 createNode animCurveTU -n "R_Finger_04_Knuckle_01_FK_Ctrl_scaleX";
 	rename -uid "41EF6CE4-415E-E6BA-317C-199801EC9D02";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_04_Knuckle_01_FK_Ctrl_scaleY";
 	rename -uid "8C264FB4-48DE-A5EF-47C5-49A291C0A646";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_04_Knuckle_01_FK_Ctrl_scaleZ";
 	rename -uid "FB29570C-4F34-3ACA-48AA-45B7E43136D2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_04_Knuckle_01_FK_Ctrl_FollowTranslate";
 	rename -uid "FF7F3AB9-43CC-8440-057F-989A7A103685";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_04_Knuckle_01_FK_Ctrl_FollowRotate";
 	rename -uid "31E69139-4179-1D43-88EC-37A32D7CFBAA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTL -n "R_Finger_05_Knuckle_01_FK_Ctrl_translateX";
 	rename -uid "5C0824F6-4065-690F-7FD9-308292F56214";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTL -n "R_Finger_05_Knuckle_01_FK_Ctrl_translateY";
 	rename -uid "4DCE5E9F-4F3A-EB31-C539-20981A6A8284";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTL -n "R_Finger_05_Knuckle_01_FK_Ctrl_translateZ";
 	rename -uid "252D03F2-459D-2EA9-1D8E-E79BCCD5CF90";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_05_Knuckle_01_FK_Ctrl_rotateX";
 	rename -uid "74B624D5-4125-898D-D60E-27A34E7DEE5E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_05_Knuckle_01_FK_Ctrl_rotateY";
 	rename -uid "AC87E703-45FE-F84A-2DF6-3CB4E5956715";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_05_Knuckle_01_FK_Ctrl_rotateZ";
 	rename -uid "C18E48F4-4030-2C66-EC92-22A49583F36E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 49.319999299709004 45 49.319999299709004
-		 65 70.536706641759778;
+	setAttr -s 6 ".ktv[0:5]"  1 49.319999299709004 15 49.319999299709004
+		 33 61.65632811570034 43 61.65632811570034 51 48.550889285703953 62 35.454561107588333;
 createNode animCurveTU -n "R_Finger_05_Knuckle_01_FK_Ctrl_scaleX";
 	rename -uid "36849632-43C1-7529-EDB8-1E87B124F2BC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_05_Knuckle_01_FK_Ctrl_scaleY";
 	rename -uid "DC348BA4-472A-DCD1-386E-488607610200";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_05_Knuckle_01_FK_Ctrl_scaleZ";
 	rename -uid "E993A707-40CF-68DD-A437-02AECCF67C6E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_05_Knuckle_01_FK_Ctrl_FollowTranslate";
 	rename -uid "B7B72348-4EB8-8533-88BF-59913A884967";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_05_Knuckle_01_FK_Ctrl_FollowRotate";
 	rename -uid "3B55D514-44E0-8CF6-ED3A-0EBABB1BC812";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTL -n "R_Finger_05_Knuckle_02_FK_Ctrl_translateX";
 	rename -uid "6F1ACF27-432F-836B-55C3-EBB4E48AB304";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTL -n "R_Finger_05_Knuckle_02_FK_Ctrl_translateY";
 	rename -uid "E3DB5904-4526-08BD-38AB-5D902089E6AC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTL -n "R_Finger_05_Knuckle_02_FK_Ctrl_translateZ";
 	rename -uid "7134AFE9-4DC3-E85D-C6D4-F9A6A424F10E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_05_Knuckle_02_FK_Ctrl_rotateX";
 	rename -uid "93F9944D-40F3-B489-D1A6-F0BA088EF6FD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_05_Knuckle_02_FK_Ctrl_rotateY";
 	rename -uid "4ECC09E5-49B6-49DF-5BEB-D9AE245C5662";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_05_Knuckle_02_FK_Ctrl_rotateZ";
 	rename -uid "0EC7E07A-4913-9856-CF88-F0809BB4D97A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 49.319999299709004 45 49.319999299709004
-		 65 70.536706641759778;
+	setAttr -s 6 ".ktv[0:5]"  1 49.319999299709004 15 49.319999299709004
+		 33 61.65632811570034 43 61.65632811570034 51 48.550889285703953 62 35.454561107588333;
 createNode animCurveTU -n "R_Finger_05_Knuckle_02_FK_Ctrl_scaleX";
 	rename -uid "BDAB3D93-4EA5-3EF5-4596-4588AAE3E3C0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_05_Knuckle_02_FK_Ctrl_scaleY";
 	rename -uid "363D1558-4513-D052-B3AB-0DB37C7BC846";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_05_Knuckle_02_FK_Ctrl_scaleZ";
 	rename -uid "97981FB6-4D57-2F1A-50FF-FEB6E5C2F0C5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_05_Knuckle_02_FK_Ctrl_FollowTranslate";
 	rename -uid "1EE7ED37-4F90-B1A7-764F-39A154F48FF1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_05_Knuckle_02_FK_Ctrl_FollowRotate";
 	rename -uid "D57969D2-4AF7-BE8D-F7CF-77A531721D82";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTL -n "R_Finger_04_Knuckle_02_FK_Ctrl_translateX";
 	rename -uid "C12395E2-4C44-6132-6FBF-44B2670823F5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTL -n "R_Finger_04_Knuckle_02_FK_Ctrl_translateY";
 	rename -uid "BD58D933-4599-D905-B4C2-2CB5D85569EC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTL -n "R_Finger_04_Knuckle_02_FK_Ctrl_translateZ";
 	rename -uid "C804E9B0-421D-FA1F-7F05-21B311244C25";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_04_Knuckle_02_FK_Ctrl_rotateX";
 	rename -uid "73C72E39-450D-8469-B019-4180024B6666";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_04_Knuckle_02_FK_Ctrl_rotateY";
 	rename -uid "374012E9-4CAB-C284-6820-6F8E350DB30C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_04_Knuckle_02_FK_Ctrl_rotateZ";
 	rename -uid "BAF326BE-4C92-639C-5BE2-F4B5F0C2AED3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 56.263479639243528 45 56.263479639243528
-		 65 77.480186981294352;
+	setAttr -s 6 ".ktv[0:5]"  1 56.263479639243528 15 56.263479639243528
+		 33 68.599808455234893 43 68.599808455234893 51 55.494369625238498 62 42.398041447122921;
 createNode animCurveTU -n "R_Finger_04_Knuckle_02_FK_Ctrl_scaleX";
 	rename -uid "C144D024-4416-E3B6-32C9-0CA19E031317";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_04_Knuckle_02_FK_Ctrl_scaleY";
 	rename -uid "5E6EAC6B-46BD-DCF4-E0CC-8992A821F44E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_04_Knuckle_02_FK_Ctrl_scaleZ";
 	rename -uid "05799265-4272-744D-8557-2FBFD4AC0359";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_04_Knuckle_02_FK_Ctrl_FollowTranslate";
 	rename -uid "0D6AFB9A-46F5-554A-820B-9E8FBAE4F1BB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_04_Knuckle_02_FK_Ctrl_FollowRotate";
 	rename -uid "8B2C5254-4BE7-6645-FEDF-8985A35ED68A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTL -n "R_Finger_03_Knuckle_02_FK_Ctrl_translateX";
 	rename -uid "32F15029-43DE-B730-BF2B-CBBDD8153379";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTL -n "R_Finger_03_Knuckle_02_FK_Ctrl_translateY";
 	rename -uid "50E65240-44BB-6762-61FC-8BB063B0C10A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTL -n "R_Finger_03_Knuckle_02_FK_Ctrl_translateZ";
 	rename -uid "F68C32D3-4A7C-3A15-7325-B5808A639CE0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTA -n "R_Finger_03_Knuckle_02_FK_Ctrl_rotateX";
 	rename -uid "3B095501-42F8-9363-D811-CE95AABADB5A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTA -n "R_Finger_03_Knuckle_02_FK_Ctrl_rotateY";
 	rename -uid "65FA26E8-45AD-E0B5-BBFB-6091F5B6D0F3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTA -n "R_Finger_03_Knuckle_02_FK_Ctrl_rotateZ";
 	rename -uid "DE63E442-4C77-33A9-2F8C-FC964F117C9C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 69.032262885246482 45 69.032262885246482
-		 65 90.248970227297235;
+	setAttr ".ktv[0]"  1 14.124100169547091;
 createNode animCurveTU -n "R_Finger_03_Knuckle_02_FK_Ctrl_scaleX";
 	rename -uid "CA24CE9B-46F1-482B-702E-BBB36A98F458";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTU -n "R_Finger_03_Knuckle_02_FK_Ctrl_scaleY";
 	rename -uid "CF1ED0FA-454D-9E8F-6F8F-88811C41BA01";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTU -n "R_Finger_03_Knuckle_02_FK_Ctrl_scaleZ";
 	rename -uid "E21072BA-471B-870C-DE80-689E8931DB9D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTU -n "R_Finger_03_Knuckle_02_FK_Ctrl_FollowTranslate";
 	rename -uid "245F07DC-48FC-8D94-C733-738FD0E0584D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTU -n "R_Finger_03_Knuckle_02_FK_Ctrl_FollowRotate";
 	rename -uid "DEB51AA2-4478-091E-3D09-7A9DC81413EC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTL -n "R_Finger_02_Knuckle_02_FK_Ctrl_translateX";
 	rename -uid "F6B55788-4CF5-7A6D-4623-6BBAE628BA45";
 	setAttr ".tan" 18;
@@ -38675,228 +39147,169 @@ createNode animCurveTL -n "R_Finger_03_Knuckle_03_FK_Ctrl_translateX";
 	rename -uid "5F22A234-4F16-192C-DE39-C6B5587251D0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTL -n "R_Finger_03_Knuckle_03_FK_Ctrl_translateY";
 	rename -uid "7D46C7B6-40E8-A3A4-1092-53AD88392C40";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTL -n "R_Finger_03_Knuckle_03_FK_Ctrl_translateZ";
 	rename -uid "6F62A0B2-4D2B-DC75-6F96-8F8BFF0301B6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTA -n "R_Finger_03_Knuckle_03_FK_Ctrl_rotateX";
 	rename -uid "3169D05A-4F48-6771-FD2C-D0A744873801";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTA -n "R_Finger_03_Knuckle_03_FK_Ctrl_rotateY";
 	rename -uid "1F9275CB-40B8-2686-15F5-05A0E86C298B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTA -n "R_Finger_03_Knuckle_03_FK_Ctrl_rotateZ";
 	rename -uid "E3747F48-4E40-F509-F8E6-7C81AFE35A61";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 49.319999299709004 45 49.319999299709004
-		 65 70.536706641759778;
+	setAttr ".ktv[0]"  1 27.292642859365685;
 createNode animCurveTU -n "R_Finger_03_Knuckle_03_FK_Ctrl_scaleX";
 	rename -uid "2E1AAA1C-4A50-5C76-3138-E3B71E0D0777";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTU -n "R_Finger_03_Knuckle_03_FK_Ctrl_scaleY";
 	rename -uid "AC48530F-4AE6-161C-D383-33B65E45E116";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTU -n "R_Finger_03_Knuckle_03_FK_Ctrl_scaleZ";
 	rename -uid "34C67556-482A-1823-FDD4-3CAEDE0433AD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTU -n "R_Finger_03_Knuckle_03_FK_Ctrl_FollowTranslate";
 	rename -uid "AF47DAB6-4689-9374-53F8-56BB619CFCF3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTU -n "R_Finger_03_Knuckle_03_FK_Ctrl_FollowRotate";
 	rename -uid "33629F08-460C-915C-1B27-19BACD0E0826";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTL -n "R_Finger_04_Knuckle_03_FK_Ctrl_translateX";
 	rename -uid "576F046C-4675-93CA-66A1-7F8E485B2D0A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTL -n "R_Finger_04_Knuckle_03_FK_Ctrl_translateY";
 	rename -uid "376A4373-4263-1F51-F760-78A6836C56F3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTL -n "R_Finger_04_Knuckle_03_FK_Ctrl_translateZ";
 	rename -uid "263DC706-486F-8F0E-F77D-C58C167E6FE5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_04_Knuckle_03_FK_Ctrl_rotateX";
 	rename -uid "EA3DA737-450C-4326-3801-798638F110B6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_04_Knuckle_03_FK_Ctrl_rotateY";
 	rename -uid "CB2DB1F1-4082-AE30-9780-86A2321915EB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_04_Knuckle_03_FK_Ctrl_rotateZ";
 	rename -uid "D9F56F38-4B1E-EDA2-AFD8-D7B66B049263";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 49.319999299709004 45 49.319999299709004
-		 65 70.536706641759778;
+	setAttr -s 6 ".ktv[0:5]"  1 49.319999299709004 15 49.319999299709004
+		 33 61.65632811570034 43 61.65632811570034 51 48.550889285703953 62 35.454561107588333;
 createNode animCurveTU -n "R_Finger_04_Knuckle_03_FK_Ctrl_scaleX";
 	rename -uid "293F0DC3-4541-D503-4582-BF9196843664";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_04_Knuckle_03_FK_Ctrl_scaleY";
 	rename -uid "7001049C-4105-D6BF-3315-6F8FCF832591";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_04_Knuckle_03_FK_Ctrl_scaleZ";
 	rename -uid "8A0CEA14-42F8-6246-C5CF-67862BFE08A8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_04_Knuckle_03_FK_Ctrl_FollowTranslate";
 	rename -uid "0E233375-457B-0838-14EB-30A19FAA41A0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_04_Knuckle_03_FK_Ctrl_FollowRotate";
 	rename -uid "70A7B2CA-4252-6410-A046-7B96309E67AB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTL -n "R_Finger_05_Knuckle_03_FK_Ctrl_translateX";
 	rename -uid "DACD1960-451C-6A73-DD23-CBB4753F4E8E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTL -n "R_Finger_05_Knuckle_03_FK_Ctrl_translateY";
 	rename -uid "C4E20A5E-4220-43F3-6F23-4C820520794A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTL -n "R_Finger_05_Knuckle_03_FK_Ctrl_translateZ";
 	rename -uid "B641A0F0-41C7-AE19-2DFA-F48D886E869F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_05_Knuckle_03_FK_Ctrl_rotateX";
 	rename -uid "2B76CF8E-4FEB-76CE-D2A6-089AF024DD45";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_05_Knuckle_03_FK_Ctrl_rotateY";
 	rename -uid "BC80C607-477B-3D14-8914-6D82E2E159EC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 45 0 65 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 15 0 33 0 43 0 51 0 62 0;
 createNode animCurveTA -n "R_Finger_05_Knuckle_03_FK_Ctrl_rotateZ";
 	rename -uid "B28BFCD2-4D65-7EEB-FBF2-F98AFB74C3F9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 49.319999299709004 45 49.319999299709004
-		 65 70.536706641759778;
+	setAttr -s 6 ".ktv[0:5]"  1 49.319999299709004 15 49.319999299709004
+		 33 61.65632811570034 43 61.65632811570034 51 48.550889285703953 62 35.454561107588333;
 createNode animCurveTU -n "R_Finger_05_Knuckle_03_FK_Ctrl_scaleX";
 	rename -uid "0BD82B6E-4138-382B-BD1A-B88C9DB6129F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_05_Knuckle_03_FK_Ctrl_scaleY";
 	rename -uid "96554C18-4135-4D39-E050-92B73CEBEF08";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_05_Knuckle_03_FK_Ctrl_scaleZ";
 	rename -uid "C61B402C-495E-FEC5-2243-D491ACB6EC98";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_05_Knuckle_03_FK_Ctrl_FollowTranslate";
 	rename -uid "EED6AF65-4E80-5CFA-6E1D-AC868154F150";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode animCurveTU -n "R_Finger_05_Knuckle_03_FK_Ctrl_FollowRotate";
 	rename -uid "13976606-4519-2365-CA15-78864506A4CD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 45 1 65 1;
-createNode animCurveTL -n "pCylinder5_translateX";
-	rename -uid "689681BD-4DB5-837C-B769-CDA0D3FC1070";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  52 1.7236485986050452 56 1.7236485986050452
-		 60 1.7236485986050452 64 1.7236485986050452;
-createNode animCurveTL -n "pCylinder5_translateY";
-	rename -uid "75143903-486A-DA55-6F18-51A8A900949D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  52 0.95124375888710389 56 0.93805617619915138
-		 60 0.93805617619915138 64 0.94839946118809781;
-createNode animCurveTL -n "pCylinder5_translateZ";
-	rename -uid "1E23692B-4F74-B681-E5CF-AE8D366754CF";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  52 0.65616055186487832 56 0.6460066757673848
-		 60 0.6460066757673848 64 0.65397056397221653;
-createNode animCurveTU -n "pCylinder5_visibility";
-	rename -uid "4B954FC4-4F2A-F8FD-02A7-139D4B43D448";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  52 1 56 1 60 1 64 1;
-	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
-createNode animCurveTA -n "pCylinder5_rotateX";
-	rename -uid "093F80CF-47C8-5745-BDDA-0D847ECEB273";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  52 37.594736685096912 56 37.594736685096912
-		 60 37.594736685096912 64 37.594736685096912;
-createNode animCurveTA -n "pCylinder5_rotateY";
-	rename -uid "D0AE8E67-462B-114D-C38E-6285597C292A";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  52 0 56 0 60 0 64 0;
-createNode animCurveTA -n "pCylinder5_rotateZ";
-	rename -uid "C39B8CDD-4D6A-0332-0E67-D7BFBA931DAA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  52 0 56 0 60 0 64 0;
-createNode animCurveTU -n "pCylinder5_scaleX";
-	rename -uid "BC7162B5-4D2D-42B0-5B23-14AB49B734E8";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  52 0.049184852015650836 56 0.049184852015650836
-		 60 0.049184852015650836 64 0.049184852015650836;
-createNode animCurveTU -n "pCylinder5_scaleY";
-	rename -uid "B6F97754-4400-F0F1-E62A-86A61E9CA983";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  52 0.010700064666699132 56 0.010700064666699132
-		 60 0.010700064666699132 64 0.010700064666699132;
-createNode animCurveTU -n "pCylinder5_scaleZ";
-	rename -uid "891FE80D-4141-F29F-F9CE-74A17006B467";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  52 0.049184852015650836 56 0.049184852015650836
-		 60 0.049184852015650836 64 0.049184852015650836;
+	setAttr -s 6 ".ktv[0:5]"  1 1 15 1 33 1 43 1 51 1 62 1;
 createNode objectSet -n "set3";
 	rename -uid "57E3DF4E-4A99-5A70-7BD6-308171086C93";
 	setAttr ".ihi" 0;
@@ -39179,887 +39592,104 @@ createNode animCurveTL -n "R_Arm_PV_Ctrl_translateX";
 	rename -uid "C7A43B8D-4970-1563-7061-E288DA84A79D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 0.3411921376761719 12 0.39084841804339504
-		 24 -0.35967489520842111 42 -0.017867811464282866 50 0.28089020290105798 64 0.28089020290105798
-		 74 0.45348645858928938 96 -0.18925401163132241;
+	setAttr -s 6 ".ktv[0:5]"  1 0.3411921376761719 24 0.3179246924513397
+		 50 0.28415745669332171 60 0.70513401023773514 85 0.33847958270519929 115 0.33847958270519929;
+	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kot[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
+	setAttr -s 6 ".kiy[2:5]"  0 0 0 0;
+	setAttr -s 6 ".kox[2:5]"  1 1 1 1;
+	setAttr -s 6 ".koy[2:5]"  0 0 0 0;
 createNode animCurveTL -n "R_Arm_PV_Ctrl_translateY";
 	rename -uid "17489458-4F49-C8EB-78CE-6C9C370F772B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 -2.3216191394953336 12 -2.3302044817192638
-		 24 -2.2627361322190702 42 -2.291481303542493 50 -2.3166061494441781 64 -2.3166061494441781
-		 74 -0.93499512483266922 96 -0.37766875773592762;
+	setAttr -s 6 ".ktv[0:5]"  1 -2.3216191394953336 24 -2.31014833772291
+		 50 -2.2652597401018744 60 -2.3759249537926266 85 -2.2812642004402508 115 -2.2812642004402508;
+	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kot[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kix[2:5]"  0.68817536489973774 1 1 1;
+	setAttr -s 6 ".kiy[2:5]"  0.7255443936418452 0 0 0;
+	setAttr -s 6 ".kox[2:5]"  0.68817536489973774 1 1 1;
+	setAttr -s 6 ".koy[2:5]"  0.72554439364184509 0 0 0;
 createNode animCurveTL -n "R_Arm_PV_Ctrl_translateZ";
 	rename -uid "AE2F481D-4D9E-5992-BC81-83980DDAE649";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 -1.1407962201709689 12 -0.28409377633243199
-		 24 -1.0882236640683343 42 -1.1083235898230048 50 -1.1258920200661042 64 -1.1258920200661042
-		 74 -0.85263549601854904 96 -1.4642845016393131;
+	setAttr -s 6 ".ktv[0:5]"  1 -1.1407962201709689 24 -0.089661630655532218
+		 50 -0.063656267889327225 60 -1.0226002143699267 85 -1.2092570775463718 115 -1.2092570775463718;
+	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kot[2:5]"  1 18 18 18;
+	setAttr -s 6 ".kix[2:5]"  1 0.020339369285844691 1 1;
+	setAttr -s 6 ".kiy[2:5]"  0 -0.99979313363167999 0 0;
+	setAttr -s 6 ".kox[2:5]"  1 0.020339369285844688 1 1;
+	setAttr -s 6 ".koy[2:5]"  0 -0.99979313363167988 0 0;
 createNode animCurveTU -n "R_Arm_PV_Ctrl_Follow";
 	rename -uid "51C815A0-47FB-8FD1-13AC-D29891FC51D1";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  1 3 12 3 24 3 42 3 50 3 64 3 74 3 96 3;
-	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
-createNode animCurveTL -n "L_Arm_PV_Ctrl_translateX";
-	rename -uid "EB4393A7-4A7C-890E-DA4A-C589C45DBEF9";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  25 -0.20250189713054145 36 -0.10632393636150209
-		 62 -0.10632393636150209 78 -0.26410387994234336;
-createNode animCurveTL -n "L_Arm_PV_Ctrl_translateY";
-	rename -uid "AEFC5689-4EA7-29B8-AC4E-A9803C2DE636";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  25 0.87856093810974967 36 2.7501366359141168
-		 62 2.7501366359141168 78 0.88069011222978733;
-createNode animCurveTL -n "L_Arm_PV_Ctrl_translateZ";
-	rename -uid "F4B5D973-43A3-6A43-1534-C4A36DC055F9";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  25 2.0207521003289677 36 0.97973055414972832
-		 62 0.97973055414972832 78 0.97014137517693944;
-createNode animCurveTU -n "L_Arm_PV_Ctrl_Follow";
-	rename -uid "0BCD6025-4F0B-3B41-73F2-45BF5C3F3DAF";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  25 3 36 3 62 3 78 3;
-	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
-createNode animCurveTL -n "L_Finger_03_Knuckle_01_FK_Ctrl_translateX";
-	rename -uid "D003A9C0-4112-F35A-BDC4-2A981536EC9E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTL -n "L_Finger_03_Knuckle_01_FK_Ctrl_translateY";
-	rename -uid "7B71A4D4-4513-F34C-7AA5-A4AF1B26E3A2";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1.2432943757832025e-15 34 1.2432943757832025e-15;
-createNode animCurveTL -n "L_Finger_03_Knuckle_01_FK_Ctrl_translateZ";
-	rename -uid "71823315-47E2-ABBD-A546-15BBE802A651";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 -3.8852949243225079e-17 34 -3.8852949243225079e-17;
-createNode animCurveTA -n "L_Finger_03_Knuckle_01_FK_Ctrl_rotateX";
-	rename -uid "9D0878A0-49A5-85D9-D24F-C2856B70BFCB";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_03_Knuckle_01_FK_Ctrl_rotateY";
-	rename -uid "005FB23A-4988-074A-C621-F3B6B8F78D94";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_03_Knuckle_01_FK_Ctrl_rotateZ";
-	rename -uid "0D2B488E-415C-45F3-59D0-FE8CA228C2FA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 55.109590796311394;
-createNode animCurveTU -n "L_Finger_03_Knuckle_01_FK_Ctrl_scaleX";
-	rename -uid "C8A92518-4E01-D9E2-6559-53BD04067376";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_03_Knuckle_01_FK_Ctrl_scaleY";
-	rename -uid "E7763FD1-4D51-1B08-BFF7-68ADD9E198CC";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_03_Knuckle_01_FK_Ctrl_scaleZ";
-	rename -uid "35C47993-465F-B62C-08CF-A0B5AE55E44E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_03_Knuckle_01_FK_Ctrl_FollowTranslate";
-	rename -uid "A14509FC-4F74-9036-94A1-4C9308AB1485";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_03_Knuckle_01_FK_Ctrl_FollowRotate";
-	rename -uid "CF7EEA69-465A-1772-1F42-D6947CDD0922";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTL -n "L_Finger_04_Knuckle_01_FK_Ctrl_translateX";
-	rename -uid "1347D8FD-418D-C186-B403-1BB7402F68C2";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 -6.2164718789160127e-16 34 -6.2164718789160127e-16;
-createNode animCurveTL -n "L_Finger_04_Knuckle_01_FK_Ctrl_translateY";
-	rename -uid "224C5251-42EC-3D2F-C2E5-478B5DD78886";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTL -n "L_Finger_04_Knuckle_01_FK_Ctrl_translateZ";
-	rename -uid "340C6032-4C79-CED8-F808-2AA7C55EA185";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_04_Knuckle_01_FK_Ctrl_rotateX";
-	rename -uid "C9C579DE-47DE-437D-7645-18BFE8710137";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_04_Knuckle_01_FK_Ctrl_rotateY";
-	rename -uid "CE705801-4100-CF47-F6C7-99BF6DCBEAA1";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_04_Knuckle_01_FK_Ctrl_rotateZ";
-	rename -uid "1C592221-48CE-E4CD-0921-73BD3B921D68";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 55.109590796311394;
-createNode animCurveTU -n "L_Finger_04_Knuckle_01_FK_Ctrl_scaleX";
-	rename -uid "27BBAD04-47D5-EF04-C35B-EE95D08E318E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_04_Knuckle_01_FK_Ctrl_scaleY";
-	rename -uid "0F19E39D-41DC-EE0F-594C-928D616CFC30";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_04_Knuckle_01_FK_Ctrl_scaleZ";
-	rename -uid "0921E6FE-439E-DC1F-300B-7FB5C6902547";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_04_Knuckle_01_FK_Ctrl_FollowTranslate";
-	rename -uid "F3AF1DEA-4928-4472-1656-6D852F2FB018";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_04_Knuckle_01_FK_Ctrl_FollowRotate";
-	rename -uid "8D8616EC-4CBC-B08A-B9A7-F9AB81B0C6A6";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTL -n "L_Finger_05_Knuckle_01_FK_Ctrl_translateX";
-	rename -uid "EE214885-4067-2DC3-AA7C-D4A60745209A";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 6.2164718789160127e-16 34 6.2164718789160127e-16;
-createNode animCurveTL -n "L_Finger_05_Knuckle_01_FK_Ctrl_translateY";
-	rename -uid "47ACFD15-4393-31E6-D769-119B7BE5B705";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 2.4865887515664051e-15 34 2.4865887515664051e-15;
-createNode animCurveTL -n "L_Finger_05_Knuckle_01_FK_Ctrl_translateZ";
-	rename -uid "9A6576C7-47F2-9C3D-3747-8E8916899387";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 3.1082359394580063e-16 34 3.1082359394580063e-16;
-createNode animCurveTA -n "L_Finger_05_Knuckle_01_FK_Ctrl_rotateX";
-	rename -uid "17DDAB6F-4C74-1A09-926E-B49E301C60CA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_05_Knuckle_01_FK_Ctrl_rotateY";
-	rename -uid "B733D04A-453B-F2B7-2EB1-A9AFDF34474C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_05_Knuckle_01_FK_Ctrl_rotateZ";
-	rename -uid "2FAF8B0C-46DE-7C0E-5490-078A5D812918";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 55.109590796311394;
-createNode animCurveTU -n "L_Finger_05_Knuckle_01_FK_Ctrl_scaleX";
-	rename -uid "007CD601-4436-146C-26F8-DE8F58997967";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_05_Knuckle_01_FK_Ctrl_scaleY";
-	rename -uid "D5872E38-499B-74B6-5661-2F9F7F7699C3";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_05_Knuckle_01_FK_Ctrl_scaleZ";
-	rename -uid "07E925B5-478B-32F9-41AF-6286BF079F4E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_05_Knuckle_01_FK_Ctrl_FollowTranslate";
-	rename -uid "A1F5B28B-4351-67FF-D3BD-269965F1D61D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_05_Knuckle_01_FK_Ctrl_FollowRotate";
-	rename -uid "ED0141BE-4D7C-BA78-57AE-DE96FC6C5108";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTL -n "L_Finger_03_Knuckle_02_FK_Ctrl_translateX";
-	rename -uid "9F72503D-41B9-859F-8C44-58AACA013359";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 -9.32470781837402e-16 34 -9.32470781837402e-16;
-createNode animCurveTL -n "L_Finger_03_Knuckle_02_FK_Ctrl_translateY";
-	rename -uid "8EA5F81A-43EB-D360-A9CA-F997E8EF6AAC";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 -1.2432943757832025e-15 34 -1.2432943757832025e-15;
-createNode animCurveTL -n "L_Finger_03_Knuckle_02_FK_Ctrl_translateZ";
-	rename -uid "9AF25B06-4065-0191-C3D8-489A1CE60AE0";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 -3.8852949243225079e-17 34 -3.8852949243225079e-17;
-createNode animCurveTA -n "L_Finger_03_Knuckle_02_FK_Ctrl_rotateX";
-	rename -uid "CF6ADC78-43E0-3463-80AA-1DBB067B300F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_03_Knuckle_02_FK_Ctrl_rotateY";
-	rename -uid "17B1A0F9-4858-0CCB-566B-5BB8D2430929";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_03_Knuckle_02_FK_Ctrl_rotateZ";
-	rename -uid "50F37747-4FE5-6B4D-429C-BA8D3F224A21";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 55.109590796311394;
-createNode animCurveTU -n "L_Finger_03_Knuckle_02_FK_Ctrl_scaleX";
-	rename -uid "5C64FB79-4260-A9C7-1770-008AE1525930";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_03_Knuckle_02_FK_Ctrl_scaleY";
-	rename -uid "B9F9CD4E-43F2-160D-B1CC-9D88EFCEEE38";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_03_Knuckle_02_FK_Ctrl_scaleZ";
-	rename -uid "B28E8AFA-463A-CF11-E629-9289849881B8";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_03_Knuckle_02_FK_Ctrl_FollowTranslate";
-	rename -uid "E6F1B071-425B-9CE6-0E31-E9803D1F0319";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_03_Knuckle_02_FK_Ctrl_FollowRotate";
-	rename -uid "1B266B4C-4F62-6083-1C3A-7CB68D68FA5F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTL -n "L_Finger_04_Knuckle_02_FK_Ctrl_translateX";
-	rename -uid "A876ADB4-4951-9A0D-2EC7-A6BC42BEF077";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 9.32470781837402e-16 34 9.32470781837402e-16;
-createNode animCurveTL -n "L_Finger_04_Knuckle_02_FK_Ctrl_translateY";
-	rename -uid "B833C514-4B50-1CE3-C25A-23BB3791EFEF";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1.2432943757832025e-15 34 1.2432943757832025e-15;
-createNode animCurveTL -n "L_Finger_04_Knuckle_02_FK_Ctrl_translateZ";
-	rename -uid "7CD4D5FE-4C9F-FC0F-258E-A8BB7C537A14";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1.5541179697290032e-16 34 1.5541179697290032e-16;
-createNode animCurveTA -n "L_Finger_04_Knuckle_02_FK_Ctrl_rotateX";
-	rename -uid "0D36EFFB-4C71-DBE9-B4D1-5AB6A8FA9829";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_04_Knuckle_02_FK_Ctrl_rotateY";
-	rename -uid "C06D0FBF-4458-0187-D2AB-75A30FDE94F7";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_04_Knuckle_02_FK_Ctrl_rotateZ";
-	rename -uid "AC50D506-4A78-444B-14D6-0289B2D0B1B0";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 55.109590796311394;
-createNode animCurveTU -n "L_Finger_04_Knuckle_02_FK_Ctrl_scaleX";
-	rename -uid "BCA571C2-4FE7-0233-2FB1-C9875A655A81";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_04_Knuckle_02_FK_Ctrl_scaleY";
-	rename -uid "E1F7AA9E-4B15-5E30-CB46-44A99DDA305F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_04_Knuckle_02_FK_Ctrl_scaleZ";
-	rename -uid "58BC3E88-47F9-FBF9-5C20-3DA50FF5DC94";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_04_Knuckle_02_FK_Ctrl_FollowTranslate";
-	rename -uid "3C3F3541-43AE-122C-173A-25B35FA60EC5";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_04_Knuckle_02_FK_Ctrl_FollowRotate";
-	rename -uid "F019F498-4A8A-1477-58FA-C6AEC79793EF";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTL -n "L_Finger_05_Knuckle_02_FK_Ctrl_translateX";
-	rename -uid "9D7267C9-42CF-B849-7B7F-9FA824B777F8";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 -9.32470781837402e-16 34 -9.32470781837402e-16;
-createNode animCurveTL -n "L_Finger_05_Knuckle_02_FK_Ctrl_translateY";
-	rename -uid "A859A08C-4210-44D4-1102-75BA062D1E70";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTL -n "L_Finger_05_Knuckle_02_FK_Ctrl_translateZ";
-	rename -uid "C316F113-4C9E-BD2E-273F-26B27A9374F4";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_05_Knuckle_02_FK_Ctrl_rotateX";
-	rename -uid "5C40E8C6-4A53-76BE-C764-2197EFD34444";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_05_Knuckle_02_FK_Ctrl_rotateY";
-	rename -uid "38345270-4924-72FC-A25D-0E914AD6A35E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_05_Knuckle_02_FK_Ctrl_rotateZ";
-	rename -uid "4A2343A3-43A5-4745-F7FB-6CAA3A09383D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 55.109590796311394;
-createNode animCurveTU -n "L_Finger_05_Knuckle_02_FK_Ctrl_scaleX";
-	rename -uid "E1B58326-402B-27AE-8793-48A4FE359732";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_05_Knuckle_02_FK_Ctrl_scaleY";
-	rename -uid "D91A06F7-4EED-E56B-C88E-B58F967C42B4";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_05_Knuckle_02_FK_Ctrl_scaleZ";
-	rename -uid "F477AB1C-40DE-60B9-14B8-8A9D28EE46EE";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_05_Knuckle_02_FK_Ctrl_FollowTranslate";
-	rename -uid "7D10BCAB-4A73-FE8F-A33C-8CA0B8756391";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_05_Knuckle_02_FK_Ctrl_FollowRotate";
-	rename -uid "9E24C9AC-460E-9B4D-5174-4B8B2E128B3E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTL -n "L_Finger_05_Knuckle_03_FK_Ctrl_translateX";
-	rename -uid "3CC0CACC-4301-FC09-767B-ACA0F5A26D7E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1.9426474621612538e-16 34 1.9426474621612538e-16;
-createNode animCurveTL -n "L_Finger_05_Knuckle_03_FK_Ctrl_translateY";
-	rename -uid "37B4C0EB-4989-AAC0-56DB-DD9CD54B4841";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1.9892710012531241e-14 34 1.9892710012531241e-14;
-createNode animCurveTL -n "L_Finger_05_Knuckle_03_FK_Ctrl_translateZ";
-	rename -uid "8C2E18B7-473A-9887-1251-FD9D8E902FB2";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 -9.32470781837402e-16 34 -9.32470781837402e-16;
-createNode animCurveTA -n "L_Finger_05_Knuckle_03_FK_Ctrl_rotateX";
-	rename -uid "39348DD9-487B-9922-D09C-698E00E51770";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_05_Knuckle_03_FK_Ctrl_rotateY";
-	rename -uid "E39DC0DB-4FF8-9A6C-230B-C5BAA80A3D9F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_05_Knuckle_03_FK_Ctrl_rotateZ";
-	rename -uid "D9819FF2-42BE-B467-165D-10B0633C237F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 55.109590796311394;
-createNode animCurveTU -n "L_Finger_05_Knuckle_03_FK_Ctrl_scaleX";
-	rename -uid "73DAC1EF-46B3-AC8B-42D9-058A087957F1";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_05_Knuckle_03_FK_Ctrl_scaleY";
-	rename -uid "E55DD146-4187-CF9E-6AC0-B1A99A5244BC";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_05_Knuckle_03_FK_Ctrl_scaleZ";
-	rename -uid "A155095E-4286-F718-2A7E-28A4B44E6CB5";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_05_Knuckle_03_FK_Ctrl_FollowTranslate";
-	rename -uid "8A13B196-4E01-2574-2F3E-FAB0A8A2DC2B";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_05_Knuckle_03_FK_Ctrl_FollowRotate";
-	rename -uid "121C0488-4174-C84C-2A4D-B19DCDA5E28F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTL -n "L_Finger_04_Knuckle_03_FK_Ctrl_translateX";
-	rename -uid "627B1899-4908-036B-6204-46877D366059";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 -6.2164718789160127e-16 34 -6.2164718789160127e-16;
-createNode animCurveTL -n "L_Finger_04_Knuckle_03_FK_Ctrl_translateY";
-	rename -uid "DA5A5E00-45B7-5BD1-5A4A-D1B8A90B3C7B";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 2.4865887515664051e-15 34 2.4865887515664051e-15;
-createNode animCurveTL -n "L_Finger_04_Knuckle_03_FK_Ctrl_translateZ";
-	rename -uid "34826438-41DF-9FAD-6313-0C8D1AD943E2";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 3.1082359394580063e-16 34 3.1082359394580063e-16;
-createNode animCurveTA -n "L_Finger_04_Knuckle_03_FK_Ctrl_rotateX";
-	rename -uid "5E0A7F43-4D4F-9478-E72F-CCA1B2EA4FDF";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_04_Knuckle_03_FK_Ctrl_rotateY";
-	rename -uid "6113D6AB-4A65-42C6-61A2-01BC97C888DA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_04_Knuckle_03_FK_Ctrl_rotateZ";
-	rename -uid "FE73D192-40EA-705B-F643-ADA3D76D9947";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 55.109590796311394;
-createNode animCurveTU -n "L_Finger_04_Knuckle_03_FK_Ctrl_scaleX";
-	rename -uid "9041ABFC-4135-6AB6-0E43-07A38E28B9CB";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_04_Knuckle_03_FK_Ctrl_scaleY";
-	rename -uid "E2E62D60-48DE-C636-24B9-7E96558F7F24";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_04_Knuckle_03_FK_Ctrl_scaleZ";
-	rename -uid "E1EC6D59-422C-9CC5-5CC0-50B433BA10C0";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_04_Knuckle_03_FK_Ctrl_FollowTranslate";
-	rename -uid "2F10F4F2-4E32-B063-278D-7C9D6F25DD3F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_04_Knuckle_03_FK_Ctrl_FollowRotate";
-	rename -uid "7C069F5B-4CC2-AE05-1761-67B94375D41A";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTL -n "L_Finger_03_Knuckle_03_FK_Ctrl_translateX";
-	rename -uid "07B6F734-44C9-F128-ADBA-F49D081EF87C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 -3.1082359394580063e-16 34 -3.1082359394580063e-16;
-createNode animCurveTL -n "L_Finger_03_Knuckle_03_FK_Ctrl_translateY";
-	rename -uid "AED00F7C-4A8F-2DD8-E87E-BCAC1140EB77";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 2.4865887515664051e-15 34 2.4865887515664051e-15;
-createNode animCurveTL -n "L_Finger_03_Knuckle_03_FK_Ctrl_translateZ";
-	rename -uid "5244BA4F-4557-5060-BAE5-629C3F57BD0A";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 -3.8852949243225079e-17 34 -3.8852949243225079e-17;
-createNode animCurveTA -n "L_Finger_03_Knuckle_03_FK_Ctrl_rotateX";
-	rename -uid "F7ABEC2A-4018-6D3F-2BB7-41970021A7C5";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_03_Knuckle_03_FK_Ctrl_rotateY";
-	rename -uid "CAD25EC1-4B68-8CF1-8A1C-55B953F96F15";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 0;
-createNode animCurveTA -n "L_Finger_03_Knuckle_03_FK_Ctrl_rotateZ";
-	rename -uid "8F828531-437A-04B7-57F1-1D8110778D78";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 34 55.109590796311394;
-createNode animCurveTU -n "L_Finger_03_Knuckle_03_FK_Ctrl_scaleX";
-	rename -uid "4716C473-4000-07F9-0655-C88F72B20689";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_03_Knuckle_03_FK_Ctrl_scaleY";
-	rename -uid "4179CD94-4F72-14C6-35EB-BA814DFA60AD";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_03_Knuckle_03_FK_Ctrl_scaleZ";
-	rename -uid "BD7D3F45-4081-ACCE-A4BE-A79120D79170";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_03_Knuckle_03_FK_Ctrl_FollowTranslate";
-	rename -uid "5D945459-4D60-FFF4-A360-0EBBA92D7C1D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTU -n "L_Finger_03_Knuckle_03_FK_Ctrl_FollowRotate";
-	rename -uid "636A37BB-4B9E-6AB2-19FF-7D8A11BBA690";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 34 1;
-createNode animCurveTL -n "L_Finger_01_Knuckle_02_FK_Ctrl_translateX";
-	rename -uid "354EBB4D-4AF0-3E2B-A795-37A039B80981";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  24 -1.5541179697290032e-16 36 -1.5541179697290032e-16
-		 54 -1.5541179697290032e-16 62 -1.5541179697290032e-16;
-createNode animCurveTL -n "L_Finger_01_Knuckle_02_FK_Ctrl_translateY";
-	rename -uid "ECE98EB7-4563-6141-8588-3AABEF6C844F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  24 -1.2432943757832025e-15 36 -1.2432943757832025e-15
-		 54 -1.2432943757832025e-15 62 -1.2432943757832025e-15;
-createNode animCurveTL -n "L_Finger_01_Knuckle_02_FK_Ctrl_translateZ";
-	rename -uid "08840E47-47F9-6156-6A4C-1987641CB98D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  24 3.729883127349608e-15 36 3.729883127349608e-15
-		 54 3.729883127349608e-15 62 3.729883127349608e-15;
-createNode animCurveTA -n "L_Finger_01_Knuckle_02_FK_Ctrl_rotateX";
-	rename -uid "E26ADA6E-47DB-8C74-66D6-568FDE97A384";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  24 0 36 0 54 16.495168553531599 62 17.852476094650672;
-createNode animCurveTA -n "L_Finger_01_Knuckle_02_FK_Ctrl_rotateY";
-	rename -uid "5CA7237A-4307-194F-7EC0-22B98FDB7F0A";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  24 0 36 38.791019432353799 54 8.423596054342994
-		 62 4.8078956468306489;
-createNode animCurveTA -n "L_Finger_01_Knuckle_02_FK_Ctrl_rotateZ";
-	rename -uid "45C986CA-416F-9135-B087-53BFDA41D2E9";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  24 0 36 0 54 23.836239562792581 62 35.5708809320098;
-createNode animCurveTU -n "L_Finger_01_Knuckle_02_FK_Ctrl_scaleX";
-	rename -uid "73768911-40C2-CE7D-B717-8BAF1D45FCCE";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  24 1 36 1 54 1 62 1;
-createNode animCurveTU -n "L_Finger_01_Knuckle_02_FK_Ctrl_scaleY";
-	rename -uid "3FFE7A23-42A0-6310-5FBB-2DA6FCCD96DF";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  24 1 36 1 54 1 62 1;
-createNode animCurveTU -n "L_Finger_01_Knuckle_02_FK_Ctrl_scaleZ";
-	rename -uid "053E6B59-4C46-4072-C7F1-CAA886A518F6";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  24 1 36 1 54 1 62 1;
-createNode animCurveTU -n "L_Finger_01_Knuckle_02_FK_Ctrl_FollowTranslate";
-	rename -uid "50582E94-45CC-0F2D-0ED0-5F865425ACDE";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  24 1 36 1 54 1 62 1;
-createNode animCurveTU -n "L_Finger_01_Knuckle_02_FK_Ctrl_FollowRotate";
-	rename -uid "95374EFC-4B1A-79E6-C289-42A6ABE05088";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  24 1 36 1 54 1 62 1;
-createNode animCurveTL -n "L_Finger_01_Knuckle_03_FK_Ctrl_translateX";
-	rename -uid "122D3379-4E06-984D-64E8-AFAECC3213FA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 6.2164718789160127e-16 36 6.2164718789160127e-16
-		 54 6.2164718789160127e-16;
-createNode animCurveTL -n "L_Finger_01_Knuckle_03_FK_Ctrl_translateY";
-	rename -uid "FACDC245-49FA-BC5B-788D-6FB9FACE65EE";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 -4.66235390918701e-16 36 -4.66235390918701e-16
-		 54 -4.66235390918701e-16;
-createNode animCurveTL -n "L_Finger_01_Knuckle_03_FK_Ctrl_translateZ";
-	rename -uid "FC4A28CE-4D30-8C51-9331-68AB120C8E24";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 0 54 0;
-createNode animCurveTA -n "L_Finger_01_Knuckle_03_FK_Ctrl_rotateX";
-	rename -uid "0F474344-4989-0D28-33CF-B58A840EDC6E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 0 54 0;
-createNode animCurveTA -n "L_Finger_01_Knuckle_03_FK_Ctrl_rotateY";
-	rename -uid "E875F6C4-4D96-CA91-D35F-50B815ABCFA5";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 0 54 0;
-createNode animCurveTA -n "L_Finger_01_Knuckle_03_FK_Ctrl_rotateZ";
-	rename -uid "C4185F6C-4D79-69B2-357F-5AB83720DD6E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 -28.855352649054957 54 -12.452807286769314;
-createNode animCurveTU -n "L_Finger_01_Knuckle_03_FK_Ctrl_scaleX";
-	rename -uid "CC48B32A-43E1-947E-E770-729C6C2EE17B";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTU -n "L_Finger_01_Knuckle_03_FK_Ctrl_scaleY";
-	rename -uid "06576C51-4D2D-2808-CA0E-CFBBE80D718F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTU -n "L_Finger_01_Knuckle_03_FK_Ctrl_scaleZ";
-	rename -uid "38EB2CAA-4FAA-C150-1924-FF93D94F836F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTU -n "L_Finger_01_Knuckle_03_FK_Ctrl_FollowTranslate";
-	rename -uid "0CBD86F9-4A43-05D5-446C-88AA9CDC2BB7";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTU -n "L_Finger_01_Knuckle_03_FK_Ctrl_FollowRotate";
-	rename -uid "9F7F8A3C-42CA-8606-4562-D58E2299A1D9";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTL -n "L_Finger_02_Knuckle_02_FK_Ctrl_translateX";
-	rename -uid "1B951578-4566-EB23-3057-87A8AE9B11C3";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 0 54 0;
-createNode animCurveTL -n "L_Finger_02_Knuckle_02_FK_Ctrl_translateY";
-	rename -uid "769BD91D-43EB-DA1A-4EE1-64B21D6C4344";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1.2432943757832025e-15 36 1.2432943757832025e-15
-		 54 1.2432943757832025e-15;
-createNode animCurveTL -n "L_Finger_02_Knuckle_02_FK_Ctrl_translateZ";
-	rename -uid "87E74315-44F8-B824-3E0C-75AA3AD5248B";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 0 54 0;
-createNode animCurveTA -n "L_Finger_02_Knuckle_02_FK_Ctrl_rotateX";
-	rename -uid "C01DB7D9-4527-2F6E-36FD-FD840AADF0C2";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 0 54 0;
-createNode animCurveTA -n "L_Finger_02_Knuckle_02_FK_Ctrl_rotateY";
-	rename -uid "CEE7A510-4BBC-7C7A-77C7-D69BF7FC86A2";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 0 54 0;
-createNode animCurveTA -n "L_Finger_02_Knuckle_02_FK_Ctrl_rotateZ";
-	rename -uid "866CF6B2-418B-48E3-A9A9-4DAF6BA7A08E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 4.5357204055947111 54 34.036338773608811;
-createNode animCurveTU -n "L_Finger_02_Knuckle_02_FK_Ctrl_scaleX";
-	rename -uid "7D03E664-4209-35CF-5A1A-A38976285EDA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTU -n "L_Finger_02_Knuckle_02_FK_Ctrl_scaleY";
-	rename -uid "67BF82E2-46D6-93A6-B0BE-C6BE02C2FEC0";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTU -n "L_Finger_02_Knuckle_02_FK_Ctrl_scaleZ";
-	rename -uid "36EA204E-4CCA-FC70-4919-C6BCD9FD582D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTU -n "L_Finger_02_Knuckle_02_FK_Ctrl_FollowTranslate";
-	rename -uid "1FD966EB-42E5-0CFA-B38F-1EBCC044D67F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTU -n "L_Finger_02_Knuckle_02_FK_Ctrl_FollowRotate";
-	rename -uid "CF007BE5-471F-756E-1BB3-42831370601F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTL -n "L_Finger_02_Knuckle_03_FK_Ctrl_translateX";
-	rename -uid "02B69B7F-4B6B-8372-3D06-E2BBDE40E151";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 -3.1082359394580063e-16 36 -3.1082359394580063e-16;
-createNode animCurveTL -n "L_Finger_02_Knuckle_03_FK_Ctrl_translateY";
-	rename -uid "EF33BC13-44CB-7659-8642-A492B17ECE36";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 -1.2432943757832025e-15 36 -1.2432943757832025e-15;
-createNode animCurveTL -n "L_Finger_02_Knuckle_03_FK_Ctrl_translateZ";
-	rename -uid "D59AAB37-41D6-9CFC-CF84-FE9A53A38FD0";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1.5541179697290032e-16 36 1.5541179697290032e-16;
-createNode animCurveTA -n "L_Finger_02_Knuckle_03_FK_Ctrl_rotateX";
-	rename -uid "1FF5C864-4DF9-3026-2EE7-9A849C7EDFBD";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 36 0;
-createNode animCurveTA -n "L_Finger_02_Knuckle_03_FK_Ctrl_rotateY";
-	rename -uid "196B5444-4FB7-66F6-1CF3-CA8FF1A5CCB0";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 36 0;
-createNode animCurveTA -n "L_Finger_02_Knuckle_03_FK_Ctrl_rotateZ";
-	rename -uid "A54F7104-4A28-B1F2-8424-7CB2221483F4";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 0 36 0;
-createNode animCurveTU -n "L_Finger_02_Knuckle_03_FK_Ctrl_scaleX";
-	rename -uid "0C2926B4-4B49-BAF2-A800-B199D2332676";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 36 1;
-createNode animCurveTU -n "L_Finger_02_Knuckle_03_FK_Ctrl_scaleY";
-	rename -uid "B7FE608D-4854-22E7-221A-1098C5624487";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 36 1;
-createNode animCurveTU -n "L_Finger_02_Knuckle_03_FK_Ctrl_scaleZ";
-	rename -uid "9107856B-4ABE-2C25-E18F-268C03F1DBB1";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 36 1;
-createNode animCurveTU -n "L_Finger_02_Knuckle_03_FK_Ctrl_FollowTranslate";
-	rename -uid "8C83414A-4E49-BBCE-1BCF-84A4E563F277";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 36 1;
-createNode animCurveTU -n "L_Finger_02_Knuckle_03_FK_Ctrl_FollowRotate";
-	rename -uid "EF999DFC-49B9-3894-C839-EFA5BF5BA9F8";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  24 1 36 1;
-createNode animCurveTL -n "L_Finger_02_Knuckle_01_FK_Ctrl_translateX";
-	rename -uid "E7C9CD68-46DF-1A5F-8CB6-6A896545ACF5";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 0 54 0;
-createNode animCurveTL -n "L_Finger_02_Knuckle_01_FK_Ctrl_translateY";
-	rename -uid "389A5B9A-4A1F-C658-F9AF-3990EF7724A9";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 0 54 0;
-createNode animCurveTL -n "L_Finger_02_Knuckle_01_FK_Ctrl_translateZ";
-	rename -uid "89A2101B-4D69-3AD8-E9CB-DA8726B255F3";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 -3.1082359394580063e-16 36 -3.1082359394580063e-16
-		 54 -3.1082359394580063e-16;
-createNode animCurveTA -n "L_Finger_02_Knuckle_01_FK_Ctrl_rotateX";
-	rename -uid "93844266-41C8-DA7C-1F68-688A36DCF43F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 0 54 0;
-createNode animCurveTA -n "L_Finger_02_Knuckle_01_FK_Ctrl_rotateY";
-	rename -uid "A650C553-4C5B-565B-D848-7E917C87A32C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 0 54 0;
-createNode animCurveTA -n "L_Finger_02_Knuckle_01_FK_Ctrl_rotateZ";
-	rename -uid "FB891132-40E4-EE83-B047-CEBA03B74FD1";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 0 36 28.405412446026876 54 28.405412446026876;
-createNode animCurveTU -n "L_Finger_02_Knuckle_01_FK_Ctrl_scaleX";
-	rename -uid "560C8531-40B3-652F-B973-95AE5FEDECF8";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTU -n "L_Finger_02_Knuckle_01_FK_Ctrl_scaleY";
-	rename -uid "841E4C3C-4B69-DAAF-C4AD-7BBC13D6198E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTU -n "L_Finger_02_Knuckle_01_FK_Ctrl_scaleZ";
-	rename -uid "EFBA6573-4E66-9B66-E78B-F7AFD8FFD428";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTU -n "L_Finger_02_Knuckle_01_FK_Ctrl_FollowTranslate";
-	rename -uid "E9E2FC4C-4658-42CA-8CA2-F4986BA5A329";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
-createNode animCurveTU -n "L_Finger_02_Knuckle_01_FK_Ctrl_FollowRotate";
-	rename -uid "72328E51-42F1-FE53-629F-7E8368239AC3";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  24 1 36 1 54 1;
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 3 24 3 50 3 60 3 85 3 115 3;
+	setAttr -s 6 ".kit[0:5]"  9 9 1 9 9 9;
+	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
+	setAttr -s 6 ".kiy[2:5]"  0 0 0 0;
 createNode animCurveTA -n "R_Clav_FK_Ctrl_rotateX";
 	rename -uid "36D63210-4E03-F083-56BE-72A92750740B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 13 0 49 0 79 0 101 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 25 0 50 0 60 -0.37743361941531423 85 -0.37743361941531423
+		 105 -0.3759264035135011;
 createNode animCurveTA -n "R_Clav_FK_Ctrl_rotateY";
 	rename -uid "5AE3A4E1-4D23-77E2-AEE8-9DB3E24C7E42";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 13 0.81573859966867801 49 10.350666807931699
-		 79 0.77631133033134658 101 -1.7799053408382761;
+	setAttr -s 6 ".ktv[0:5]"  1 0 25 2.6132290603307364 50 2.6132290603307364
+		 60 6.2124207567348408 85 6.2124207567348408 105 -3.5201530764730831;
 createNode animCurveTA -n "R_Clav_FK_Ctrl_rotateZ";
 	rename -uid "18D50D54-4282-F080-3CD0-33AE1C4C5A05";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 13 0 49 0 79 0 101 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 25 0 50 0 60 -8.2904717741708609 85 -8.2904717741708609
+		 105 -8.2265451936099669;
 createNode animCurveTL -n "R_Clav_FK_Ctrl_translateX";
 	rename -uid "ED331AE4-4980-83A2-A530-1CBD56DE080B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 13 0 49 0 79 0 101 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 25 0 50 0 60 0 85 0 105 0;
 createNode animCurveTL -n "R_Clav_FK_Ctrl_translateY";
 	rename -uid "822E79D7-4455-6A0B-D49D-6EB40116DC4B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 13 0 49 0 79 0 101 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 25 0 50 0 60 0 85 0 105 0;
 createNode animCurveTL -n "R_Clav_FK_Ctrl_translateZ";
 	rename -uid "BE232C01-4F0B-F50F-42E7-AFA9C916AD25";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 13 0 49 0 79 0 101 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 25 0 50 0 60 0 85 0 105 0;
 createNode animCurveTU -n "R_Clav_FK_Ctrl_scaleX";
 	rename -uid "FBF81529-4696-C985-0489-7E91603241CA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 1 13 1 49 1 79 1 101 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 25 1 50 1 60 1 85 1 105 1;
 createNode animCurveTU -n "R_Clav_FK_Ctrl_scaleY";
 	rename -uid "7CDD0514-4806-EC77-0D38-C980D8354195";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 1 13 1 49 1 79 1 101 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 25 1 50 1 60 1 85 1 105 1;
 createNode animCurveTU -n "R_Clav_FK_Ctrl_scaleZ";
 	rename -uid "15D06A85-4254-C9DE-A4C6-2FB77C203216";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 1 13 1 49 1 79 1 101 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 25 1 50 1 60 1 85 1 105 1;
 createNode animCurveTU -n "R_Clav_FK_Ctrl_FollowTranslate";
 	rename -uid "50FA8444-46D4-2110-FA9D-3195F2963591";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 1 13 1 49 1 79 1 101 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 25 1 50 1 60 1 85 1 105 1;
 createNode animCurveTU -n "R_Clav_FK_Ctrl_FollowRotate";
 	rename -uid "499A5269-4DC0-966E-9717-97A471C94658";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 1 13 1 49 1 79 1 101 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 25 1 50 1 60 1 85 1 105 1;
 createNode animCurveTA -n "L_Clav_FK_Ctrl_rotateX";
 	rename -uid "AA562CB5-442A-CF63-9E0B-029995336DE8";
 	setAttr ".tan" 18;
@@ -40115,68 +39745,1497 @@ createNode animCurveTU -n "L_Clav_FK_Ctrl_FollowRotate";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
+createNode animCurveTL -n "L_Leg_IK_Ctrl_translateX";
+	rename -uid "AEBE78BE-4DDA-6244-DF26-C6B3AF5D8FFA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0.5110251352387859;
+createNode animCurveTL -n "L_Leg_IK_Ctrl_translateY";
+	rename -uid "F93D37B6-48B4-F952-31FE-8E8396386052";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "L_Leg_IK_Ctrl_translateZ";
+	rename -uid "424C7A54-4D6D-603D-6673-A487220FA54B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 -0.015543587105132503;
+createNode animCurveTA -n "L_Leg_IK_Ctrl_rotateX";
+	rename -uid "609B103F-4BF7-69B6-C071-5C9B97231F49";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "L_Leg_IK_Ctrl_rotateY";
+	rename -uid "ED4A090F-47EE-F21F-60B4-3AACCE05327E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "L_Leg_IK_Ctrl_rotateZ";
+	rename -uid "F6AB5F1F-497B-3AC5-065E-33BF38FEECFA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_Follow";
+	rename -uid "2F431FE6-480F-1A1F-ACBB-AA8AA67975EC";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+	setAttr ".kot[0]"  5;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_RockFoot";
+	rename -uid "ED1A25E2-493D-9215-B887-54890A6170CC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_HeelRotate";
+	rename -uid "0E298C88-4A28-9BD9-F62A-75849400D51B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_HeelPivot";
+	rename -uid "EC4B8CDA-4795-D6D2-E5DF-95AC07D309BF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_HeelTwist";
+	rename -uid "3F7E97B5-4075-008D-A634-AA96BDA626AD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_ToeRotate";
+	rename -uid "68A66F85-4581-0DF4-B5A4-40925793A197";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_ToePivot";
+	rename -uid "336212D8-46E3-6359-764A-D48B600CA549";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_ToeTwist";
+	rename -uid "B4E7F2E8-42A6-523E-7E05-FF9D7E5FD88B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_BallRotate";
+	rename -uid "4B37CB37-47D6-E269-771C-9CA8EC5E2C6B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_BallPivot";
+	rename -uid "CE869C28-4147-95A8-683C-E19E1C87B31D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_BallTwist";
+	rename -uid "60D67357-4888-22D8-35AA-B6BC714E5DE7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_ToeTapRotate";
+	rename -uid "54645695-498A-2627-DEEB-4B9F5CF981B7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_ToeTapPivot";
+	rename -uid "4357A966-490E-D51F-BD2C-34B8C0ACF951";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_ToeTapTwist";
+	rename -uid "16B9B717-4F2A-F2F7-C11D-769F8F185F80";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_FootRoll";
+	rename -uid "3D5F18A4-4479-3AD3-C084-E99932E0F7BF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_ControlVis";
+	rename -uid "C8F57B99-4592-5A5C-8D4A-8B86CAB8788D";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_Stretch";
+	rename -uid "92D5AF03-499C-B9D5-96DB-1A8B46341351";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_MaxStretch";
+	rename -uid "CED0B65D-472D-9C7B-30A5-13A285706855";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 3;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_LegLength";
+	rename -uid "9261398F-494D-77D0-8DF7-FE8E87EE2884";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_UpperLegLength";
+	rename -uid "DE7D959B-49A0-330D-1FC6-E6B727F5C5B2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Leg_IK_Ctrl_LowerLegLength";
+	rename -uid "E6DB7EB7-44BB-F4AA-519C-0684EA1A6E68";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "R_Leg_IK_Ctrl_translateX";
+	rename -uid "4164469C-4629-612C-C230-9C8B9C85E33C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 -0.30208695296332017;
+createNode animCurveTL -n "R_Leg_IK_Ctrl_translateY";
+	rename -uid "00B4E21D-47BE-9D1E-0CC2-ACB6F0369DDE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "R_Leg_IK_Ctrl_translateZ";
+	rename -uid "5B263850-43BC-E59E-53CC-A79375A6A246";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0.0091884225313398557;
+createNode animCurveTA -n "R_Leg_IK_Ctrl_rotateX";
+	rename -uid "4A3BAE05-47ED-5614-9910-F29052BA7EBB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "R_Leg_IK_Ctrl_rotateY";
+	rename -uid "9F76937A-48A5-A73E-5B8F-2BAF23ECACA6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "R_Leg_IK_Ctrl_rotateZ";
+	rename -uid "B595230B-485D-317D-2EC9-F897FAE985FD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_Follow";
+	rename -uid "515EEF5F-4C71-FD97-0527-EAA43742FC1C";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+	setAttr ".kot[0]"  5;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_RockFoot";
+	rename -uid "E4F09381-4680-76D9-6C9F-B29421C3D4E5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_HeelRotate";
+	rename -uid "14E7115A-4433-A9D0-20A4-7CBF283621DA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_HeelPivot";
+	rename -uid "73A10C94-45B3-4BA3-22F4-6BA8180EEE0B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_HeelTwist";
+	rename -uid "71E36E17-48F4-7FEF-01C9-5D9353304CE8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_ToeRotate";
+	rename -uid "C057A98B-45A7-296A-7545-15B1525814DD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_ToePivot";
+	rename -uid "E9B180B7-4EBF-574D-F698-3DB49BE437CE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_ToeTwist";
+	rename -uid "496B86F6-4C51-338E-3F5C-EEA7895DA12A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_BallRotate";
+	rename -uid "2531E035-4AD4-D49B-4B8F-2A9FED5A3911";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_BallPivot";
+	rename -uid "CE16D5B0-4423-3069-15D1-3AA24E720D87";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_BallTwist";
+	rename -uid "3E03EB4F-4EAA-EABD-855B-C98A5AD17B1E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_ToeTapRotate";
+	rename -uid "ACB760D9-4F6C-1CDC-7FEF-469F55B57EA6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_ToeTapPivot";
+	rename -uid "7CFA6CF5-42AA-9915-66C6-12BEF63D695C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_ToeTapTwist";
+	rename -uid "AE0F8694-4D59-E959-382F-37B38399C3E1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_FootRoll";
+	rename -uid "0BECFD8B-4440-295D-10FF-6DAA4397D1EE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_ControlVis";
+	rename -uid "7253C90F-41AE-6BEC-8E1C-49BD964816D2";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_Stretch";
+	rename -uid "95091D81-4370-2A1C-D1D7-0284F7028B41";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_MaxStretch";
+	rename -uid "0A2083C7-4778-F313-6047-C2AA51522628";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 3;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_LegLength";
+	rename -uid "59862F30-4804-73CB-87A9-67B187D81BB5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_UpperLegLength";
+	rename -uid "05103674-4F33-8A0D-CF39-7FA60E84EB43";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "R_Leg_IK_Ctrl_LowerLegLength";
+	rename -uid "20CE20B6-46C4-ADEE-DE64-BF9A223B08D1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "L_Leg_PV_Ctrl_translateX";
+	rename -uid "5F598117-4D68-CE55-9E31-28AD1E1A037F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0.2023271456655816;
+createNode animCurveTL -n "L_Leg_PV_Ctrl_translateY";
+	rename -uid "7ADC9A7D-4F91-393D-8101-EE8563C5B610";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1.5347142119125776;
+createNode animCurveTL -n "L_Leg_PV_Ctrl_translateZ";
+	rename -uid "28E3157A-4D65-CB40-67B4-E8AE7B3E84DF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0.8989140966110547;
+createNode animCurveTU -n "L_Leg_PV_Ctrl_Follow";
+	rename -uid "F0F2D264-48C6-6C02-A855-E199B239652C";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 4;
+	setAttr ".kot[0]"  5;
+createNode animCurveTL -n "R_Leg_PV_Ctrl_translateX";
+	rename -uid "285BF3ED-4D39-604E-AE5E-5F91BED9CC6E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 -0.067822363809708741;
+createNode animCurveTL -n "R_Leg_PV_Ctrl_translateY";
+	rename -uid "23CEF9DF-4735-12A5-6AC6-DF8190EBFD6F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 -1.2838115327994957;
+createNode animCurveTL -n "R_Leg_PV_Ctrl_translateZ";
+	rename -uid "251671F2-473A-AC6A-3AB2-B582D6ECB675";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 -0.32459165682219498;
+createNode animCurveTU -n "R_Leg_PV_Ctrl_Follow";
+	rename -uid "4750165F-4360-ED5D-E8E0-83A87E3C6827";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 4;
+	setAttr ".kot[0]"  5;
+createNode animCurveTL -n "L_Finger_01_Knuckle_01_FK_Ctrl_translateX";
+	rename -uid "FDD4CF05-484B-2663-3813-BBB4896E85AB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 3.8852949243225079e-17;
+createNode animCurveTL -n "L_Finger_01_Knuckle_01_FK_Ctrl_translateY";
+	rename -uid "69DA7A61-4030-9301-C6AF-2EBFA420AF43";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "L_Finger_01_Knuckle_01_FK_Ctrl_translateZ";
+	rename -uid "51E77E1A-4EE2-D8B8-6B5B-4E8E2741F310";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "L_Finger_01_Knuckle_01_FK_Ctrl_rotateX";
+	rename -uid "9D3AF540-4BE9-4968-370F-46875BD0F578";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "L_Finger_01_Knuckle_01_FK_Ctrl_rotateY";
+	rename -uid "D08851A7-4342-B65D-2875-DE84686C505C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "L_Finger_01_Knuckle_01_FK_Ctrl_rotateZ";
+	rename -uid "6F0EA2BC-4BBF-BBEE-3A94-D1BEF8D84D0A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "L_Finger_01_Knuckle_01_FK_Ctrl_scaleX";
+	rename -uid "5DAB955B-47C0-7512-1260-61ABF0FEEF32";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_01_FK_Ctrl_scaleY";
+	rename -uid "DDC4A03C-470C-1E30-9764-E7AD293271B7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_01_FK_Ctrl_scaleZ";
+	rename -uid "FB74CED1-4136-5056-9EC2-ACA5F3BF3175";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_01_FK_Ctrl_FollowTranslate";
+	rename -uid "84794215-4BB1-9EDE-7232-50A0D3F197BD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_01_FK_Ctrl_FollowRotate";
+	rename -uid "0373BE64-41A2-321D-4D18-FBA2AB3074D6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTL -n "L_Finger_01_Knuckle_02_FK_Ctrl_translateX";
+	rename -uid "1514B041-47FB-676C-0ADB-73A160F40EDF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 -1.5541179697290032e-16 115 -1.5541179697290032e-16;
+createNode animCurveTL -n "L_Finger_01_Knuckle_02_FK_Ctrl_translateY";
+	rename -uid "47D40F07-404C-CCAD-59A8-37B36579D93A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 -1.2432943757832025e-15 115 -1.2432943757832025e-15;
+createNode animCurveTL -n "L_Finger_01_Knuckle_02_FK_Ctrl_translateZ";
+	rename -uid "FD95608F-49AA-59DD-3F1F-7BB2015C7F02";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 3.729883127349608e-15 115 3.729883127349608e-15;
+createNode animCurveTA -n "L_Finger_01_Knuckle_02_FK_Ctrl_rotateX";
+	rename -uid "7E2ABD91-43D5-8155-99CB-B3B3992D7F8D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 10.502665704643094 115 10.502665704643094;
+createNode animCurveTA -n "L_Finger_01_Knuckle_02_FK_Ctrl_rotateY";
+	rename -uid "33A3DC5A-4EE8-1AA0-5E0D-99A0EA81CB3F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 -3.182429408942971 115 -3.182429408942971;
+createNode animCurveTA -n "L_Finger_01_Knuckle_02_FK_Ctrl_rotateZ";
+	rename -uid "DFFCDC77-49BF-094B-DF44-4DA62862E25D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 -24.538525196280293 115 -24.538525196280293;
+createNode animCurveTU -n "L_Finger_01_Knuckle_02_FK_Ctrl_scaleX";
+	rename -uid "30ADA576-4384-7E6A-65D0-EFB6B0F931D4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 115 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_02_FK_Ctrl_scaleY";
+	rename -uid "B7723422-45F1-B4A8-0115-1798DF442A03";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 115 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_02_FK_Ctrl_scaleZ";
+	rename -uid "5A99869E-47D5-FF01-9604-36AD61C88768";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 115 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_02_FK_Ctrl_FollowTranslate";
+	rename -uid "90E540F4-4243-B34F-38E0-B4A69276AF11";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 115 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_02_FK_Ctrl_FollowRotate";
+	rename -uid "B364CFDC-479F-6916-2A2C-69B010E4CDE1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 115 1;
+createNode animCurveTL -n "L_Finger_01_Knuckle_03_FK_Ctrl_translateX";
+	rename -uid "3046341D-46AB-144E-6214-99BDCBCAA40A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 6.2164718789160127e-16 115 6.2164718789160127e-16;
+createNode animCurveTL -n "L_Finger_01_Knuckle_03_FK_Ctrl_translateY";
+	rename -uid "EDCA82F8-4E1B-8467-66DB-51939609F205";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 -4.66235390918701e-16 115 -4.66235390918701e-16;
+createNode animCurveTL -n "L_Finger_01_Knuckle_03_FK_Ctrl_translateZ";
+	rename -uid "3E95C362-4B3A-D3AA-10CB-92AC17C6F525";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 115 0;
+createNode animCurveTA -n "L_Finger_01_Knuckle_03_FK_Ctrl_rotateX";
+	rename -uid "09A5782A-421A-A8F8-24C3-9789EF9AF38B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 115 0;
+createNode animCurveTA -n "L_Finger_01_Knuckle_03_FK_Ctrl_rotateY";
+	rename -uid "BA6585C4-42E1-8ADD-8007-E0825DA9817C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 115 0;
+createNode animCurveTA -n "L_Finger_01_Knuckle_03_FK_Ctrl_rotateZ";
+	rename -uid "F0966303-49E2-219D-3923-7CAF4070E312";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 -12.452807286769314 115 -12.452807286769314;
+createNode animCurveTU -n "L_Finger_01_Knuckle_03_FK_Ctrl_scaleX";
+	rename -uid "07642051-4676-30B2-D975-499BAB52C32B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 115 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_03_FK_Ctrl_scaleY";
+	rename -uid "75965245-4196-122B-DA39-C2BD7909A117";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 115 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_03_FK_Ctrl_scaleZ";
+	rename -uid "204B129C-4CF7-9BAF-DED9-468A9CC42AF0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 115 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_03_FK_Ctrl_FollowTranslate";
+	rename -uid "149FE5FE-49C6-4BD4-129D-068ABF1C1ACD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 115 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_03_FK_Ctrl_FollowRotate";
+	rename -uid "2B11C20D-4AB7-8321-8596-0A8C4BD71DD7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 115 1;
+createNode animCurveTL -n "L_Finger_02_Knuckle_01_FK_Ctrl_translateX";
+	rename -uid "5D0A2490-41D8-BDF4-89D7-97A217BBEA3B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 0 115 0 132 0 142 0 148 0 154 0 162 0;
+createNode animCurveTL -n "L_Finger_02_Knuckle_01_FK_Ctrl_translateY";
+	rename -uid "23204EAF-40DE-C48B-6C8A-E7920F228507";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 0 115 0 132 0 142 0 148 0 154 0 162 0;
+createNode animCurveTL -n "L_Finger_02_Knuckle_01_FK_Ctrl_translateZ";
+	rename -uid "F2C88A26-457D-97D1-5818-0CA4D5949DB4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 -3.1082359394580063e-16 115 -3.1082359394580063e-16
+		 132 -3.1082359394580063e-16 142 -3.1082359394580063e-16 148 -3.1082359394580063e-16
+		 154 -3.1082359394580063e-16 162 -3.1082359394580063e-16;
+createNode animCurveTA -n "L_Finger_02_Knuckle_01_FK_Ctrl_rotateX";
+	rename -uid "415B9C4D-4AEA-D632-8B5C-8E9A6C68FD4F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 0 115 0 132 0 142 0 148 0 154 0 162 0;
+createNode animCurveTA -n "L_Finger_02_Knuckle_01_FK_Ctrl_rotateY";
+	rename -uid "4A1C29C8-41B2-C4E2-DCF7-8E9A977352F6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 0 115 0 132 0 142 0 148 0 154 0 162 0;
+createNode animCurveTA -n "L_Finger_02_Knuckle_01_FK_Ctrl_rotateZ";
+	rename -uid "EF741FAF-4CEB-9386-884B-D98380C71AD1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 -12.05063851070776 115 -12.05063851070776
+		 132 17.212469460779324 142 4.547100621032194 148 30.044362823034415 154 -6.1705202859352175
+		 162 29.707869055783085;
+createNode animCurveTU -n "L_Finger_02_Knuckle_01_FK_Ctrl_scaleX";
+	rename -uid "85870FC5-4A9C-28BD-BA5F-C48B078424A3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTU -n "L_Finger_02_Knuckle_01_FK_Ctrl_scaleY";
+	rename -uid "6E620FAB-4661-BE33-25A0-71A5D89A02C8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTU -n "L_Finger_02_Knuckle_01_FK_Ctrl_scaleZ";
+	rename -uid "72B59A80-46BC-C523-36A5-7DB35A27B7F9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTU -n "L_Finger_02_Knuckle_01_FK_Ctrl_FollowTranslate";
+	rename -uid "12670E09-4CCB-9A7A-9F6D-9A95177B6D9D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTU -n "L_Finger_02_Knuckle_01_FK_Ctrl_FollowRotate";
+	rename -uid "02C37945-4099-0688-6AA5-42AB0AA56C41";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTL -n "L_Finger_02_Knuckle_02_FK_Ctrl_translateX";
+	rename -uid "D0AC943D-4336-FE50-15B4-8DBBDEE59CE9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 0 115 0 132 0 142 0 148 0 154 0 162 0;
+createNode animCurveTL -n "L_Finger_02_Knuckle_02_FK_Ctrl_translateY";
+	rename -uid "6B775542-417A-46F6-3B20-5AADC324251E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1.2432943757832025e-15 115 1.2432943757832025e-15
+		 132 1.2432943757832025e-15 142 1.2432943757832025e-15 148 1.2432943757832025e-15
+		 154 1.2432943757832025e-15 162 1.2432943757832025e-15;
+createNode animCurveTL -n "L_Finger_02_Knuckle_02_FK_Ctrl_translateZ";
+	rename -uid "4E265FCB-4E35-B811-F902-238CA91BDF3B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 0 115 0 132 0 142 0 148 0 154 0 162 0;
+createNode animCurveTA -n "L_Finger_02_Knuckle_02_FK_Ctrl_rotateX";
+	rename -uid "F7894334-4CD7-FCE2-E8A8-03ABDE0543BC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 0 115 0 132 0 142 0 148 0 154 0 162 0;
+createNode animCurveTA -n "L_Finger_02_Knuckle_02_FK_Ctrl_rotateY";
+	rename -uid "6C57C0AA-458B-DEBF-5DFF-89B474C88A99";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 0 115 0 132 0 142 0 148 0 154 0 162 0;
+createNode animCurveTA -n "L_Finger_02_Knuckle_02_FK_Ctrl_rotateZ";
+	rename -uid "BE607570-4396-A730-D2A8-849335571587";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 -6.4197121831258395 115 -6.4197121831258395
+		 132 22.843395788361246 142 10.178026948614113 148 35.675289150616301 154 -0.53959395835334167
+		 162 35.338795383364968;
+createNode animCurveTU -n "L_Finger_02_Knuckle_02_FK_Ctrl_scaleX";
+	rename -uid "06607E4F-497B-37F3-FD96-1588BDBB4FEE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTU -n "L_Finger_02_Knuckle_02_FK_Ctrl_scaleY";
+	rename -uid "CBDEC6F3-473F-FA7E-C9C6-499EA373FDB0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTU -n "L_Finger_02_Knuckle_02_FK_Ctrl_scaleZ";
+	rename -uid "10BD9C43-45A3-7D9D-980A-308234B46FD8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTU -n "L_Finger_02_Knuckle_02_FK_Ctrl_FollowTranslate";
+	rename -uid "2C1A3921-47A6-6FBD-AB91-D5BBBBFAB5FB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTU -n "L_Finger_02_Knuckle_02_FK_Ctrl_FollowRotate";
+	rename -uid "50F81A24-4038-DDD8-55B7-5B92C8474452";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTL -n "L_Finger_02_Knuckle_03_FK_Ctrl_translateX";
+	rename -uid "8B197AA2-42D4-6D57-39AA-74B9FE494888";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 -3.1082359394580063e-16 115 -3.1082359394580063e-16
+		 132 -3.1082359394580063e-16 142 -3.1082359394580063e-16 148 -3.1082359394580063e-16
+		 154 -3.1082359394580063e-16 162 -3.1082359394580063e-16;
+createNode animCurveTL -n "L_Finger_02_Knuckle_03_FK_Ctrl_translateY";
+	rename -uid "27C62872-4FD9-6D87-9FC5-A99473BFD3CA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 -1.2432943757832025e-15 115 -1.2432943757832025e-15
+		 132 -1.2432943757832025e-15 142 -1.2432943757832025e-15 148 -1.2432943757832025e-15
+		 154 -1.2432943757832025e-15 162 -1.2432943757832025e-15;
+createNode animCurveTL -n "L_Finger_02_Knuckle_03_FK_Ctrl_translateZ";
+	rename -uid "A8FAD198-466B-C38B-7ED9-A087BE2A047C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1.5541179697290032e-16 115 1.5541179697290032e-16
+		 132 1.5541179697290032e-16 142 1.5541179697290032e-16 148 1.5541179697290032e-16
+		 154 1.5541179697290032e-16 162 1.5541179697290032e-16;
+createNode animCurveTA -n "L_Finger_02_Knuckle_03_FK_Ctrl_rotateX";
+	rename -uid "D4FCC8C3-4B82-8E13-7601-E497511B7CF9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 0 115 0 132 0 142 0 148 0 154 0 162 0;
+createNode animCurveTA -n "L_Finger_02_Knuckle_03_FK_Ctrl_rotateY";
+	rename -uid "9350CE68-4A67-F265-F39B-86B0861FDCCC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 0 115 0 132 0 142 0 148 0 154 0 162 0;
+createNode animCurveTA -n "L_Finger_02_Knuckle_03_FK_Ctrl_rotateZ";
+	rename -uid "8E7BB1D4-4B36-B402-F977-658C3F0A3139";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 -11.82143397630127 115 -11.82143397630127
+		 132 17.441673995185809 142 4.7763051554386742 148 30.273567357440907 154 -5.9413157515287374
+		 162 29.937073590189566;
+createNode animCurveTU -n "L_Finger_02_Knuckle_03_FK_Ctrl_scaleX";
+	rename -uid "7579C583-476B-0043-80C9-69B53282780C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTU -n "L_Finger_02_Knuckle_03_FK_Ctrl_scaleY";
+	rename -uid "39E4621F-4612-64AD-1A6E-9DA6CACCB41B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTU -n "L_Finger_02_Knuckle_03_FK_Ctrl_scaleZ";
+	rename -uid "E8693B2D-486F-5F54-0322-E79DBBDF9D4D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTU -n "L_Finger_02_Knuckle_03_FK_Ctrl_FollowTranslate";
+	rename -uid "9B38F9AA-4CE6-2C88-0ABC-148742DBBC36";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTU -n "L_Finger_02_Knuckle_03_FK_Ctrl_FollowRotate";
+	rename -uid "7583D31D-4CC7-CD2D-0C2C-F9BD69535FC7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1 1 115 1 132 1 142 1 148 1 154 1 162 1;
+createNode animCurveTL -n "L_Finger_03_Knuckle_03_FK_Ctrl_translateX";
+	rename -uid "56B9BC0F-488F-3B05-EE7F-8DBD7BF7856A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -3.1082359394580063e-16 115 -3.1082359394580063e-16
+		 132 -3.1082359394580063e-16;
+createNode animCurveTL -n "L_Finger_03_Knuckle_03_FK_Ctrl_translateY";
+	rename -uid "E2D1A58A-4941-B1F6-7297-218BC74627FE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 2.4865887515664051e-15 115 2.4865887515664051e-15
+		 132 2.4865887515664051e-15;
+createNode animCurveTL -n "L_Finger_03_Knuckle_03_FK_Ctrl_translateZ";
+	rename -uid "EB92354A-4616-CAB4-BFC2-F086E95764D2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -3.8852949243225079e-17 115 -3.8852949243225079e-17
+		 132 -3.8852949243225079e-17;
+createNode animCurveTA -n "L_Finger_03_Knuckle_03_FK_Ctrl_rotateX";
+	rename -uid "34D530E0-46ED-1249-52F4-B0AC4D02B042";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_03_Knuckle_03_FK_Ctrl_rotateY";
+	rename -uid "0F09E13F-4A5C-80BF-F4B7-3FB45660434C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_03_Knuckle_03_FK_Ctrl_rotateZ";
+	rename -uid "54C34999-427B-D522-A1C4-D999ADE68C00";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -0.60901327339802769 115 -0.60901327339802769
+		 132 62.692689528654462;
+createNode animCurveTU -n "L_Finger_03_Knuckle_03_FK_Ctrl_scaleX";
+	rename -uid "79754307-42D0-45CE-7BCC-3C83BAB9057C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_03_Knuckle_03_FK_Ctrl_scaleY";
+	rename -uid "5D2622C3-4497-1E9E-7732-279DF5C400EF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_03_Knuckle_03_FK_Ctrl_scaleZ";
+	rename -uid "20B7C902-46A0-C635-325E-21B32A997BA4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_03_Knuckle_03_FK_Ctrl_FollowTranslate";
+	rename -uid "B5E2EA35-4969-942B-3D3B-D7A5B748CA7F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_03_Knuckle_03_FK_Ctrl_FollowRotate";
+	rename -uid "C0400C44-4157-5BC2-7BFA-FCA1B3CB049B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTL -n "L_Finger_03_Knuckle_02_FK_Ctrl_translateX";
+	rename -uid "011538F0-4649-A305-D2B7-76BFB030FF79";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -9.32470781837402e-16 115 -9.32470781837402e-16
+		 132 -9.32470781837402e-16;
+createNode animCurveTL -n "L_Finger_03_Knuckle_02_FK_Ctrl_translateY";
+	rename -uid "090CD003-4DC7-1799-F834-23B7B0643CFD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -1.2432943757832025e-15 115 -1.2432943757832025e-15
+		 132 -1.2432943757832025e-15;
+createNode animCurveTL -n "L_Finger_03_Knuckle_02_FK_Ctrl_translateZ";
+	rename -uid "5A795949-4D7E-7330-6528-5C9A93A583E6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -3.8852949243225079e-17 115 -3.8852949243225079e-17
+		 132 -3.8852949243225079e-17;
+createNode animCurveTA -n "L_Finger_03_Knuckle_02_FK_Ctrl_rotateX";
+	rename -uid "5F58F8CA-45D6-1E87-728B-49AF87D731D7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_03_Knuckle_02_FK_Ctrl_rotateY";
+	rename -uid "6DB77F80-4320-68B4-6067-EFB817E49496";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_03_Knuckle_02_FK_Ctrl_rotateZ";
+	rename -uid "404FBE50-4F41-8A9F-4C2B-F6A5B49DFD3A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -14.048197782906348 115 -14.048197782906348
+		 132 49.253505019146218;
+createNode animCurveTU -n "L_Finger_03_Knuckle_02_FK_Ctrl_scaleX";
+	rename -uid "6D7DAD87-4A6E-DFC8-E237-669AFAD385AC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_03_Knuckle_02_FK_Ctrl_scaleY";
+	rename -uid "B05BA001-4455-6B3A-6512-BA8CA9E57194";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_03_Knuckle_02_FK_Ctrl_scaleZ";
+	rename -uid "32E7802A-4E56-1717-6096-34B3C2BE0AF1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_03_Knuckle_02_FK_Ctrl_FollowTranslate";
+	rename -uid "7A802C43-4073-CEA0-ED12-D29B94672BD8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_03_Knuckle_02_FK_Ctrl_FollowRotate";
+	rename -uid "62E4ACFE-4332-A208-D882-CAAEF32DDDCD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTL -n "L_Finger_03_Knuckle_01_FK_Ctrl_translateX";
+	rename -uid "D93077F9-4AA6-FC49-7C60-31B1D72056A2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTL -n "L_Finger_03_Knuckle_01_FK_Ctrl_translateY";
+	rename -uid "CA61C90C-439A-6A76-9EBD-8380FBC18B89";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1.2432943757832025e-15 115 1.2432943757832025e-15
+		 132 1.2432943757832025e-15;
+createNode animCurveTL -n "L_Finger_03_Knuckle_01_FK_Ctrl_translateZ";
+	rename -uid "B3549090-47E3-F30A-CFD2-DF802729B6D5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -3.8852949243225079e-17 115 -3.8852949243225079e-17
+		 132 -3.8852949243225079e-17;
+createNode animCurveTA -n "L_Finger_03_Knuckle_01_FK_Ctrl_rotateX";
+	rename -uid "3B300B5D-4066-F775-B530-6B9C2B5826BC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_03_Knuckle_01_FK_Ctrl_rotateY";
+	rename -uid "FA3D9E92-4C1E-B1CC-0C3B-C38E8DB10FD7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_03_Knuckle_01_FK_Ctrl_rotateZ";
+	rename -uid "01C5B20C-46BF-7F2F-E7DB-8E8C0AC34898";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -14.048197782906348 115 -14.048197782906348
+		 132 49.253505019146218;
+createNode animCurveTU -n "L_Finger_03_Knuckle_01_FK_Ctrl_scaleX";
+	rename -uid "B28957CC-44AC-447A-293C-62B82643B27B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_03_Knuckle_01_FK_Ctrl_scaleY";
+	rename -uid "F70FD5B5-4171-DDFC-C3B3-FCBCBE690423";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_03_Knuckle_01_FK_Ctrl_scaleZ";
+	rename -uid "38D1F600-4E9F-094B-8E6F-679A72197DFC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_03_Knuckle_01_FK_Ctrl_FollowTranslate";
+	rename -uid "81222F54-43A3-1F93-4B69-B9BC727627AB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_03_Knuckle_01_FK_Ctrl_FollowRotate";
+	rename -uid "A2D19832-442D-2370-1FBD-398DCD3FB0C7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTL -n "L_Finger_04_Knuckle_01_FK_Ctrl_translateX";
+	rename -uid "14AB7C36-4B3D-7575-1483-26920507C403";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -6.2164718789160127e-16 115 -6.2164718789160127e-16
+		 132 -6.2164718789160127e-16;
+createNode animCurveTL -n "L_Finger_04_Knuckle_01_FK_Ctrl_translateY";
+	rename -uid "DD6DBBC9-4285-D690-21DB-D4A51D2730B5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTL -n "L_Finger_04_Knuckle_01_FK_Ctrl_translateZ";
+	rename -uid "83D05556-4A21-281A-20CA-5BB777211C8A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_04_Knuckle_01_FK_Ctrl_rotateX";
+	rename -uid "7A3C5010-4389-2271-F760-179954E67A39";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_04_Knuckle_01_FK_Ctrl_rotateY";
+	rename -uid "A94DA832-4945-DE9B-06BE-E3A38A1EA6E5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_04_Knuckle_01_FK_Ctrl_rotateZ";
+	rename -uid "931B5BB0-4863-E594-7794-2E875D2DFFE3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -14.048197782906348 115 -14.048197782906348
+		 132 49.253505019146218;
+createNode animCurveTU -n "L_Finger_04_Knuckle_01_FK_Ctrl_scaleX";
+	rename -uid "89129EA3-4742-3443-A00A-4181DF3912CD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_04_Knuckle_01_FK_Ctrl_scaleY";
+	rename -uid "C1029B7B-428B-54E1-9D3B-25ACFEF6620B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_04_Knuckle_01_FK_Ctrl_scaleZ";
+	rename -uid "C93DC2A7-43CB-103C-7CE6-A18E3014F70E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_04_Knuckle_01_FK_Ctrl_FollowTranslate";
+	rename -uid "5CE42412-4FC3-32C9-4545-199B8460A51A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_04_Knuckle_01_FK_Ctrl_FollowRotate";
+	rename -uid "8669390C-48FC-CF8E-8870-E8A61E637285";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTL -n "L_Finger_04_Knuckle_02_FK_Ctrl_translateX";
+	rename -uid "8820FC1A-4257-DB64-BCF9-8F901532598B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 9.32470781837402e-16 115 9.32470781837402e-16
+		 132 9.32470781837402e-16;
+createNode animCurveTL -n "L_Finger_04_Knuckle_02_FK_Ctrl_translateY";
+	rename -uid "A50AEEFA-4262-E417-611C-79B103C33E1A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1.2432943757832025e-15 115 1.2432943757832025e-15
+		 132 1.2432943757832025e-15;
+createNode animCurveTL -n "L_Finger_04_Knuckle_02_FK_Ctrl_translateZ";
+	rename -uid "8D7BCFA8-427B-A3C0-CC18-A8923F306AC1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1.5541179697290032e-16 115 1.5541179697290032e-16
+		 132 1.5541179697290032e-16;
+createNode animCurveTA -n "L_Finger_04_Knuckle_02_FK_Ctrl_rotateX";
+	rename -uid "2F5633EE-49A5-BBBF-0FD0-9C9B4D6B1C3E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_04_Knuckle_02_FK_Ctrl_rotateY";
+	rename -uid "CD9B9C08-42AA-5B6F-E2A2-D5BB91FEFE4D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_04_Knuckle_02_FK_Ctrl_rotateZ";
+	rename -uid "BB2C3B90-4C6B-E084-6C60-2191B6034E90";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -14.048197782906348 115 -14.048197782906348
+		 132 49.253505019146218;
+createNode animCurveTU -n "L_Finger_04_Knuckle_02_FK_Ctrl_scaleX";
+	rename -uid "164BA603-4B70-C98D-8768-0FB3C8F3C3F0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_04_Knuckle_02_FK_Ctrl_scaleY";
+	rename -uid "04A137DB-401E-0EB4-CC56-32AF980899B2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_04_Knuckle_02_FK_Ctrl_scaleZ";
+	rename -uid "DAB1B452-4849-A5F2-052E-23B920B5931E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_04_Knuckle_02_FK_Ctrl_FollowTranslate";
+	rename -uid "DC2F9C32-48AD-967A-C7A3-53876140024B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_04_Knuckle_02_FK_Ctrl_FollowRotate";
+	rename -uid "2AD35DF1-4AE1-871D-835B-87B296E5099D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTL -n "L_Finger_04_Knuckle_03_FK_Ctrl_translateX";
+	rename -uid "6C6F96BE-45A8-FF3C-06FE-C88C43210B50";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -6.2164718789160127e-16 115 -6.2164718789160127e-16
+		 132 -6.2164718789160127e-16;
+createNode animCurveTL -n "L_Finger_04_Knuckle_03_FK_Ctrl_translateY";
+	rename -uid "12FA9121-4BDD-E527-8633-7F9A51622C10";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 2.4865887515664051e-15 115 2.4865887515664051e-15
+		 132 2.4865887515664051e-15;
+createNode animCurveTL -n "L_Finger_04_Knuckle_03_FK_Ctrl_translateZ";
+	rename -uid "4B4EF4F8-4003-1B01-9B10-0697CB6893F2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 3.1082359394580063e-16 115 3.1082359394580063e-16
+		 132 3.1082359394580063e-16;
+createNode animCurveTA -n "L_Finger_04_Knuckle_03_FK_Ctrl_rotateX";
+	rename -uid "AD82B381-4F4D-32E3-DBCB-328A0305977E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_04_Knuckle_03_FK_Ctrl_rotateY";
+	rename -uid "7416E752-4B8F-3E50-DBA4-0FA06850179D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_04_Knuckle_03_FK_Ctrl_rotateZ";
+	rename -uid "61D6A1E2-457C-F1B1-AF82-9BA350D84B35";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -6.4326784637024144 115 -6.4326784637024144
+		 132 56.869024338350066;
+createNode animCurveTU -n "L_Finger_04_Knuckle_03_FK_Ctrl_scaleX";
+	rename -uid "94682641-4116-F23C-8C2B-66A35035C441";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_04_Knuckle_03_FK_Ctrl_scaleY";
+	rename -uid "B49AC3F7-4162-687F-5B9C-E19073457BFD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_04_Knuckle_03_FK_Ctrl_scaleZ";
+	rename -uid "6158AC3E-47D5-DA7A-BCBB-A4BCE2065928";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_04_Knuckle_03_FK_Ctrl_FollowTranslate";
+	rename -uid "FDE2C7A6-4DDE-6828-059B-F895324DE95D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_04_Knuckle_03_FK_Ctrl_FollowRotate";
+	rename -uid "AF444F95-4A90-5BCE-8F93-AA959B384ADF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTL -n "L_Finger_05_Knuckle_03_FK_Ctrl_translateX";
+	rename -uid "E90D9D36-4D48-D2F9-11F0-1AA636977820";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1.9426474621612538e-16 115 1.9426474621612538e-16
+		 132 1.9426474621612538e-16;
+createNode animCurveTL -n "L_Finger_05_Knuckle_03_FK_Ctrl_translateY";
+	rename -uid "7096AB11-409E-29CA-F616-0C9C70B65C36";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1.9892710012531241e-14 115 1.9892710012531241e-14
+		 132 1.9892710012531241e-14;
+createNode animCurveTL -n "L_Finger_05_Knuckle_03_FK_Ctrl_translateZ";
+	rename -uid "67A0923C-4EEE-698B-F00D-4FAFC8D055EC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -9.32470781837402e-16 115 -9.32470781837402e-16
+		 132 -9.32470781837402e-16;
+createNode animCurveTA -n "L_Finger_05_Knuckle_03_FK_Ctrl_rotateX";
+	rename -uid "CFA7E995-44CA-12AE-D64B-84882989BEBB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_05_Knuckle_03_FK_Ctrl_rotateY";
+	rename -uid "504E42F2-443E-270A-3C39-D19BBEC20E09";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_05_Knuckle_03_FK_Ctrl_rotateZ";
+	rename -uid "6282026D-451D-8DB2-9389-C687793908F7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -10.129540576066985 115 -10.129540576066985
+		 132 53.172162225985474;
+createNode animCurveTU -n "L_Finger_05_Knuckle_03_FK_Ctrl_scaleX";
+	rename -uid "42935261-4BF7-3CF2-4C40-019823B395CB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_05_Knuckle_03_FK_Ctrl_scaleY";
+	rename -uid "CF932353-489F-1C9B-0BFC-E39A89DA9A3E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_05_Knuckle_03_FK_Ctrl_scaleZ";
+	rename -uid "EA680EE0-4F95-1D89-1373-6F83730C6342";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_05_Knuckle_03_FK_Ctrl_FollowTranslate";
+	rename -uid "79AF868E-4A16-C18A-4A2B-CA9481C8D487";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_05_Knuckle_03_FK_Ctrl_FollowRotate";
+	rename -uid "2D5D46DA-4D9E-8BB4-B4B3-B0A7949E7CBA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTL -n "L_Finger_05_Knuckle_02_FK_Ctrl_translateX";
+	rename -uid "A73165A2-4AC3-1970-B1DE-098D73608A91";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -9.32470781837402e-16 115 -9.32470781837402e-16
+		 132 -9.32470781837402e-16;
+createNode animCurveTL -n "L_Finger_05_Knuckle_02_FK_Ctrl_translateY";
+	rename -uid "71DD3702-4329-E6B3-6FCF-41B0CC6DA786";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTL -n "L_Finger_05_Knuckle_02_FK_Ctrl_translateZ";
+	rename -uid "77AA0B8C-43DA-CB06-AB98-CAA42D6E2F61";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_05_Knuckle_02_FK_Ctrl_rotateX";
+	rename -uid "D4F4FCBE-4D73-CE0C-4EFD-2AAE161AF007";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_05_Knuckle_02_FK_Ctrl_rotateY";
+	rename -uid "C65E9361-4F37-313F-EC3B-A9A18261FF5C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_05_Knuckle_02_FK_Ctrl_rotateZ";
+	rename -uid "016ACBC4-4E82-33A1-ED6B-D880E5D606CB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -14.048197782906348 115 -14.048197782906348
+		 132 49.253505019146218;
+createNode animCurveTU -n "L_Finger_05_Knuckle_02_FK_Ctrl_scaleX";
+	rename -uid "D7CEAABD-4E06-3139-B635-FE851633E20A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_05_Knuckle_02_FK_Ctrl_scaleY";
+	rename -uid "6EB68B7D-43EE-3390-1CCD-90B8B7E1E8AC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_05_Knuckle_02_FK_Ctrl_scaleZ";
+	rename -uid "DDD47BFC-49E0-A806-CAD6-9B868A93F4FD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_05_Knuckle_02_FK_Ctrl_FollowTranslate";
+	rename -uid "747E18E0-40C5-F391-F639-AFB7056C0339";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_05_Knuckle_02_FK_Ctrl_FollowRotate";
+	rename -uid "1175C9FD-42E2-EF79-AFAE-508954A805B5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTL -n "L_Finger_05_Knuckle_01_FK_Ctrl_translateX";
+	rename -uid "E1897C2D-4691-FCD3-0251-F38A7070F4BF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 6.2164718789160127e-16 115 6.2164718789160127e-16
+		 132 6.2164718789160127e-16;
+createNode animCurveTL -n "L_Finger_05_Knuckle_01_FK_Ctrl_translateY";
+	rename -uid "53B272A2-408F-8E15-09D5-E588C219ADC5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 2.4865887515664051e-15 115 2.4865887515664051e-15
+		 132 2.4865887515664051e-15;
+createNode animCurveTL -n "L_Finger_05_Knuckle_01_FK_Ctrl_translateZ";
+	rename -uid "131B56C1-4502-C366-578A-92BA0189E928";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 3.1082359394580063e-16 115 3.1082359394580063e-16
+		 132 3.1082359394580063e-16;
+createNode animCurveTA -n "L_Finger_05_Knuckle_01_FK_Ctrl_rotateX";
+	rename -uid "05CCD2BF-4C28-49B7-BA64-30AA9BFFB4ED";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_05_Knuckle_01_FK_Ctrl_rotateY";
+	rename -uid "B91783EB-4B30-F718-5365-6B9123F3EA43";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 115 0 132 0;
+createNode animCurveTA -n "L_Finger_05_Knuckle_01_FK_Ctrl_rotateZ";
+	rename -uid "8D594EC8-4FEB-95A7-ECD1-3BA218D87AAD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -14.048197782906348 115 -14.048197782906348
+		 132 49.253505019146218;
+createNode animCurveTU -n "L_Finger_05_Knuckle_01_FK_Ctrl_scaleX";
+	rename -uid "AD19719C-4C96-E55A-E896-58A8D75C8FE7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_05_Knuckle_01_FK_Ctrl_scaleY";
+	rename -uid "481EAF94-4141-2865-DECB-249BFADC7E31";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_05_Knuckle_01_FK_Ctrl_scaleZ";
+	rename -uid "81CDB351-4EF4-190B-9670-27B7A5F9C00F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_05_Knuckle_01_FK_Ctrl_FollowTranslate";
+	rename -uid "1F39E4C2-496D-E1A7-B8E4-D5828032C554";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTU -n "L_Finger_05_Knuckle_01_FK_Ctrl_FollowRotate";
+	rename -uid "D07ACF46-4FC4-C269-60E8-C5823CFBF767";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 115 1 132 1;
+createNode animCurveTL -n "L_Arm_PV_Ctrl_translateX";
+	rename -uid "39CDF6CD-4026-209A-B9F0-87840649169B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -0.16227740316905115 115 -0.16227740316905115
+		 140 -0.21490864379626412;
+createNode animCurveTL -n "L_Arm_PV_Ctrl_translateY";
+	rename -uid "3300ACF0-493A-3A24-ED8D-6E8D4CECD942";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0.85476294443644818 115 0.85476294443644818
+		 140 2.3945869105892683;
+createNode animCurveTL -n "L_Arm_PV_Ctrl_translateZ";
+	rename -uid "0E0206BA-45B1-188D-03FD-4B875D5CA27D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0.7592064660193597 115 0.7592064660193597
+		 140 0.4576745613526727;
+createNode animCurveTU -n "L_Arm_PV_Ctrl_Follow";
+	rename -uid "132BF370-42C2-935D-A55E-DA8474AE7A81";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 3 115 3 140 3;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTL -n "Spine_01_FK_Ctrl_translateX";
-	rename -uid "FCD9488C-46C1-B26A-8ED8-43B0BA5CA795";
+	rename -uid "345969F8-4DB2-A3F4-D13B-45A60C534AF5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 60 0 85 0 95 0 105 0 115 0 135 0;
 createNode animCurveTL -n "Spine_01_FK_Ctrl_translateY";
-	rename -uid "75ECE7E2-445C-ECD2-5E80-9789E0866E6B";
+	rename -uid "538B50C2-4194-10DC-2AFB-43891A02A240";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 60 0 85 0 95 0 105 0 115 0 135 0;
 createNode animCurveTL -n "Spine_01_FK_Ctrl_translateZ";
-	rename -uid "B9BD950B-40C2-835D-BCC0-699A6F08D5C0";
+	rename -uid "404DACFB-4ED6-B38F-7E69-0A8A3B0B69B6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 60 0 85 0 95 0 105 0 115 0 135 0;
 createNode animCurveTA -n "Spine_01_FK_Ctrl_rotateX";
-	rename -uid "677E27D7-4E66-9898-4E1E-029C33C2EAFE";
+	rename -uid "B99C1E6F-466F-F198-443C-2A99008EDF6D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  62 0 90 40.203049606558764;
+	setAttr -s 7 ".ktv[0:6]"  1 8.4105701154133397e-16 60 8.4105701154133397e-16
+		 85 -4.0116733946635375 95 -0.34945851865334171 105 0 115 0 135 0;
 createNode animCurveTA -n "Spine_01_FK_Ctrl_rotateY";
-	rename -uid "47C54450-4E46-D7A1-2FF8-3EA5D2C5416A";
+	rename -uid "1B6D8A01-4EEC-103E-CD42-17827A699EA8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 -19.020151976042396 60 -19.020151976042396
+		 85 -18.607596853765692 95 -9.3883358516454933 105 0 115 0 135 0;
 createNode animCurveTA -n "Spine_01_FK_Ctrl_rotateZ";
-	rename -uid "4998DC12-4ECC-2189-0177-E2B4690C5C2A";
+	rename -uid "C8B57C8B-4678-890F-B342-1EBAEF051D93";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  62 0 90 0;
+	setAttr -s 7 ".ktv[0:6]"  1 30.824400247598209 60 30.824400247598209
+		 85 43.220318406730158 95 30.46934087658693 105 38.198926879125061 115 36.898975164245606
+		 135 23.99512318492383;
 createNode animCurveTU -n "Spine_01_FK_Ctrl_scaleX";
-	rename -uid "F2C92B68-4A13-E9A4-F229-5A9E74F9C409";
+	rename -uid "88076BEF-4CD6-D617-7A5F-1F80493C944F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "Spine_01_FK_Ctrl_scaleY";
-	rename -uid "ECCDEB31-4305-6A39-3884-B1B869C3E629";
+	rename -uid "2D946996-4F35-64E1-3373-399014AE7EC1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "Spine_01_FK_Ctrl_scaleZ";
-	rename -uid "F1169476-4BFC-BBD0-1386-71AB6ECA5778";
+	rename -uid "AE78BBF0-498D-88EA-5C82-1BBC5A03B40A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "Spine_01_FK_Ctrl_FollowTranslate";
-	rename -uid "7ECCA000-4263-F29C-491E-35B12B9550C1";
+	rename -uid "0459ED9E-49A6-6AA1-B1EA-C7B559988933";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
 createNode animCurveTU -n "Spine_01_FK_Ctrl_FollowRotate";
-	rename -uid "B0503F1F-4572-9A25-83BE-A9880D3B52B1";
+	rename -uid "3AFABDD2-4C86-A472-11E0-0A91AA38A397";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  62 1 90 1;
+	setAttr -s 7 ".ktv[0:6]"  1 1 60 1 85 1 95 1 105 1 115 1 135 1;
+createNode animCurveTL -n "pCube5_translateX";
+	rename -uid "47668F57-4309-65E6-F7E8-D9BD3DC87C1F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pCube5_translateY";
+	rename -uid "EF09FA2D-477D-7DD3-19A5-32A11C1828C0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pCube5_translateZ";
+	rename -uid "E8A26C06-4819-28E1-716A-FB8D7D13BAE9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "pCube5_visibility";
+	rename -uid "38EE490D-414D-0FB3-0845-5A828CC9777C";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTA -n "pCube5_rotateX";
+	rename -uid "32FAB8F7-4541-9B44-58A8-59AAF476AA4B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "pCube5_rotateY";
+	rename -uid "70A0EB03-407F-B1C5-D319-7AA2C7F06E03";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "pCube5_rotateZ";
+	rename -uid "CE106D9D-4B12-8C46-3396-1AB1514A5CD9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "pCube5_scaleX";
+	rename -uid "E3BC4682-4395-F962-C9C0-F7A8309A2AF2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "pCube5_scaleY";
+	rename -uid "5328D7C5-4E1F-7F7F-B0B4-DBACAC97ADA7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "pCube5_scaleZ";
+	rename -uid "46DA6B59-4DCA-3912-AD40-8A98DE1F2F76";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTL -n "Pelvis_FK_Ctrl_translateX";
+	rename -uid "F91D438F-4675-9453-910C-2D86BB10EE75";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  85 0 105 0 115 0 135 0;
+createNode animCurveTL -n "Pelvis_FK_Ctrl_translateY";
+	rename -uid "782AAF77-4BF4-F336-0059-08B61A2886C3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  85 0 105 0 115 0 135 0;
+createNode animCurveTL -n "Pelvis_FK_Ctrl_translateZ";
+	rename -uid "62AD7821-4840-0DC3-89C0-DC8EC35EE064";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  85 0 105 0 115 0 135 0;
+createNode animCurveTA -n "Pelvis_FK_Ctrl_rotateX";
+	rename -uid "E14319F2-4E84-292B-2CB7-E699303C43E7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  85 0 105 0 115 0 135 0;
+createNode animCurveTA -n "Pelvis_FK_Ctrl_rotateY";
+	rename -uid "7B007BDF-4F97-DD92-C5ED-5F81CEC7E132";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  85 0 105 0 115 0 135 0;
+createNode animCurveTA -n "Pelvis_FK_Ctrl_rotateZ";
+	rename -uid "C29BEF84-4FEA-0737-A7AB-4DAAB98C2FF3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  85 21.601200003462566 105 21.601200003462566
+		 115 21.601200003462566 135 7.8036583882831012;
+createNode animCurveTU -n "Pelvis_FK_Ctrl_scaleX";
+	rename -uid "DF3D12B7-40EF-762E-3369-D9868DEDE316";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  85 1 105 1 115 1 135 1;
+createNode animCurveTU -n "Pelvis_FK_Ctrl_scaleY";
+	rename -uid "640FC6BF-4507-8F7F-EC18-089A2068B31C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  85 1 105 1 115 1 135 1;
+createNode animCurveTU -n "Pelvis_FK_Ctrl_scaleZ";
+	rename -uid "2ABEA0D3-4AF6-B4DD-942F-CAAC5B86E11B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  85 1 105 1 115 1 135 1;
+createNode animCurveTU -n "Pelvis_FK_Ctrl_FollowTranslate";
+	rename -uid "F0AE7E68-4F8C-3A48-0999-6C8E8E84993F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  85 1 105 1 115 1 135 1;
+createNode animCurveTU -n "Pelvis_FK_Ctrl_FollowRotate";
+	rename -uid "78C568DF-410B-912B-5EAC-3D83123EDB20";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  85 1 105 1 115 1 135 1;
+createNode animCurveTL -n "L_Finger_01_Knuckle_04_FK_Ctrl_translateX";
+	rename -uid "AB487854-4A4B-5343-4A0B-5D87B6C4C9A7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 -3.1082359394580063e-16;
+createNode animCurveTL -n "L_Finger_01_Knuckle_04_FK_Ctrl_translateY";
+	rename -uid "2F4A5BE0-462C-1ACA-491C-9990BF6046C2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 -7.7705898486450159e-17;
+createNode animCurveTL -n "L_Finger_01_Knuckle_04_FK_Ctrl_translateZ";
+	rename -uid "D1DD55FE-4961-B4E5-C517-DFA1B38E8FDA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 1.2432943757832025e-15;
+createNode animCurveTA -n "L_Finger_01_Knuckle_04_FK_Ctrl_rotateX";
+	rename -uid "72E627B1-448D-5574-FF73-5DACA5D00831";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 0;
+createNode animCurveTA -n "L_Finger_01_Knuckle_04_FK_Ctrl_rotateY";
+	rename -uid "51FB2074-462A-0110-AE5B-BEB4885E273F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 0;
+createNode animCurveTA -n "L_Finger_01_Knuckle_04_FK_Ctrl_rotateZ";
+	rename -uid "35F99D10-4276-FC4F-C8ED-D296922BA130";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 0;
+createNode animCurveTU -n "L_Finger_01_Knuckle_04_FK_Ctrl_scaleX";
+	rename -uid "DDCCAE65-4D96-EE7B-A008-9BABC03D3CF5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_04_FK_Ctrl_scaleY";
+	rename -uid "80608893-41DC-9989-E97D-BF81CA511F46";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_04_FK_Ctrl_scaleZ";
+	rename -uid "893B5869-4558-FEDD-10DE-7BACF02EF0DC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_04_FK_Ctrl_FollowTranslate";
+	rename -uid "2FCA19E2-4910-3D2E-71C1-20A4097BA9DA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 1;
+createNode animCurveTU -n "L_Finger_01_Knuckle_04_FK_Ctrl_FollowRotate";
+	rename -uid "9E56172D-42DC-285E-F603-71A5BCB44713";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 1;
+createNode animCurveTU -n "pCube12_visibility";
+	rename -uid "9D39FC14-432A-DFB5-0708-8DBE0B559016";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTL -n "pCube12_translateX";
+	rename -uid "31E745DC-412B-A413-B28F-18814A11F3A3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 0;
+createNode animCurveTL -n "pCube12_translateY";
+	rename -uid "3B6F160F-4130-8ED3-AE6A-0FBBF41BD069";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 0;
+createNode animCurveTL -n "pCube12_translateZ";
+	rename -uid "120DBA5B-4AD9-EE67-8346-D7A0A0B3F75E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 0;
+createNode animCurveTA -n "pCube12_rotateX";
+	rename -uid "5BE5FC7C-4A1F-2AE2-6632-EF9448218718";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 0;
+createNode animCurveTA -n "pCube12_rotateY";
+	rename -uid "D7FE6532-46E1-7D8A-28C9-6E80EE86D873";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 0;
+createNode animCurveTA -n "pCube12_rotateZ";
+	rename -uid "050141BE-47BA-5E3F-6266-1A9120D227EE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 0;
+createNode animCurveTU -n "pCube12_scaleX";
+	rename -uid "21AF5140-490A-5C4A-4B0C-7D9AFFF3A627";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 1;
+createNode animCurveTU -n "pCube12_scaleY";
+	rename -uid "58A51CB7-4442-0341-F60E-9EA86FC3DF17";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 1;
+createNode animCurveTU -n "pCube12_scaleZ";
+	rename -uid "96492050-4249-8526-7513-3C8509BBB097";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  115 1;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -av -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 1;
-	setAttr -av ".unw" 1;
+	setAttr -k on ".o" 72;
+	setAttr -av ".unw" 72;
 	setAttr -av -k on ".etw";
 	setAttr -av -k on ".tps";
 	setAttr -av -k on ".tms";
@@ -40431,7 +41490,7 @@ select -ne :hardwareRenderGlobals;
 	setAttr -k on ".shml";
 	setAttr -k on ".hwel";
 select -ne :ikSystem;
-	setAttr -s 2 ".sol";
+	setAttr -s 4 ".sol";
 connectAttr "|Objects|Desk_Geo|pCube1|pCubeShape1.iog" "DeskRN.phl[1]";
 connectAttr "|Objects|Desk_Geo1|pCube1|pCubeShape1.iog" "DeskRN.phl[2]";
 connectAttr "|Objects|Desk_Geo2|pCube1|pCubeShape1.iog" "DeskRN.phl[3]";
@@ -40601,6 +41660,16 @@ connectAttr "pSphereShape2.iog" "GlassEquipmentRN.phl[39]";
 connectAttr "pSphereShape3.iog" "GlassEquipmentRN.phl[40]";
 connectAttr "pCylinderShape1.iog" "GlassEquipmentRN.phl[41]";
 connectAttr "pSphereShape4.iog" "GlassEquipmentRN.phl[42]";
+connectAttr "pCube5_translateX.o" "MicroscopeRN.phl[9]";
+connectAttr "pCube5_translateY.o" "MicroscopeRN.phl[10]";
+connectAttr "pCube5_translateZ.o" "MicroscopeRN.phl[11]";
+connectAttr "pCube5_visibility.o" "MicroscopeRN.phl[12]";
+connectAttr "pCube5_rotateX.o" "MicroscopeRN.phl[13]";
+connectAttr "pCube5_rotateY.o" "MicroscopeRN.phl[14]";
+connectAttr "pCube5_rotateZ.o" "MicroscopeRN.phl[15]";
+connectAttr "pCube5_scaleX.o" "MicroscopeRN.phl[16]";
+connectAttr "pCube5_scaleY.o" "MicroscopeRN.phl[17]";
+connectAttr "pCube5_scaleZ.o" "MicroscopeRN.phl[18]";
 connectAttr "Desk_ChairRN.phl[4]" "standardSurface10SG.dsm" -na;
 connectAttr "Desk_ChairRN.phl[5]" "standardSurface10SG.dsm" -na;
 connectAttr "Desk_ChairRN.phl[6]" "standardSurface10SG.dsm" -na;
@@ -40669,758 +41738,890 @@ connectAttr "COG_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[19]";
 connectAttr "COG_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[20]";
 connectAttr "COG_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[21]";
 connectAttr "COG_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[22]";
-connectAttr "Spine_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[23]"
-		;
-connectAttr "Spine_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[24]"
-		;
-connectAttr "Spine_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[25]"
-		;
-connectAttr "Spine_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[26]"
-		;
-connectAttr "Spine_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[27]"
-		;
-connectAttr "Spine_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[28]";
-connectAttr "Spine_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[29]";
-connectAttr "Spine_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[30]";
-connectAttr "Spine_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[31]";
-connectAttr "Spine_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[32]";
-connectAttr "Spine_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[33]";
-connectAttr "Spine_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[34]"
-		;
-connectAttr "Spine_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[35]"
-		;
-connectAttr "Spine_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[36]"
-		;
-connectAttr "Spine_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[37]"
-		;
-connectAttr "Spine_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[38]"
-		;
-connectAttr "Spine_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[39]";
-connectAttr "Spine_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[40]";
-connectAttr "Spine_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[41]";
-connectAttr "Spine_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[42]";
-connectAttr "Spine_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[43]";
-connectAttr "Spine_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[44]";
-connectAttr "Spine_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[45]"
-		;
-connectAttr "Spine_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[46]"
-		;
-connectAttr "Spine_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[47]"
-		;
-connectAttr "Spine_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[48]"
-		;
-connectAttr "Spine_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[49]"
-		;
-connectAttr "Spine_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[50]";
-connectAttr "Spine_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[51]";
-connectAttr "Spine_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[52]";
-connectAttr "Spine_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[53]";
-connectAttr "Spine_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[54]";
-connectAttr "Spine_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[55]";
-connectAttr "Head_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[56]"
-		;
-connectAttr "Head_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[57]";
-connectAttr "Head_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[58]";
-connectAttr "Head_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[59]";
-connectAttr "Head_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[60]";
-connectAttr "Head_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[61]";
-connectAttr "Head_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[62]";
-connectAttr "Head_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[63]";
-connectAttr "Head_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[64]";
-connectAttr "Head_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[65]";
-connectAttr "Head_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[66]";
-connectAttr "L_Clav_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[67]"
+connectAttr "Pelvis_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[23]"
+		;
+connectAttr "Pelvis_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[24]"
+		;
+connectAttr "Pelvis_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[25]";
+connectAttr "Pelvis_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[26]";
+connectAttr "Pelvis_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[27]";
+connectAttr "Pelvis_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[28]";
+connectAttr "Pelvis_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[29]";
+connectAttr "Pelvis_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[30]";
+connectAttr "Pelvis_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[31]";
+connectAttr "Pelvis_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[32]";
+connectAttr "Pelvis_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[33]";
+connectAttr "Spine_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[34]"
+		;
+connectAttr "Spine_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[35]"
+		;
+connectAttr "Spine_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[36]"
+		;
+connectAttr "Spine_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[37]"
+		;
+connectAttr "Spine_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[38]"
+		;
+connectAttr "Spine_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[39]";
+connectAttr "Spine_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[40]";
+connectAttr "Spine_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[41]";
+connectAttr "Spine_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[42]";
+connectAttr "Spine_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[43]";
+connectAttr "Spine_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[44]";
+connectAttr "Spine_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[45]"
+		;
+connectAttr "Spine_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[46]"
+		;
+connectAttr "Spine_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[47]"
+		;
+connectAttr "Spine_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[48]"
+		;
+connectAttr "Spine_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[49]"
+		;
+connectAttr "Spine_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[50]";
+connectAttr "Spine_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[51]";
+connectAttr "Spine_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[52]";
+connectAttr "Spine_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[53]";
+connectAttr "Spine_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[54]";
+connectAttr "Spine_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[55]";
+connectAttr "Spine_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[56]"
+		;
+connectAttr "Spine_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[57]"
+		;
+connectAttr "Spine_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[58]"
+		;
+connectAttr "Spine_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[59]"
+		;
+connectAttr "Spine_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[60]"
+		;
+connectAttr "Spine_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[61]";
+connectAttr "Spine_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[62]";
+connectAttr "Spine_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[63]";
+connectAttr "Spine_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[64]";
+connectAttr "Spine_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[65]";
+connectAttr "Spine_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[66]";
+connectAttr "Head_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[67]"
 		;
-connectAttr "L_Clav_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[68]"
+connectAttr "Head_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[68]";
+connectAttr "Head_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[69]";
+connectAttr "Head_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[70]";
+connectAttr "Head_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[71]";
+connectAttr "Head_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[72]";
+connectAttr "Head_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[73]";
+connectAttr "Head_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[74]";
+connectAttr "Head_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[75]";
+connectAttr "Head_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[76]";
+connectAttr "Head_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[77]";
+connectAttr "L_Clav_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[78]"
 		;
-connectAttr "L_Clav_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[69]";
-connectAttr "L_Clav_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[70]";
-connectAttr "L_Clav_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[71]";
-connectAttr "L_Clav_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[72]";
-connectAttr "L_Clav_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[73]";
-connectAttr "L_Clav_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[74]";
-connectAttr "L_Clav_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[75]";
-connectAttr "L_Clav_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[76]";
-connectAttr "L_Clav_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[77]";
-connectAttr "L_Arm_IK_Ctrl_Follow.o" "LowPolyHumanSceneControlsRN.phl[78]";
-connectAttr "L_Arm_IK_Ctrl_Stretch.o" "LowPolyHumanSceneControlsRN.phl[79]";
-connectAttr "L_Arm_IK_Ctrl_MaxStretch.o" "LowPolyHumanSceneControlsRN.phl[80]";
-connectAttr "L_Arm_IK_Ctrl_ArmLength.o" "LowPolyHumanSceneControlsRN.phl[81]";
-connectAttr "L_Arm_IK_Ctrl_UpperArmLength.o" "LowPolyHumanSceneControlsRN.phl[82]"
+connectAttr "L_Clav_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[79]"
 		;
-connectAttr "L_Arm_IK_Ctrl_LowerArmLength.o" "LowPolyHumanSceneControlsRN.phl[83]"
+connectAttr "L_Clav_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[80]";
+connectAttr "L_Clav_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[81]";
+connectAttr "L_Clav_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[82]";
+connectAttr "L_Clav_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[83]";
+connectAttr "L_Clav_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[84]";
+connectAttr "L_Clav_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[85]";
+connectAttr "L_Clav_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[86]";
+connectAttr "L_Clav_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[87]";
+connectAttr "L_Clav_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[88]";
+connectAttr "L_Arm_IK_Ctrl_Follow.o" "LowPolyHumanSceneControlsRN.phl[89]";
+connectAttr "L_Arm_IK_Ctrl_Stretch.o" "LowPolyHumanSceneControlsRN.phl[90]";
+connectAttr "L_Arm_IK_Ctrl_MaxStretch.o" "LowPolyHumanSceneControlsRN.phl[91]";
+connectAttr "L_Arm_IK_Ctrl_ArmLength.o" "LowPolyHumanSceneControlsRN.phl[92]";
+connectAttr "L_Arm_IK_Ctrl_UpperArmLength.o" "LowPolyHumanSceneControlsRN.phl[93]"
 		;
-connectAttr "L_Arm_IK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[84]";
-connectAttr "L_Arm_IK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[85]";
-connectAttr "L_Arm_IK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[86]";
-connectAttr "L_Arm_IK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[87]";
-connectAttr "L_Arm_IK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[88]";
-connectAttr "L_Arm_IK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[89]";
-connectAttr "L_Arm_PV_Ctrl_Follow.o" "LowPolyHumanSceneControlsRN.phl[90]";
-connectAttr "L_Arm_PV_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[91]";
-connectAttr "L_Arm_PV_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[92]";
-connectAttr "L_Arm_PV_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[93]";
-connectAttr "R_Clav_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[94]"
+connectAttr "L_Arm_IK_Ctrl_LowerArmLength.o" "LowPolyHumanSceneControlsRN.phl[94]"
 		;
-connectAttr "R_Clav_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[95]"
+connectAttr "L_Arm_IK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[95]";
+connectAttr "L_Arm_IK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[96]";
+connectAttr "L_Arm_IK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[97]";
+connectAttr "L_Arm_IK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[98]";
+connectAttr "L_Arm_IK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[99]";
+connectAttr "L_Arm_IK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[100]";
+connectAttr "L_Arm_PV_Ctrl_Follow.o" "LowPolyHumanSceneControlsRN.phl[101]";
+connectAttr "L_Arm_PV_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[102]";
+connectAttr "L_Arm_PV_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[103]";
+connectAttr "L_Arm_PV_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[104]";
+connectAttr "R_Clav_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[105]"
 		;
-connectAttr "R_Clav_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[96]";
-connectAttr "R_Clav_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[97]";
-connectAttr "R_Clav_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[98]";
-connectAttr "R_Clav_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[99]";
-connectAttr "R_Clav_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[100]";
-connectAttr "R_Clav_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[101]";
-connectAttr "R_Clav_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[102]";
-connectAttr "R_Clav_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[103]";
-connectAttr "R_Clav_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[104]";
-connectAttr "LowPolyHumanSceneControlsRN.phl[105]" "Sample_parentConstraint1.tg[0].ts"
+connectAttr "R_Clav_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[106]"
 		;
-connectAttr "R_Arm_IK_Ctrl_Follow.o" "LowPolyHumanSceneControlsRN.phl[106]";
-connectAttr "R_Arm_IK_Ctrl_Stretch.o" "LowPolyHumanSceneControlsRN.phl[107]";
-connectAttr "R_Arm_IK_Ctrl_MaxStretch.o" "LowPolyHumanSceneControlsRN.phl[108]";
-connectAttr "R_Arm_IK_Ctrl_ArmLength.o" "LowPolyHumanSceneControlsRN.phl[109]";
-connectAttr "R_Arm_IK_Ctrl_UpperArmLength.o" "LowPolyHumanSceneControlsRN.phl[110]"
+connectAttr "R_Clav_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[107]"
 		;
-connectAttr "R_Arm_IK_Ctrl_LowerArmLength.o" "LowPolyHumanSceneControlsRN.phl[111]"
+connectAttr "R_Clav_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[108]"
 		;
-connectAttr "LowPolyHumanSceneControlsRN.phl[112]" "Sample_parentConstraint1.tg[0].tt"
+connectAttr "R_Clav_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[109]"
 		;
-connectAttr "R_Arm_IK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[113]";
-connectAttr "R_Arm_IK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[114]";
-connectAttr "R_Arm_IK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[115]";
-connectAttr "LowPolyHumanSceneControlsRN.phl[116]" "Sample_parentConstraint1.tg[0].trp"
+connectAttr "R_Clav_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[110]";
+connectAttr "R_Clav_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[111]";
+connectAttr "R_Clav_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[112]";
+connectAttr "R_Clav_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[113]";
+connectAttr "R_Clav_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[114]";
+connectAttr "R_Clav_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[115]";
+connectAttr "LowPolyHumanSceneControlsRN.phl[116]" "Sample_parentConstraint1.tg[0].ts"
 		;
-connectAttr "LowPolyHumanSceneControlsRN.phl[117]" "Sample_parentConstraint1.tg[0].trt"
+connectAttr "R_Arm_IK_Ctrl_Follow.o" "LowPolyHumanSceneControlsRN.phl[117]";
+connectAttr "R_Arm_IK_Ctrl_Stretch.o" "LowPolyHumanSceneControlsRN.phl[118]";
+connectAttr "R_Arm_IK_Ctrl_MaxStretch.o" "LowPolyHumanSceneControlsRN.phl[119]";
+connectAttr "R_Arm_IK_Ctrl_ArmLength.o" "LowPolyHumanSceneControlsRN.phl[120]";
+connectAttr "R_Arm_IK_Ctrl_UpperArmLength.o" "LowPolyHumanSceneControlsRN.phl[121]"
 		;
-connectAttr "LowPolyHumanSceneControlsRN.phl[118]" "Sample_parentConstraint1.tg[0].tr"
+connectAttr "R_Arm_IK_Ctrl_LowerArmLength.o" "LowPolyHumanSceneControlsRN.phl[122]"
 		;
-connectAttr "R_Arm_IK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[119]";
-connectAttr "R_Arm_IK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[120]";
-connectAttr "R_Arm_IK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[121]";
-connectAttr "LowPolyHumanSceneControlsRN.phl[122]" "Sample_parentConstraint1.tg[0].tro"
+connectAttr "LowPolyHumanSceneControlsRN.phl[123]" "Sample_parentConstraint1.tg[0].tt"
 		;
-connectAttr "LowPolyHumanSceneControlsRN.phl[123]" "Sample_parentConstraint1.tg[0].tpm"
+connectAttr "R_Arm_IK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[124]";
+connectAttr "R_Arm_IK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[125]";
+connectAttr "R_Arm_IK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[126]";
+connectAttr "LowPolyHumanSceneControlsRN.phl[127]" "Sample_parentConstraint1.tg[0].trp"
 		;
-connectAttr "R_Arm_PV_Ctrl_Follow.o" "LowPolyHumanSceneControlsRN.phl[124]";
-connectAttr "R_Arm_PV_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[125]";
-connectAttr "R_Arm_PV_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[126]";
-connectAttr "R_Arm_PV_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[127]";
-connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[128]"
+connectAttr "LowPolyHumanSceneControlsRN.phl[128]" "Sample_parentConstraint1.tg[0].trt"
 		;
-connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[129]"
+connectAttr "LowPolyHumanSceneControlsRN.phl[129]" "Sample_parentConstraint1.tg[0].tr"
 		;
-connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[130]"
+connectAttr "R_Arm_IK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[130]";
+connectAttr "R_Arm_IK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[131]";
+connectAttr "R_Arm_IK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[132]";
+connectAttr "LowPolyHumanSceneControlsRN.phl[133]" "Sample_parentConstraint1.tg[0].tro"
 		;
-connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[131]"
+connectAttr "LowPolyHumanSceneControlsRN.phl[134]" "Sample_parentConstraint1.tg[0].tpm"
 		;
-connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[132]"
+connectAttr "R_Arm_PV_Ctrl_Follow.o" "LowPolyHumanSceneControlsRN.phl[135]";
+connectAttr "R_Arm_PV_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[136]";
+connectAttr "R_Arm_PV_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[137]";
+connectAttr "R_Arm_PV_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[138]";
+connectAttr "L_Finger_01_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[139]"
 		;
-connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[133]"
+connectAttr "L_Finger_01_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[140]"
 		;
-connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[134]"
+connectAttr "L_Finger_01_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[141]"
 		;
-connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[135]"
+connectAttr "L_Finger_01_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[142]"
 		;
-connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[136]"
+connectAttr "L_Finger_01_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[143]"
 		;
-connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[137]"
+connectAttr "L_Finger_01_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[144]"
 		;
-connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[138]"
+connectAttr "L_Finger_01_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[145]"
 		;
-connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[139]"
+connectAttr "L_Finger_01_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[146]"
 		;
-connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[140]"
+connectAttr "L_Finger_01_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[147]"
 		;
-connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[141]"
+connectAttr "L_Finger_01_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[148]"
 		;
-connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[142]"
+connectAttr "L_Finger_01_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[149]"
 		;
-connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[143]"
+connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[150]"
 		;
-connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[144]"
+connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[151]"
 		;
-connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[145]"
+connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[152]"
 		;
-connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[146]"
+connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[153]"
 		;
-connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[147]"
+connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[154]"
 		;
-connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[148]"
+connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[155]"
 		;
-connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[149]"
+connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[156]"
 		;
-connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[150]"
+connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[157]"
 		;
-connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[151]"
+connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[158]"
 		;
-connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[152]"
+connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[159]"
 		;
-connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[153]"
+connectAttr "L_Finger_01_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[160]"
 		;
-connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[154]"
+connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[161]"
 		;
-connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[155]"
+connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[162]"
 		;
-connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[156]"
+connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[163]"
 		;
-connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[157]"
+connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[164]"
 		;
-connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[158]"
+connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[165]"
 		;
-connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[159]"
+connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[166]"
 		;
-connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[160]"
+connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[167]"
 		;
-connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[161]"
+connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[168]"
 		;
-connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[162]"
+connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[169]"
 		;
-connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[163]"
+connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[170]"
 		;
-connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[164]"
+connectAttr "L_Finger_01_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[171]"
 		;
-connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[165]"
+connectAttr "L_Finger_01_Knuckle_04_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[172]"
 		;
-connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[166]"
+connectAttr "L_Finger_01_Knuckle_04_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[173]"
 		;
-connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[167]"
+connectAttr "L_Finger_01_Knuckle_04_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[174]"
 		;
-connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[168]"
+connectAttr "L_Finger_01_Knuckle_04_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[175]"
 		;
-connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[169]"
+connectAttr "L_Finger_01_Knuckle_04_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[176]"
 		;
-connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[170]"
+connectAttr "L_Finger_01_Knuckle_04_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[177]"
 		;
-connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[171]"
+connectAttr "L_Finger_01_Knuckle_04_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[178]"
 		;
-connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[172]"
+connectAttr "L_Finger_01_Knuckle_04_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[179]"
 		;
-connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[173]"
+connectAttr "L_Finger_01_Knuckle_04_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[180]"
 		;
-connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[174]"
+connectAttr "L_Finger_01_Knuckle_04_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[181]"
 		;
-connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[175]"
+connectAttr "L_Finger_01_Knuckle_04_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[182]"
 		;
-connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[176]"
+connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[183]"
 		;
-connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[177]"
+connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[184]"
 		;
-connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[178]"
+connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[185]"
 		;
-connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[179]"
+connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[186]"
 		;
-connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[180]"
+connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[187]"
 		;
-connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[181]"
+connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[188]"
 		;
-connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[182]"
+connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[189]"
 		;
-connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[183]"
+connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[190]"
 		;
-connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[184]"
+connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[191]"
 		;
-connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[185]"
+connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[192]"
 		;
-connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[186]"
+connectAttr "L_Finger_02_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[193]"
 		;
-connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[187]"
+connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[194]"
 		;
-connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[188]"
+connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[195]"
 		;
-connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[189]"
+connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[196]"
 		;
-connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[190]"
+connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[197]"
 		;
-connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[191]"
+connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[198]"
 		;
-connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[192]"
+connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[199]"
 		;
-connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[193]"
+connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[200]"
 		;
-connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[194]"
+connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[201]"
 		;
-connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[195]"
+connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[202]"
 		;
-connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[196]"
+connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[203]"
 		;
-connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[197]"
+connectAttr "L_Finger_02_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[204]"
 		;
-connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[198]"
+connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[205]"
 		;
-connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[199]"
+connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[206]"
 		;
-connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[200]"
+connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[207]"
 		;
-connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[201]"
+connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[208]"
 		;
-connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[202]"
+connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[209]"
 		;
-connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[203]"
+connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[210]"
 		;
-connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[204]"
+connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[211]"
 		;
-connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[205]"
+connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[212]"
 		;
-connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[206]"
+connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[213]"
 		;
-connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[207]"
+connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[214]"
 		;
-connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[208]"
+connectAttr "L_Finger_02_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[215]"
 		;
-connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[209]"
+connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[216]"
 		;
-connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[210]"
+connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[217]"
 		;
-connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[211]"
+connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[218]"
 		;
-connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[212]"
+connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[219]"
 		;
-connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[213]"
+connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[220]"
 		;
-connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[214]"
+connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[221]"
 		;
-connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[215]"
+connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[222]"
 		;
-connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[216]"
+connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[223]"
 		;
-connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[217]"
+connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[224]"
 		;
-connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[218]"
+connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[225]"
 		;
-connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[219]"
+connectAttr "L_Finger_03_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[226]"
 		;
-connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[220]"
+connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[227]"
 		;
-connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[221]"
+connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[228]"
 		;
-connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[222]"
+connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[229]"
 		;
-connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[223]"
+connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[230]"
 		;
-connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[224]"
+connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[231]"
 		;
-connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[225]"
+connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[232]"
 		;
-connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[226]"
+connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[233]"
 		;
-connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[227]"
+connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[234]"
 		;
-connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[228]"
+connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[235]"
 		;
-connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[229]"
+connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[236]"
 		;
-connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[230]"
+connectAttr "L_Finger_03_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[237]"
 		;
-connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[231]"
+connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[238]"
 		;
-connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[232]"
+connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[239]"
 		;
-connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[233]"
+connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[240]"
 		;
-connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[234]"
+connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[241]"
 		;
-connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[235]"
+connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[242]"
 		;
-connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[236]"
+connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[243]"
 		;
-connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[237]"
+connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[244]"
 		;
-connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[238]"
+connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[245]"
 		;
-connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[239]"
+connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[246]"
 		;
-connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[240]"
+connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[247]"
 		;
-connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[241]"
+connectAttr "L_Finger_03_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[248]"
 		;
-connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[242]"
+connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[249]"
 		;
-connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[243]"
+connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[250]"
 		;
-connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[244]"
+connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[251]"
 		;
-connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[245]"
+connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[252]"
 		;
-connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[246]"
+connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[253]"
 		;
-connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[247]"
+connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[254]"
 		;
-connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[248]"
+connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[255]"
 		;
-connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[249]"
+connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[256]"
 		;
-connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[250]"
+connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[257]"
 		;
-connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[251]"
+connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[258]"
 		;
-connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[252]"
+connectAttr "L_Finger_04_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[259]"
 		;
-connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[253]"
+connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[260]"
 		;
-connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[254]"
+connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[261]"
 		;
-connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[255]"
+connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[262]"
 		;
-connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[256]"
+connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[263]"
 		;
-connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[257]"
+connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[264]"
 		;
-connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[258]"
+connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[265]"
 		;
-connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[259]"
+connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[266]"
 		;
-connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[260]"
+connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[267]"
 		;
-connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[261]"
+connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[268]"
 		;
-connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[262]"
+connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[269]"
 		;
-connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[263]"
+connectAttr "L_Finger_04_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[270]"
 		;
-connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[264]"
+connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[271]"
 		;
-connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[265]"
+connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[272]"
 		;
-connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[266]"
+connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[273]"
 		;
-connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[267]"
+connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[274]"
 		;
-connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[268]"
+connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[275]"
 		;
-connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[269]"
+connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[276]"
 		;
-connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[270]"
+connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[277]"
 		;
-connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[271]"
+connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[278]"
 		;
-connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[272]"
+connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[279]"
 		;
-connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[273]"
+connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[280]"
 		;
-connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[274]"
+connectAttr "L_Finger_04_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[281]"
 		;
-connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[275]"
+connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[282]"
 		;
-connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[276]"
+connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[283]"
 		;
-connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[277]"
+connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[284]"
 		;
-connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[278]"
+connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[285]"
 		;
-connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[279]"
+connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[286]"
 		;
-connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[280]"
+connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[287]"
 		;
-connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[281]"
+connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[288]"
 		;
-connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[282]"
+connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[289]"
 		;
-connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[283]"
+connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[290]"
 		;
-connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[284]"
+connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[291]"
 		;
-connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[285]"
+connectAttr "L_Finger_05_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[292]"
 		;
-connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[286]"
+connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[293]"
 		;
-connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[287]"
+connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[294]"
 		;
-connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[288]"
+connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[295]"
 		;
-connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[289]"
+connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[296]"
 		;
-connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[290]"
+connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[297]"
 		;
-connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[291]"
+connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[298]"
 		;
-connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[292]"
+connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[299]"
 		;
-connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[293]"
+connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[300]"
 		;
-connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[294]"
+connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[301]"
 		;
-connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[295]"
+connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[302]"
 		;
-connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[296]"
+connectAttr "L_Finger_05_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[303]"
 		;
-connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[297]"
+connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[304]"
 		;
-connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[298]"
+connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[305]"
 		;
-connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[299]"
+connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[306]"
 		;
-connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[300]"
+connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[307]"
 		;
-connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[301]"
+connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[308]"
 		;
-connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[302]"
+connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[309]"
 		;
-connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[303]"
+connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[310]"
 		;
-connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[304]"
+connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[311]"
 		;
-connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[305]"
+connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[312]"
 		;
-connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[306]"
+connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[313]"
 		;
-connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[307]"
+connectAttr "L_Finger_05_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[314]"
 		;
-connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[308]"
+connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[315]"
 		;
-connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[309]"
+connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[316]"
 		;
-connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[310]"
+connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[317]"
 		;
-connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[311]"
+connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[318]"
 		;
-connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[312]"
+connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[319]"
 		;
-connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[313]"
+connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[320]"
 		;
-connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[314]"
+connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[321]"
 		;
-connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[315]"
+connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[322]"
 		;
-connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[316]"
+connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[323]"
 		;
-connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[317]"
+connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[324]"
 		;
-connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[318]"
+connectAttr "R_Finger_01_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[325]"
 		;
-connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[319]"
+connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[326]"
 		;
-connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[320]"
+connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[327]"
 		;
-connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[321]"
+connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[328]"
 		;
-connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[322]"
+connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[329]"
 		;
-connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[323]"
+connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[330]"
 		;
-connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[324]"
+connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[331]"
 		;
-connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[325]"
+connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[332]"
 		;
-connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[326]"
+connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[333]"
 		;
-connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[327]"
+connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[334]"
 		;
-connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[328]"
+connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[335]"
 		;
-connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[329]"
+connectAttr "R_Finger_01_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[336]"
 		;
-connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[330]"
+connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[337]"
 		;
-connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[331]"
+connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[338]"
 		;
-connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[332]"
+connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[339]"
 		;
-connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[333]"
+connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[340]"
 		;
-connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[334]"
+connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[341]"
 		;
-connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[335]"
+connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[342]"
 		;
-connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[336]"
+connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[343]"
 		;
-connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[337]"
+connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[344]"
 		;
-connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[338]"
+connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[345]"
 		;
-connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[339]"
+connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[346]"
 		;
-connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[340]"
+connectAttr "R_Finger_02_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[347]"
 		;
-connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[341]"
+connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[348]"
 		;
-connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[342]"
+connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[349]"
 		;
-connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[343]"
+connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[350]"
 		;
-connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[344]"
+connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[351]"
 		;
-connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[345]"
+connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[352]"
 		;
-connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[346]"
+connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[353]"
 		;
-connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[347]"
+connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[354]"
 		;
-connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[348]"
+connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[355]"
 		;
-connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[349]"
+connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[356]"
 		;
-connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[350]"
+connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[357]"
 		;
-connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[351]"
+connectAttr "R_Finger_02_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[358]"
 		;
-connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[352]"
+connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[359]"
 		;
-connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[353]"
+connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[360]"
 		;
-connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[354]"
+connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[361]"
 		;
-connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[355]"
+connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[362]"
 		;
-connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[356]"
+connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[363]"
 		;
-connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[357]"
+connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[364]"
 		;
-connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[358]"
+connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[365]"
 		;
-connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[359]"
+connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[366]"
 		;
-connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[360]"
+connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[367]"
 		;
-connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[361]"
+connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[368]"
 		;
-connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[362]"
+connectAttr "R_Finger_02_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[369]"
 		;
-connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[363]"
+connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[370]"
 		;
-connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[364]"
+connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[371]"
 		;
-connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[365]"
+connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[372]"
 		;
-connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[366]"
+connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[373]"
 		;
-connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[367]"
+connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[374]"
 		;
-connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[368]"
+connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[375]"
 		;
-connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[369]"
+connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[376]"
 		;
-connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[370]"
+connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[377]"
 		;
-connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[371]"
+connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[378]"
 		;
-connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[372]"
+connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[379]"
 		;
-connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[373]"
+connectAttr "R_Finger_03_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[380]"
 		;
-connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[374]"
+connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[381]"
 		;
-connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[375]"
+connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[382]"
 		;
-connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[376]"
+connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[383]"
 		;
-connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[377]"
+connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[384]"
 		;
-connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[378]"
+connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[385]"
 		;
-connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[379]"
+connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[386]"
 		;
-connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[380]"
+connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[387]"
 		;
-connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[381]"
+connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[388]"
 		;
-connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[382]"
+connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[389]"
 		;
-connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[383]"
+connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[390]"
 		;
-connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[384]"
+connectAttr "R_Finger_03_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[391]"
 		;
-connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[385]"
+connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[392]"
 		;
-connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[386]"
+connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[393]"
 		;
-connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[387]"
+connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[394]"
 		;
-connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[388]"
+connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[395]"
 		;
-connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[389]"
+connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[396]"
 		;
-connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[390]"
+connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[397]"
 		;
-connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[391]"
+connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[398]"
 		;
-connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[392]"
+connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[399]"
 		;
-connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[393]"
+connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[400]"
 		;
-connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[394]"
+connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[401]"
 		;
-connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[395]"
+connectAttr "R_Finger_03_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[402]"
 		;
-connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[396]"
+connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[403]"
 		;
-connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[397]"
+connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[404]"
 		;
-connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[398]"
+connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[405]"
 		;
-connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[399]"
+connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[406]"
 		;
-connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[400]"
+connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[407]"
 		;
-connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[401]"
+connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[408]"
 		;
-connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[402]"
+connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[409]"
 		;
-connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[403]"
+connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[410]"
 		;
-connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[404]"
+connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[411]"
 		;
-connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[405]"
+connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[412]"
 		;
-connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[406]"
+connectAttr "R_Finger_04_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[413]"
 		;
-connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[407]"
+connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[414]"
 		;
-connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[408]"
+connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[415]"
 		;
-connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[409]"
+connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[416]"
 		;
-connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[410]"
+connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[417]"
 		;
-connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[411]"
+connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[418]"
 		;
-connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[412]"
+connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[419]"
 		;
-connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[413]"
+connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[420]"
 		;
-connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[414]"
+connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[421]"
 		;
-connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[415]"
+connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[422]"
 		;
-connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[416]"
+connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[423]"
 		;
-connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[417]"
+connectAttr "R_Finger_04_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[424]"
 		;
-connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[418]"
+connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[425]"
 		;
-connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[419]"
+connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[426]"
 		;
-connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[420]"
+connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[427]"
 		;
-connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[421]"
+connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[428]"
 		;
-connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[422]"
+connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[429]"
 		;
-connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[423]"
+connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[430]"
 		;
-connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[424]"
+connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[431]"
 		;
-connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[425]"
+connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[432]"
 		;
-connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[426]"
+connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[433]"
 		;
-connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[427]"
+connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[434]"
 		;
-connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[428]"
+connectAttr "R_Finger_04_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[435]"
 		;
-connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[429]"
+connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[436]"
 		;
-connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[430]"
+connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[437]"
 		;
-connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[431]"
+connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[438]"
 		;
-connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[432]"
+connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[439]"
 		;
-connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[433]"
+connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[440]"
 		;
-connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[434]"
+connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[441]"
 		;
-connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[435]"
+connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[442]"
 		;
+connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[443]"
+		;
+connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[444]"
+		;
+connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[445]"
+		;
+connectAttr "R_Finger_05_Knuckle_01_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[446]"
+		;
+connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[447]"
+		;
+connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[448]"
+		;
+connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[449]"
+		;
+connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[450]"
+		;
+connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[451]"
+		;
+connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[452]"
+		;
+connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[453]"
+		;
+connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[454]"
+		;
+connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[455]"
+		;
+connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[456]"
+		;
+connectAttr "R_Finger_05_Knuckle_02_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[457]"
+		;
+connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_FollowTranslate.o" "LowPolyHumanSceneControlsRN.phl[458]"
+		;
+connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_FollowRotate.o" "LowPolyHumanSceneControlsRN.phl[459]"
+		;
+connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[460]"
+		;
+connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[461]"
+		;
+connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[462]"
+		;
+connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[463]"
+		;
+connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[464]"
+		;
+connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[465]"
+		;
+connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_scaleX.o" "LowPolyHumanSceneControlsRN.phl[466]"
+		;
+connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_scaleY.o" "LowPolyHumanSceneControlsRN.phl[467]"
+		;
+connectAttr "R_Finger_05_Knuckle_03_FK_Ctrl_scaleZ.o" "LowPolyHumanSceneControlsRN.phl[468]"
+		;
+connectAttr "L_Leg_IK_Ctrl_Follow.o" "LowPolyHumanSceneControlsRN.phl[469]";
+connectAttr "L_Leg_IK_Ctrl_RockFoot.o" "LowPolyHumanSceneControlsRN.phl[470]";
+connectAttr "L_Leg_IK_Ctrl_HeelRotate.o" "LowPolyHumanSceneControlsRN.phl[471]";
+connectAttr "L_Leg_IK_Ctrl_HeelPivot.o" "LowPolyHumanSceneControlsRN.phl[472]";
+connectAttr "L_Leg_IK_Ctrl_HeelTwist.o" "LowPolyHumanSceneControlsRN.phl[473]";
+connectAttr "L_Leg_IK_Ctrl_ToeRotate.o" "LowPolyHumanSceneControlsRN.phl[474]";
+connectAttr "L_Leg_IK_Ctrl_ToePivot.o" "LowPolyHumanSceneControlsRN.phl[475]";
+connectAttr "L_Leg_IK_Ctrl_ToeTwist.o" "LowPolyHumanSceneControlsRN.phl[476]";
+connectAttr "L_Leg_IK_Ctrl_BallRotate.o" "LowPolyHumanSceneControlsRN.phl[477]";
+connectAttr "L_Leg_IK_Ctrl_BallPivot.o" "LowPolyHumanSceneControlsRN.phl[478]";
+connectAttr "L_Leg_IK_Ctrl_BallTwist.o" "LowPolyHumanSceneControlsRN.phl[479]";
+connectAttr "L_Leg_IK_Ctrl_ToeTapRotate.o" "LowPolyHumanSceneControlsRN.phl[480]"
+		;
+connectAttr "L_Leg_IK_Ctrl_ToeTapPivot.o" "LowPolyHumanSceneControlsRN.phl[481]"
+		;
+connectAttr "L_Leg_IK_Ctrl_ToeTapTwist.o" "LowPolyHumanSceneControlsRN.phl[482]"
+		;
+connectAttr "L_Leg_IK_Ctrl_FootRoll.o" "LowPolyHumanSceneControlsRN.phl[483]";
+connectAttr "L_Leg_IK_Ctrl_ControlVis.o" "LowPolyHumanSceneControlsRN.phl[484]";
+connectAttr "L_Leg_IK_Ctrl_Stretch.o" "LowPolyHumanSceneControlsRN.phl[485]";
+connectAttr "L_Leg_IK_Ctrl_MaxStretch.o" "LowPolyHumanSceneControlsRN.phl[486]";
+connectAttr "L_Leg_IK_Ctrl_LegLength.o" "LowPolyHumanSceneControlsRN.phl[487]";
+connectAttr "L_Leg_IK_Ctrl_UpperLegLength.o" "LowPolyHumanSceneControlsRN.phl[488]"
+		;
+connectAttr "L_Leg_IK_Ctrl_LowerLegLength.o" "LowPolyHumanSceneControlsRN.phl[489]"
+		;
+connectAttr "L_Leg_IK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[490]";
+connectAttr "L_Leg_IK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[491]";
+connectAttr "L_Leg_IK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[492]";
+connectAttr "L_Leg_IK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[493]";
+connectAttr "L_Leg_IK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[494]";
+connectAttr "L_Leg_IK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[495]";
+connectAttr "L_Leg_PV_Ctrl_Follow.o" "LowPolyHumanSceneControlsRN.phl[496]";
+connectAttr "L_Leg_PV_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[497]";
+connectAttr "L_Leg_PV_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[498]";
+connectAttr "L_Leg_PV_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[499]";
+connectAttr "R_Leg_IK_Ctrl_Follow.o" "LowPolyHumanSceneControlsRN.phl[500]";
+connectAttr "R_Leg_IK_Ctrl_RockFoot.o" "LowPolyHumanSceneControlsRN.phl[501]";
+connectAttr "R_Leg_IK_Ctrl_HeelRotate.o" "LowPolyHumanSceneControlsRN.phl[502]";
+connectAttr "R_Leg_IK_Ctrl_HeelPivot.o" "LowPolyHumanSceneControlsRN.phl[503]";
+connectAttr "R_Leg_IK_Ctrl_HeelTwist.o" "LowPolyHumanSceneControlsRN.phl[504]";
+connectAttr "R_Leg_IK_Ctrl_ToeRotate.o" "LowPolyHumanSceneControlsRN.phl[505]";
+connectAttr "R_Leg_IK_Ctrl_ToePivot.o" "LowPolyHumanSceneControlsRN.phl[506]";
+connectAttr "R_Leg_IK_Ctrl_ToeTwist.o" "LowPolyHumanSceneControlsRN.phl[507]";
+connectAttr "R_Leg_IK_Ctrl_BallRotate.o" "LowPolyHumanSceneControlsRN.phl[508]";
+connectAttr "R_Leg_IK_Ctrl_BallPivot.o" "LowPolyHumanSceneControlsRN.phl[509]";
+connectAttr "R_Leg_IK_Ctrl_BallTwist.o" "LowPolyHumanSceneControlsRN.phl[510]";
+connectAttr "R_Leg_IK_Ctrl_ToeTapRotate.o" "LowPolyHumanSceneControlsRN.phl[511]"
+		;
+connectAttr "R_Leg_IK_Ctrl_ToeTapPivot.o" "LowPolyHumanSceneControlsRN.phl[512]"
+		;
+connectAttr "R_Leg_IK_Ctrl_ToeTapTwist.o" "LowPolyHumanSceneControlsRN.phl[513]"
+		;
+connectAttr "R_Leg_IK_Ctrl_FootRoll.o" "LowPolyHumanSceneControlsRN.phl[514]";
+connectAttr "R_Leg_IK_Ctrl_ControlVis.o" "LowPolyHumanSceneControlsRN.phl[515]";
+connectAttr "R_Leg_IK_Ctrl_Stretch.o" "LowPolyHumanSceneControlsRN.phl[516]";
+connectAttr "R_Leg_IK_Ctrl_MaxStretch.o" "LowPolyHumanSceneControlsRN.phl[517]";
+connectAttr "R_Leg_IK_Ctrl_LegLength.o" "LowPolyHumanSceneControlsRN.phl[518]";
+connectAttr "R_Leg_IK_Ctrl_UpperLegLength.o" "LowPolyHumanSceneControlsRN.phl[519]"
+		;
+connectAttr "R_Leg_IK_Ctrl_LowerLegLength.o" "LowPolyHumanSceneControlsRN.phl[520]"
+		;
+connectAttr "R_Leg_IK_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[521]";
+connectAttr "R_Leg_IK_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[522]";
+connectAttr "R_Leg_IK_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[523]";
+connectAttr "R_Leg_IK_Ctrl_rotateX.o" "LowPolyHumanSceneControlsRN.phl[524]";
+connectAttr "R_Leg_IK_Ctrl_rotateY.o" "LowPolyHumanSceneControlsRN.phl[525]";
+connectAttr "R_Leg_IK_Ctrl_rotateZ.o" "LowPolyHumanSceneControlsRN.phl[526]";
+connectAttr "R_Leg_PV_Ctrl_Follow.o" "LowPolyHumanSceneControlsRN.phl[527]";
+connectAttr "R_Leg_PV_Ctrl_translateX.o" "LowPolyHumanSceneControlsRN.phl[528]";
+connectAttr "R_Leg_PV_Ctrl_translateY.o" "LowPolyHumanSceneControlsRN.phl[529]";
+connectAttr "R_Leg_PV_Ctrl_translateZ.o" "LowPolyHumanSceneControlsRN.phl[530]";
 connectAttr "pCube3_translateX.o" "pCube3.tx";
 connectAttr "pCube3_translateY.o" "pCube3.ty";
 connectAttr "pCube3_translateZ.o" "pCube3.tz";
@@ -41445,6 +42646,16 @@ connectAttr "groupId217.id" "|ExitBox|pCube122|pCubeShape122.iog.og[0].gid";
 connectAttr "set1.mwc" "|ExitBox|pCube122|pCubeShape122.iog.og[0].gco";
 connectAttr "groupId218.id" "|ExitBox|pCube122|pCubeShape122.iog.og[1].gid";
 connectAttr "set2.mwc" "|ExitBox|pCube122|pCubeShape122.iog.og[1].gco";
+connectAttr "pCube12_visibility.o" "|Objects|Desk_Geo|pCube12.v";
+connectAttr "pCube12_translateX.o" "|Objects|Desk_Geo|pCube12.tx";
+connectAttr "pCube12_translateY.o" "|Objects|Desk_Geo|pCube12.ty";
+connectAttr "pCube12_translateZ.o" "|Objects|Desk_Geo|pCube12.tz";
+connectAttr "pCube12_rotateX.o" "|Objects|Desk_Geo|pCube12.rx";
+connectAttr "pCube12_rotateY.o" "|Objects|Desk_Geo|pCube12.ry";
+connectAttr "pCube12_rotateZ.o" "|Objects|Desk_Geo|pCube12.rz";
+connectAttr "pCube12_scaleX.o" "|Objects|Desk_Geo|pCube12.sx";
+connectAttr "pCube12_scaleY.o" "|Objects|Desk_Geo|pCube12.sy";
+connectAttr "pCube12_scaleZ.o" "|Objects|Desk_Geo|pCube12.sz";
 connectAttr "groupId46.id" "|Objects|Desk_Geo|pCube12|pCube12Shape.iog.og[1].gid"
 		;
 connectAttr "groupId47.id" "|Objects|Desk_Geo|pCube12|pCube12Shape.iog.og[2].gid"
@@ -41544,16 +42755,6 @@ connectAttr "groupId235.id" "pCylinderShape1.iog.og[0].gid";
 connectAttr "groupId236.id" "pSphereShape4.iog.og[0].gid";
 connectAttr "polySplit4.out" "pCubeShape124.i";
 connectAttr "polyCylinder1.out" "pCylinderShape3.i";
-connectAttr "pCylinder5_translateX.o" "pCylinder5.tx";
-connectAttr "pCylinder5_translateY.o" "pCylinder5.ty";
-connectAttr "pCylinder5_translateZ.o" "pCylinder5.tz";
-connectAttr "pCylinder5_visibility.o" "pCylinder5.v";
-connectAttr "pCylinder5_rotateX.o" "pCylinder5.rx";
-connectAttr "pCylinder5_rotateY.o" "pCylinder5.ry";
-connectAttr "pCylinder5_rotateZ.o" "pCylinder5.rz";
-connectAttr "pCylinder5_scaleX.o" "pCylinder5.sx";
-connectAttr "pCylinder5_scaleY.o" "pCylinder5.sy";
-connectAttr "pCylinder5_scaleZ.o" "pCylinder5.sz";
 connectAttr "polySplit13.out" "pCubeShape125.i";
 connectAttr "polyCylinder2.out" "pCylinderShape6.i";
 connectAttr "polyExtrudeFace8.out" "pCubeShape139.i";
@@ -42566,4 +43767,4 @@ connectAttr "groupId225.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId226.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId229.msg" ":initialShadingGroup.gn" -na;
 connectAttr "areaLight1.iog" ":defaultLightSet.dsm" -na;
-// End of Shot5.ma
+// End of Shot6.ma
